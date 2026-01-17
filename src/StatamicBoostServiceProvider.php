@@ -16,6 +16,10 @@ class StatamicBoostServiceProvider extends ServiceProvider
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {
+            $this->commands([
+                Console\InstallCommand::class,
+            ]);
+
             $this->publishes([
                 __DIR__.'/../config/statamic-boost.php' => config_path('statamic-boost.php'),
             ], 'statamic-boost-config');
@@ -25,8 +29,45 @@ class StatamicBoostServiceProvider extends ServiceProvider
             ], 'statamic-boost-guidelines');
         }
 
-        $this->registerStatamicTools();
-        $this->conditionallyExcludeDatabaseTools();
+        $this->applyEnvironmentConfiguration();
+    }
+
+    protected function applyEnvironmentConfiguration(): void
+    {
+        $environment = $this->determineEnvironment();
+
+        // Register Statamic tools (unless in laravel-only mode)
+        if ($environment !== 'laravel') {
+            $this->registerStatamicTools();
+        }
+
+        // Apply environment-specific tool excludes
+        $this->applyEnvironmentExcludes($environment);
+    }
+
+    protected function determineEnvironment(): string
+    {
+        // First check boost.json for persisted environment setting
+        $boostJsonPath = base_path('boost.json');
+        if (file_exists($boostJsonPath)) {
+            $boostConfig = json_decode(file_get_contents($boostJsonPath), true);
+            if (isset($boostConfig['environment'])) {
+                return $boostConfig['environment'];
+            }
+        }
+
+        // Fall back to config value
+        $environment = config('statamic-boost.environment', 'hybrid');
+
+        // If hybrid and auto-detect is enabled, check if we should treat as statamic-centric
+        if ($environment === 'hybrid' && config('statamic-boost.auto_detect', true)) {
+            $detector = $this->app->make(EnvironmentDetector::class);
+            if ($detector->isStatamicCentric()) {
+                return 'statamic';
+            }
+        }
+
+        return $environment;
     }
 
     protected function registerStatamicTools(): void
@@ -45,19 +86,16 @@ class StatamicBoostServiceProvider extends ServiceProvider
         config(['boost.mcp.tools.include' => array_merge($existingInclude, $toolsToRegister)]);
     }
 
-    protected function conditionallyExcludeDatabaseTools(): void
+    protected function applyEnvironmentExcludes(string $environment): void
     {
-        if (! config('statamic-boost.auto_detect', true)) {
+        $environmentExcludes = config("statamic-boost.environment_excludes.{$environment}", []);
+
+        if (empty($environmentExcludes)) {
             return;
         }
 
-        $detector = $this->app->make(EnvironmentDetector::class);
-
-        if ($detector->isStatamicCentric()) {
-            $excludes = config('statamic-boost.statamic_centric_excludes', []);
-            $existingExclude = config('boost.mcp.tools.exclude', []);
-            config(['boost.mcp.tools.exclude' => array_merge($existingExclude, $excludes)]);
-        }
+        $existingExclude = config('boost.mcp.tools.exclude', []);
+        config(['boost.mcp.tools.exclude' => array_merge($existingExclude, $environmentExcludes)]);
     }
 
     protected function getStatamicTools(): array

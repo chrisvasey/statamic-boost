@@ -71,4 +71,41 @@ return [
         \Laravel\Boost\Mcp\Tools\DatabaseConnections::class,
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Environment-Specific Tool Excludes
+    |--------------------------------------------------------------------------
+    |
+    | These tools are automatically excluded based on the environment setting.
+    |
+    */
+
+    'environment_excludes' => [
+        // Tools excluded when environment is 'statamic' (flat-file only)
+        'statamic' => [
+            \Laravel\Boost\Mcp\Tools\DatabaseSchema::class,
+            \Laravel\Boost\Mcp\Tools\DatabaseQuery::class,
+            \Laravel\Boost\Mcp\Tools\DatabaseConnections::class,
+        ],
+
+        // Tools excluded when environment is 'laravel' (no Statamic)
+        'laravel' => [
+            \ChrisVasey\StatamicBoost\Mcp\Tools\ListCollections::class,
+            \ChrisVasey\StatamicBoost\Mcp\Tools\GetCollectionEntries::class,
+            \ChrisVasey\StatamicBoost\Mcp\Tools\GetBlueprint::class,
+            \ChrisVasey\StatamicBoost\Mcp\Tools\ListNavigations::class,
+            \ChrisVasey\StatamicBoost\Mcp\Tools\ListGlobals::class,
+            \ChrisVasey\StatamicBoost\Mcp\Tools\ListTaxonomies::class,
+            \ChrisVasey\StatamicBoost\Mcp\Tools\GetAssetContainers::class,
+            \ChrisVasey\StatamicBoost\Mcp\Tools\ListForms::class,
+            \ChrisVasey\StatamicBoost\Mcp\Tools\ListFieldtypes::class,
+            \ChrisVasey\StatamicBoost\Mcp\Tools\ListAddons::class,
+            \ChrisVasey\StatamicBoost\Mcp\Tools\StacheInfo::class,
+            \ChrisVasey\StatamicBoost\Mcp\Tools\SearchStatamicDocs::class,
+        ],
+
+        // No tools excluded when environment is 'hybrid'
+        'hybrid' => [],
+    ],
+
 ];
