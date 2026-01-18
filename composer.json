@@ -19,6 +19,7 @@
     "require": {
         "php": "^8.2",
         "laravel/boost": "^1.1",
+        "laravel/mcp": "^0.5",
         "statamic/cms": "^5.0||^6.0"
     },
     "require-dev": {
