@@ -7,7 +7,6 @@ namespace ChrisVasey\StatamicBoost\Console;
 use ChrisVasey\StatamicBoost\EnvironmentDetector;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
-use Laravel\Boost\Support\Config as BoostConfig;
 
 use function Laravel\Prompts\intro;
 use function Laravel\Prompts\note;
@@ -15,12 +14,18 @@ use function Laravel\Prompts\select;
 
 class InstallCommand extends Command
 {
-    protected $signature = 'statamic-boost:install';
+    protected $signature = 'statamic-boost:install
+        {--env= : Environment type (statamic, hybrid, or laravel)}';
 
     protected $description = 'Configure Statamic Boost environment and run boost:install';
 
-    public function handle(EnvironmentDetector $detector, BoostConfig $boostConfig): int
+    public function handle(EnvironmentDetector $detector): int
     {
+        // Handle --no-interaction mode (CI/CD)
+        if ($this->option('no-interaction') || $this->option('env')) {
+            return $this->handleNonInteractive($detector);
+        }
+
         $this->displayHeader();
 
         // Show current environment detection
@@ -30,11 +35,42 @@ class InstallCommand extends Command
         $environment = $this->selectEnvironment($detector);
 
         // Save to both boost.json and config file
-        $this->saveEnvironmentConfig($environment, $boostConfig);
+        $this->saveEnvironmentConfig($environment);
 
         // Run boost:install
         $this->info("\nRunning boost:install...\n");
         $this->call('boost:install');
+
+        return self::SUCCESS;
+    }
+
+    protected function handleNonInteractive(EnvironmentDetector $detector): int
+    {
+        $environment = $this->option('env');
+
+        // Auto-detect if not specified
+        if (! $environment) {
+            if (! $detector->isStatamicInstalled()) {
+                $environment = 'laravel';
+            } elseif ($detector->isStatamicCentric()) {
+                $environment = 'statamic';
+            } else {
+                $environment = 'hybrid';
+            }
+            $this->info("Auto-detected environment: {$environment}");
+        }
+
+        // Validate environment option
+        $valid = ['statamic', 'hybrid', 'laravel'];
+        if (! in_array($environment, $valid, true)) {
+            $this->error("Invalid environment: {$environment}. Must be one of: ".implode(', ', $valid));
+
+            return self::FAILURE;
+        }
+
+        $this->saveEnvironmentConfig($environment);
+
+        $this->call('boost:install', ['--no-interaction' => true]);
 
         return self::SUCCESS;
     }
@@ -114,7 +150,7 @@ class InstallCommand extends Command
         );
     }
 
-    protected function saveEnvironmentConfig(string $environment, BoostConfig $boostConfig): void
+    protected function saveEnvironmentConfig(string $environment): void
     {
         // Save to boost.json
         $this->saveToBoostJson($environment);
@@ -130,17 +166,44 @@ class InstallCommand extends Command
         $boostJsonPath = base_path('boost.json');
         $config = [];
 
-        if (File::exists($boostJsonPath)) {
-            $config = json_decode(File::get($boostJsonPath), true) ?? [];
+        try {
+            if (File::exists($boostJsonPath)) {
+                $existing = File::get($boostJsonPath);
+                $config = json_decode($existing, true) ?? [];
+            }
+
+            $config['environment'] = $environment;
+
+            // Exclude Inertia guidelines for Statamic-only environments
+            // Statamic's CP uses Inertia internally, causing false detection
+            if ($environment === 'statamic') {
+                $config['exclude_guidelines'] = [
+                    'inertia-laravel',
+                    'inertia-react',
+                    'inertia-vue',
+                    'inertia-svelte',
+                ];
+            } elseif (isset($config['exclude_guidelines'])) {
+                // Remove Inertia exclusions if switching away from statamic-only
+                $config['exclude_guidelines'] = array_values(array_filter(
+                    $config['exclude_guidelines'],
+                    fn ($g) => ! str_starts_with($g, 'inertia-')
+                ));
+
+                if (empty($config['exclude_guidelines'])) {
+                    unset($config['exclude_guidelines']);
+                }
+            }
+
+            ksort($config);
+
+            File::put(
+                $boostJsonPath,
+                json_encode($config, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES).PHP_EOL
+            );
+        } catch (\JsonException $e) {
+            $this->error("Failed to parse boost.json: {$e->getMessage()}");
         }
-
-        $config['environment'] = $environment;
-        ksort($config);
-
-        File::put(
-            $boostJsonPath,
-            json_encode($config, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES).PHP_EOL
-        );
     }
 
     protected function updatePublishedConfig(string $environment): void

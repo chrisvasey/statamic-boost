@@ -22,22 +22,31 @@ class GetAssetContainers extends Tool
     public function handle(Request $request): Response
     {
         $containers = AssetContainer::all()->map(function ($container) {
-            return [
+            // Basic properties that don't require disk access
+            $data = [
                 'handle' => $container->handle(),
                 'title' => $container->title(),
                 'disk' => $container->diskHandle(),
-                'url' => $container->url(),
-                'absolute_url' => $container->absoluteUrl(),
-                'private' => $container->private(),
-                'allow_uploads' => $container->allowUploads(),
-                'allow_downloading' => $container->allowDownloading(),
-                'allow_moving' => $container->allowMoving(),
-                'allow_renaming' => $container->allowRenaming(),
-                'create_folders' => $container->createFolders(),
-                'source_preset' => $container->sourcePreset(),
-                'warm_presets' => $container->warmPresets(),
-                'asset_count' => $container->assets()->count(),
             ];
+
+            // Properties that may require disk access - wrap in try-catch
+            try {
+                $data['private'] = $container->private();
+                $data['allow_uploads'] = $container->allowUploads();
+                $data['allow_downloading'] = $container->allowDownloading();
+                $data['allow_moving'] = $container->allowMoving();
+                $data['allow_renaming'] = $container->allowRenaming();
+                $data['create_folders'] = $container->createFolders();
+                $data['source_preset'] = $container->sourcePreset();
+                $data['warm_presets'] = $container->warmPresets();
+                $data['url'] = $container->url();
+                $data['absolute_url'] = $container->absoluteUrl();
+                $data['asset_count'] = $container->assets()->count();
+            } catch (\Exception $e) {
+                $data['disk_error'] = "Unable to access disk '{$container->diskHandle()}': {$e->getMessage()}";
+            }
+
+            return $data;
         })->values()->toArray();
 
         return Response::json([
