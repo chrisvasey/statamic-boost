@@ -5,14 +5,19 @@ namespace ChrisVasey\StatamicBoost\Mcp\Tools;
 use Illuminate\Contracts\JsonSchema\JsonSchema;
 use Laravel\Mcp\Request;
 use Laravel\Mcp\Response;
-use Laravel\Mcp\Server\Tools\Annotations\IsReadOnly;
 use Laravel\Mcp\Server\Tool;
+use Laravel\Mcp\Server\Tools\Annotations\IsReadOnly;
 use Statamic\Facades\Nav;
 
 #[IsReadOnly]
 class ListNavigations extends Tool
 {
     protected string $description = 'List all Statamic navigation trees with their handles, titles, and tree structure.';
+
+    /**
+     * Maximum recursion depth to prevent infinite loops in malformed navigation data.
+     */
+    protected const MAX_DEPTH = 10;
 
     public function schema(JsonSchema $schema): array
     {
@@ -44,6 +49,14 @@ class ListNavigations extends Tool
 
     protected function flattenTree(array $items, int $depth = 0): array
     {
+        // Prevent excessive recursion
+        if ($depth >= self::MAX_DEPTH) {
+            return [[
+                'warning' => 'Maximum depth reached, children truncated',
+                'depth' => $depth,
+            ]];
+        }
+
         $result = [];
 
         foreach ($items as $item) {

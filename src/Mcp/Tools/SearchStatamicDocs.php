@@ -6,13 +6,25 @@ use Illuminate\Contracts\JsonSchema\JsonSchema;
 use Illuminate\Support\Str;
 use Laravel\Mcp\Request;
 use Laravel\Mcp\Response;
-use Laravel\Mcp\Server\Tools\Annotations\IsReadOnly;
 use Laravel\Mcp\Server\Tool;
+use Laravel\Mcp\Server\Tools\Annotations\IsReadOnly;
 
 #[IsReadOnly]
 class SearchStatamicDocs extends Tool
 {
     protected string $description = 'Search the Statamic documentation using semantic search. Use simple, topic-based queries for best results.';
+
+    /**
+     * Cached parsed documentation sections.
+     *
+     * @var array<int, array{title: string, source: string, description: string, content: string}>|null
+     */
+    protected static ?array $cachedSections = null;
+
+    /**
+     * Cache key based on file modification time.
+     */
+    protected static ?int $cacheKey = null;
 
     public function schema(JsonSchema $schema): array
     {
@@ -40,10 +52,10 @@ class SearchStatamicDocs extends Tool
         $docsPath = $this->getDocsPath();
 
         if (! file_exists($docsPath)) {
-            return Response::error('Documentation file not found at: '.$docsPath);
+            return Response::error('Documentation file not found. Please ensure the statamic-boost package is installed correctly.');
         }
 
-        $sections = $this->parseDocs($docsPath);
+        $sections = $this->getCachedSections($docsPath);
         $results = [];
 
         foreach ($queries as $query) {
@@ -56,6 +68,27 @@ class SearchStatamicDocs extends Tool
             'total_sections' => count($sections),
             'results' => $results,
         ]);
+    }
+
+    /**
+     * Get cached sections, parsing only when file changes.
+     *
+     * @return array<int, array{title: string, source: string, description: string, content: string}>
+     */
+    protected function getCachedSections(string $docsPath): array
+    {
+        $mtime = filemtime($docsPath);
+
+        // Return cached sections if file hasn't changed
+        if (static::$cachedSections !== null && static::$cacheKey === $mtime) {
+            return static::$cachedSections;
+        }
+
+        // Parse and cache
+        static::$cachedSections = $this->parseDocs($docsPath);
+        static::$cacheKey = $mtime;
+
+        return static::$cachedSections;
     }
 
     protected function getDocsPath(): string
@@ -117,6 +150,7 @@ class SearchStatamicDocs extends Tool
         foreach ($lines as $line) {
             if (str_starts_with($line, 'Source:')) {
                 $inDescription = true;
+
                 continue;
             }
             if ($inDescription) {
@@ -140,7 +174,6 @@ class SearchStatamicDocs extends Tool
     /**
      * Search sections for matching query terms.
      *
-     * @param  array  $sections
      * @return array<int, array{title: string, source: string, description: string, score: int, content: string}>
      */
     protected function searchSections(array $sections, string $query, int $limit): array

@@ -5,8 +5,9 @@ namespace ChrisVasey\StatamicBoost\Mcp\Tools;
 use Illuminate\Contracts\JsonSchema\JsonSchema;
 use Laravel\Mcp\Request;
 use Laravel\Mcp\Response;
-use Laravel\Mcp\Server\Tools\Annotations\IsReadOnly;
 use Laravel\Mcp\Server\Tool;
+use Laravel\Mcp\Server\Tools\Annotations\IsReadOnly;
+use Statamic\Facades\Collection;
 use Statamic\Facades\Entry;
 
 #[IsReadOnly]
@@ -30,10 +31,24 @@ class GetCollectionEntries extends Tool
 
     public function handle(Request $request): Response
     {
+        $collectionHandle = $request->get('collection');
+
+        // Validate collection exists if specified
+        if ($collectionHandle !== null) {
+            $collection = Collection::findByHandle($collectionHandle);
+            if (! $collection) {
+                $available = Collection::all()->map->handle()->values()->toArray();
+
+                return Response::error(
+                    "Collection '{$collectionHandle}' not found. Available collections: ".implode(', ', $available)
+                );
+            }
+        }
+
         $query = Entry::query();
 
-        if ($collection = $request->get('collection')) {
-            $query->where('collection', $collection);
+        if ($collectionHandle) {
+            $query->where('collection', $collectionHandle);
         }
 
         if ($status = $request->get('status')) {
@@ -51,7 +66,7 @@ class GetCollectionEntries extends Tool
                 'uri' => $entry->uri(),
                 'url' => $entry->url(),
                 'collection' => $entry->collectionHandle(),
-                'blueprint' => $entry->blueprint()->handle(),
+                'blueprint' => $entry->blueprint()?->handle(),
                 'status' => $entry->status(),
                 'published' => $entry->published(),
                 'date' => $entry->date()?->toDateTimeString(),
