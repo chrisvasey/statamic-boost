@@ -222,7 +222,7 @@ class InstallCommand extends Command
             // Match: 'environment' => env('STATAMIC_BOOST_ENV', 'hybrid'),
             "/('environment'\s*=>\s*env\s*\(\s*'STATAMIC_BOOST_ENV'\s*,\s*')([^']+)('\s*\))/",
             // Match: 'environment' => 'hybrid',
-            "/('environment'\s*=>\s*')([^']+)('/",
+            "/('environment'\s*=>\s*')([^']+)(')/",
         ];
 
         $replaced = false;

@@ -2,6 +2,7 @@
 
 namespace ChrisVasey\StatamicBoost\Mcp\Tools;
 
+use ChrisVasey\StatamicBoost\EnvironmentDetector;
 use Illuminate\Contracts\JsonSchema\JsonSchema;
 use Illuminate\Support\Str;
 use Laravel\Mcp\Request;
@@ -12,7 +13,7 @@ use Laravel\Mcp\Server\Tools\Annotations\IsReadOnly;
 #[IsReadOnly]
 class SearchStatamicDocs extends Tool
 {
-    protected string $description = 'Search the Statamic documentation using semantic search. Use simple, topic-based queries for best results.';
+    protected string $description = 'Search the Statamic documentation (version-matched) using semantic search. Use simple, topic-based queries for best results.';
 
     /**
      * Cached parsed documentation sections.
@@ -25,6 +26,11 @@ class SearchStatamicDocs extends Tool
      * Cache key based on file modification time.
      */
     protected static ?int $cacheKey = null;
+
+    /**
+     * Tracks current docs path for cache invalidation.
+     */
+    protected static ?string $currentDocsPath = null;
 
     public function schema(JsonSchema $schema): array
     {
@@ -79,21 +85,42 @@ class SearchStatamicDocs extends Tool
     {
         $mtime = filemtime($docsPath);
 
-        // Return cached sections if file hasn't changed
-        if (static::$cachedSections !== null && static::$cacheKey === $mtime) {
+        // Return cached sections if file hasn't changed and path is the same
+        if (static::$cachedSections !== null
+            && static::$cacheKey === $mtime
+            && static::$currentDocsPath === $docsPath) {
             return static::$cachedSections;
         }
 
         // Parse and cache
         static::$cachedSections = $this->parseDocs($docsPath);
         static::$cacheKey = $mtime;
+        static::$currentDocsPath = $docsPath;
 
         return static::$cachedSections;
     }
 
     protected function getDocsPath(): string
     {
-        return dirname(__DIR__, 3).'/docs/statamic-docs-v6.0.0-beta.md';
+        $detector = app(EnvironmentDetector::class);
+        $version = $detector->getStatamicMajorVersion() ?? 6;
+
+        $docsDir = dirname(__DIR__, 3).'/docs';
+
+        // Try version-specific docs first (e.g., statamic-docs-v5.md)
+        $versionFile = "{$docsDir}/statamic-docs-v{$version}.md";
+        if (file_exists($versionFile)) {
+            return $versionFile;
+        }
+
+        // Fallback: find any docs file matching the version pattern
+        $files = glob("{$docsDir}/statamic-docs-v{$version}*.md");
+        if (! empty($files)) {
+            return $files[0];
+        }
+
+        // Final fallback to v6 beta
+        return "{$docsDir}/statamic-docs-v6.0.0-beta.md";
     }
 
     /**

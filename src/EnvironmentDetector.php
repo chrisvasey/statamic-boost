@@ -13,6 +13,17 @@ class EnvironmentDetector
         return class_exists(\Statamic\Statamic::class);
     }
 
+    public function getStatamicMajorVersion(): ?int
+    {
+        if (! $this->isStatamicInstalled()) {
+            return null;
+        }
+
+        $version = \Composer\InstalledVersions::getVersion('statamic/cms');
+
+        return $version ? (int) explode('.', $version)[0] : null;
+    }
+
     public function isStatamicCentric(): bool
     {
         if ($this->cachedIsStatamicCentric !== null) {
