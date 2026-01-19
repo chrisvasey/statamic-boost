@@ -28,6 +28,8 @@ Then run the Boost installer to configure your AI tools:
 php artisan boost:install
 ```
 
+To install the MCP into your preferred editor/cli, follow the instructions on the [Larvael Boost Install Guide](https://laravel.com/ai/boost#installation-guide).
+
 ## Available MCP Tools
 
 | Tool | Description |
