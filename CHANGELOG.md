@@ -2,6 +2,15 @@
 
 All notable changes to `statamic-boost` will be documented in this file.
 
+## v1.1.0 - 2026-01-20
+
+### Changed
+
+- Converted to official Statamic addon structure using `php please make:addon`
+- ServiceProvider now extends `Statamic\Providers\AddonServiceProvider` instead of Laravel's base ServiceProvider
+- Uses `bootAddon()` method for addon-specific boot logic
+- Added `extra.statamic` section to composer.json for proper addon discovery
+
 ## v1.0.0 - 2026-01-19
 
 Initial release of Statamic Boost — MCP tools and AI guidelines for Statamic sites, extending Laravel Boost.

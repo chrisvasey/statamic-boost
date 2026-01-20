@@ -52,9 +52,13 @@
         }
     },
     "extra": {
+        "statamic": {
+            "name": "Statamic Boost",
+            "description": "Statamic-specific MCP tools and AI guidelines, extending Laravel Boost"
+        },
         "laravel": {
             "providers": [
-                "ChrisVasey\\StatamicBoost\\StatamicBoostServiceProvider"
+                "ChrisVasey\\StatamicBoost\\ServiceProvider"
             ]
         }
     },
