@@ -9,6 +9,8 @@ Statamic-specific MCP tools and AI guidelines for [Laravel Boost](https://github
 - **Environment Detection** automatically excludes database tools for flat-file sites
 - **Seamless Integration** with Laravel Boost's MCP server
 
+This package focuses on providing **read-only context** to AI agents about your Statamic site. If you need full CRUD operations, template analysis, or addon scaffolding, check out [cboxdk/statamic-mcp](https://github.com/cboxdk/statamic-mcp) which offers 100+ tools with write capabilities.
+
 ## Requirements
 
 - PHP 8.2+
