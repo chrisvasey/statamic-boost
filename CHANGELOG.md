@@ -2,6 +2,13 @@
 
 All notable changes to `statamic-boost` will be documented in this file.
 
+## v1.1.0 - setup as Statamic Addon - 2026-01-21
+
+- Converted to official Statamic addon structure using `php please make:addon`
+- ServiceProvider now extends `Statamic\Providers\AddonServiceProvider` instead of Laravel's base ServiceProvider
+- Uses `bootAddon()` method for addon-specific boot logic
+- Added `extra.statamic` section to composer.json for proper addon discovery
+
 ## v1.1.0 - 2026-01-20
 
 ### Changed
@@ -30,6 +37,7 @@ Initial release of Statamic Boost — MCP tools and AI guidelines for Statamic s
   - `list-addons` - List installed Statamic addons
   - `stache-info` - Get Stache cache status and statistics
   - `search-statamic-docs` - Search bundled Statamic documentation
+  
 - **Environment Detection** - Automatically detects Statamic-only vs hybrid Laravel+Statamic apps, excluding irrelevant database tools for flat-file sites
 - **AI Guidelines** - Includes guidance for Antlers templating, blueprints, and Statamic best practices
 - **Install Command** - Interactive setup with environment selection
