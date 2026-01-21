@@ -14,7 +14,7 @@ Statamic-specific MCP tools and AI guidelines for [Laravel Boost](https://github
 - PHP 8.2+
 - Laravel 10, 11, or 12
 - Statamic 5 or 6
-- Laravel Boost 1.0+
+- Laravel Boost 1.1+
 
 ## Installation
 
@@ -25,7 +25,7 @@ composer require chrisvasey/statamic-boost --dev
 Then run the Boost installer to configure your AI tools:
 
 ```bash
-php artisan boost:install
+php please boost:install
 ```
 
 To install the MCP into your preferred editor/cli, follow the instructions on the [Larvael Boost Install Guide](https://laravel.com/ai/boost#installation-guide).
@@ -52,7 +52,7 @@ To install the MCP into your preferred editor/cli, follow the instructions on th
 Publish the config file:
 
 ```bash
-php artisan vendor:publish --tag=statamic-boost-config
+php please vendor:publish --tag=statamic-boost-config
 ```
 
 ### Exclude Tools
@@ -93,7 +93,7 @@ Statamic Boost includes guidelines for AI assistants covering:
 - Statamic CLI commands (`php please`)
 - Best practices for Statamic development
 
-Guidelines are automatically included when you run `php artisan boost:install`.
+Guidelines are automatically included when you run `php please boost:install`.
 
 ## Testing
 
