@@ -2,6 +2,11 @@
 
 All notable changes to `statamic-boost` will be documented in this file.
 
+## v1.1.2 - 2026-01-21
+
+- Remove `/docs` from `export-ignore` in `.gitattributes` so documentation files are included when the package is installed via Composer
+- Fixes the "Documentation file not found" error in the `search-statamic-docs` MCP tool
+
 ## v1.1.1 - 2026-01-21
 
 Added link to [cboxdk/statamic-mcp](https://github.com/cboxdk/statamic-mcp) in README.
