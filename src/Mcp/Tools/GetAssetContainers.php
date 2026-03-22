@@ -42,7 +42,7 @@ class GetAssetContainers extends Tool
                 $data['url'] = $container->url();
                 $data['absolute_url'] = $container->absoluteUrl();
                 $data['asset_count'] = $container->assets()->count();
-            } catch (\Exception $e) {
+            } catch (\Throwable $e) {
                 $data['disk_error'] = "Unable to access disk '{$container->diskHandle()}': {$e->getMessage()}";
             }
 
