@@ -2,9 +2,10 @@
 
 use ChrisVasey\StatamicBoost\Mcp\Tools\ListFieldtypes;
 use Laravel\Mcp\Request;
+use Statamic\Facades\Fieldtype;
 
 beforeEach(function () {
-    if (! class_exists(\Statamic\Facades\Fieldtype::class)) {
+    if (! class_exists(Fieldtype::class)) {
         $this->markTestSkipped('Statamic Fieldtype facade not available');
     }
 });
