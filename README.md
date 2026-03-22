@@ -24,11 +24,15 @@ This package focuses on providing **read-only context** to AI agents about your 
 composer require chrisvasey/statamic-boost --dev
 ```
 
-Then run the Boost installer to configure your AI tools:
+Then run the Boost installer to generate your AI context files:
 
 ```bash
-php please boost:install
+php artisan boost:install
 ```
+
+This is **Laravel Boost's** install command. It auto-discovers Statamic Boost's guidelines and includes them in your generated CLAUDE.md / agent context files.
+
+> **Note:** There is also a `php artisan statamic-boost:install` command (or `php please statamic-boost:install`). This is a separate command that configures your environment type (Statamic-only, hybrid, or Laravel-only) and then calls `boost:install` for you. Run it instead of `boost:install` if you want to be prompted for your environment type.
 
 To install the MCP into your preferred editor/cli, follow the instructions on the [Laravel Boost Install Guide](https://laravel.com/ai/boost#installation-guide).
 
