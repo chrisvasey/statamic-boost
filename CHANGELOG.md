@@ -2,6 +2,10 @@
 
 All notable changes to `statamic-boost` will be documented in this file.
 
+## Unreleased
+
+- Update `laravel/boost` requirement from `^1.1` to `^2.0` to support Laravel Boost v2.x (#14)
+
 ## v1.1.2 - 2026-01-21
 
 - Remove `/docs` from `export-ignore` in `.gitattributes` so documentation files are included when the package is installed via Composer
