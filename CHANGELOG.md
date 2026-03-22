@@ -2,6 +2,25 @@
 
 All notable changes to `statamic-boost` will be documented in this file.
 
+## v1.2.0 - 2026-03-22
+
+### What's Changed
+
+#### New
+
+- **Guidelines auto-discovery**: Statamic guidelines are now automatically included when running `php artisan boost:install` — no manual publishing required. The package now ships `resources/boost/guidelines/core.blade.php` which Laravel Boost v2 picks up automatically during install. (#19)
+
+#### Fixed
+
+- **Laravel Boost v2 compatibility**: Updated `laravel/boost` requirement from `^1.1` to `^2.0`, resolving composer conflicts for projects on Laravel 12 / Boost v2.x. Closes #14. (#19)
+- **Statamic 6.7+ compatibility**: `GetAssetContainers` tool now catches `\Throwable` instead of `\Exception`, fixing a crash caused by a breaking change in Statamic 6.7's augmentation layer. (#19)
+
+#### Maintenance
+
+- Bumped `ramsey/composer-install` GitHub Action from v3 to v4 (#17)
+
+**Full Changelog**: https://github.com/chrisvasey/statamic-boost/compare/v1.1.2...v1.2.0
+
 ## Unreleased
 
 - Add `resources/boost/guidelines/core.blade.php` so guidelines are auto-discovered by `boost:install` (#10)
