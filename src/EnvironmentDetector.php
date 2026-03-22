@@ -2,7 +2,10 @@
 
 namespace ChrisVasey\StatamicBoost;
 
+use Composer\InstalledVersions;
 use Illuminate\Support\Facades\File;
+use Statamic\Statamic;
+use StatamicRadPack\Runway\Runway;
 
 class EnvironmentDetector
 {
@@ -10,7 +13,7 @@ class EnvironmentDetector
 
     public function isStatamicInstalled(): bool
     {
-        return class_exists(\Statamic\Statamic::class);
+        return class_exists(Statamic::class);
     }
 
     public function getStatamicMajorVersion(): ?int
@@ -19,7 +22,7 @@ class EnvironmentDetector
             return null;
         }
 
-        $version = \Composer\InstalledVersions::getVersion('statamic/cms');
+        $version = InstalledVersions::getVersion('statamic/cms');
 
         return $version ? (int) explode('.', $version)[0] : null;
     }
@@ -40,7 +43,7 @@ class EnvironmentDetector
 
     public function hasRunwayAddon(): bool
     {
-        return class_exists(\StatamicRadPack\Runway\Runway::class);
+        return class_exists(Runway::class);
     }
 
     public function hasCustomEloquentModels(): bool

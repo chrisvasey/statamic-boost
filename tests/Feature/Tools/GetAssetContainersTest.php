@@ -5,7 +5,7 @@ use Laravel\Mcp\Request;
 use Statamic\Facades\AssetContainer;
 
 beforeEach(function () {
-    if (! class_exists(\Statamic\Facades\AssetContainer::class)) {
+    if (! class_exists(AssetContainer::class)) {
         $this->markTestSkipped('Statamic AssetContainer facade not available');
     }
 });
@@ -14,7 +14,7 @@ afterEach(function () {
     try {
         AssetContainer::findByHandle('images')?->delete();
         AssetContainer::findByHandle('broken')?->delete();
-    } catch (\Exception $e) {
+    } catch (Exception $e) {
         // Ignore cleanup errors
     }
 });
@@ -25,7 +25,7 @@ it('lists all asset containers', function () {
             ->title('Images')
             ->disk('local')
             ->save();
-    } catch (\Exception $e) {
+    } catch (Exception $e) {
         $this->markTestSkipped('Unable to create asset container');
     }
 
@@ -45,7 +45,7 @@ it('includes container handles and titles', function () {
             ->title('Images')
             ->disk('local')
             ->save();
-    } catch (\Exception $e) {
+    } catch (Exception $e) {
         $this->markTestSkipped('Unable to create asset container');
     }
 

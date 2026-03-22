@@ -1,5 +1,21 @@
 <?php
 
+use ChrisVasey\StatamicBoost\Mcp\Tools\GetAssetContainers;
+use ChrisVasey\StatamicBoost\Mcp\Tools\GetBlueprint;
+use ChrisVasey\StatamicBoost\Mcp\Tools\GetCollectionEntries;
+use ChrisVasey\StatamicBoost\Mcp\Tools\ListAddons;
+use ChrisVasey\StatamicBoost\Mcp\Tools\ListCollections;
+use ChrisVasey\StatamicBoost\Mcp\Tools\ListFieldtypes;
+use ChrisVasey\StatamicBoost\Mcp\Tools\ListForms;
+use ChrisVasey\StatamicBoost\Mcp\Tools\ListGlobals;
+use ChrisVasey\StatamicBoost\Mcp\Tools\ListNavigations;
+use ChrisVasey\StatamicBoost\Mcp\Tools\ListTaxonomies;
+use ChrisVasey\StatamicBoost\Mcp\Tools\SearchStatamicDocs;
+use ChrisVasey\StatamicBoost\Mcp\Tools\StacheInfo;
+use Laravel\Boost\Mcp\Tools\DatabaseConnections;
+use Laravel\Boost\Mcp\Tools\DatabaseQuery;
+use Laravel\Boost\Mcp\Tools\DatabaseSchema;
+
 return [
 
     /*
@@ -66,9 +82,9 @@ return [
     */
 
     'statamic_centric_excludes' => [
-        \Laravel\Boost\Mcp\Tools\DatabaseSchema::class,
-        \Laravel\Boost\Mcp\Tools\DatabaseQuery::class,
-        \Laravel\Boost\Mcp\Tools\DatabaseConnections::class,
+        DatabaseSchema::class,
+        DatabaseQuery::class,
+        DatabaseConnections::class,
     ],
 
     /*
@@ -83,25 +99,25 @@ return [
     'environment_excludes' => [
         // Tools excluded when environment is 'statamic' (flat-file only)
         'statamic' => [
-            \Laravel\Boost\Mcp\Tools\DatabaseSchema::class,
-            \Laravel\Boost\Mcp\Tools\DatabaseQuery::class,
-            \Laravel\Boost\Mcp\Tools\DatabaseConnections::class,
+            DatabaseSchema::class,
+            DatabaseQuery::class,
+            DatabaseConnections::class,
         ],
 
         // Tools excluded when environment is 'laravel' (no Statamic)
         'laravel' => [
-            \ChrisVasey\StatamicBoost\Mcp\Tools\ListCollections::class,
-            \ChrisVasey\StatamicBoost\Mcp\Tools\GetCollectionEntries::class,
-            \ChrisVasey\StatamicBoost\Mcp\Tools\GetBlueprint::class,
-            \ChrisVasey\StatamicBoost\Mcp\Tools\ListNavigations::class,
-            \ChrisVasey\StatamicBoost\Mcp\Tools\ListGlobals::class,
-            \ChrisVasey\StatamicBoost\Mcp\Tools\ListTaxonomies::class,
-            \ChrisVasey\StatamicBoost\Mcp\Tools\GetAssetContainers::class,
-            \ChrisVasey\StatamicBoost\Mcp\Tools\ListForms::class,
-            \ChrisVasey\StatamicBoost\Mcp\Tools\ListFieldtypes::class,
-            \ChrisVasey\StatamicBoost\Mcp\Tools\ListAddons::class,
-            \ChrisVasey\StatamicBoost\Mcp\Tools\StacheInfo::class,
-            \ChrisVasey\StatamicBoost\Mcp\Tools\SearchStatamicDocs::class,
+            ListCollections::class,
+            GetCollectionEntries::class,
+            GetBlueprint::class,
+            ListNavigations::class,
+            ListGlobals::class,
+            ListTaxonomies::class,
+            GetAssetContainers::class,
+            ListForms::class,
+            ListFieldtypes::class,
+            ListAddons::class,
+            StacheInfo::class,
+            SearchStatamicDocs::class,
         ],
 
         // No tools excluded when environment is 'hybrid'
