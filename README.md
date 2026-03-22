@@ -14,8 +14,9 @@ This package focuses on providing **read-only context** to AI agents about your 
 ## Requirements
 
 - PHP 8.2+
-- Laravel 10, 11, or 12
+- Laravel 11 or 12
 - Statamic 5 or 6
+- [Laravel Boost](https://github.com/laravel/boost) ^2.0
 
 ## Installation
 
