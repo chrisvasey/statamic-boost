@@ -2,6 +2,16 @@
 
 All notable changes to `statamic-boost` will be documented in this file.
 
+## v1.2.1 - 2026-03-26
+
+### Fixed
+
+- **laravel/mcp compatibility**: Updated `laravel/mcp` requirement from `^0.5` to `^0.5|^0.6`, unblocking installation for projects on `laravel/mcp` v0.6.x. Closes #14.
+
+### Maintenance
+
+- CI matrix now tests against `laravel/mcp` ^0.5 and ^0.6, Laravel 11/12/13, and Pest 3/4.
+
 ## v1.2.0 - 2026-03-22
 
 ### What's Changed
