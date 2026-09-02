@@ -17,38 +17,38 @@ Antlers is Statamic's templating language. Use double curly braces for variables
 
 **Variables:**
 ```antlers
-{{ title }}
-{{ content | markdown }}
-{{ date | format('F j, Y') }}
+@{{ title }}
+@{{ content | markdown }}
+@{{ date | format('F j, Y') }}
 ```
 
 **Tags (with parameters):**
 ```antlers
-{{ collection:blog limit="5" }}
+@{{ collection:blog limit="5" }}
     <article>
-        <h2>{{ title }}</h2>
-        {{ content }}
+        <h2>@{{ title }}</h2>
+        @{{ content }}
     </article>
-{{ /collection:blog }}
+@{{ /collection:blog }}
 ```
 
 **Conditionals:**
 ```antlers
-{{ if logged_in }}
-    Welcome, {{ current_user:name }}
-{{ elseif show_login }}
+@{{ if logged_in }}
+    Welcome, @{{ current_user:name }}
+@{{ elseif show_login }}
     <a href="/login">Login</a>
-{{ else }}
+@{{ else }}
     Guest content
-{{ /if }}
+@{{ /if }}
 ```
 
 **Modifiers (pipe syntax):**
 ```antlers
-{{ title | upper }}
-{{ content | markdown | safe }}
-{{ date | relative }}
-{{ image | glide:width="800" }}
+@{{ title | upper }}
+@{{ content | markdown | safe }}
+@{{ date | relative }}
+@{{ image | glide:width="800" }}
 ```
 
 ### Blueprints
@@ -171,17 +171,17 @@ GlobalSet::findByHandle('site')->in('default')->get('company_name');
 ### Tags Reference
 
 Common Antlers tags:
-- `{{ collection:* }}` - Query collection entries
-- `{{ taxonomy:* }}` - Query taxonomy terms
-- `{{ nav:* }}` - Render navigation
-- `{{ form:* }}` - Render forms
-- `{{ user:* }}` - Current user data
-- `{{ asset:* }}` - Asset information
-- `{{ glide }}` - Image manipulation
-- `{{ partial:* }}` - Include partials
-- `{{ cache }}` - Cache blocks
-- `{{ session:* }}` - Session data
-- `{{ route }}` - Generate URLs
+- `@{{ collection:* }}` - Query collection entries
+- `@{{ taxonomy:* }}` - Query taxonomy terms
+- `@{{ nav:* }}` - Render navigation
+- `@{{ form:* }}` - Render forms
+- `@{{ user:* }}` - Current user data
+- `@{{ asset:* }}` - Asset information
+- `@{{ glide }}` - Image manipulation
+- `@{{ partial:* }}` - Include partials
+- `@{{ cache }}` - Cache blocks
+- `@{{ session:* }}` - Session data
+- `@{{ route }}` - Generate URLs
 
 ### Statamic 6
 
@@ -199,6 +199,6 @@ Statamic 6 runs on Laravel 12.
 1. **Use blueprints** - Define all fields in blueprints, not inline
 2. **Leverage taxonomies** - For categories, tags, and relationships
 3. **Partial templates** - Break templates into reusable partials
-4. **Use Glide** - For responsive images: `{{ image | glide:width="800" }}`
+4. **Use Glide** - For responsive images: `@{{ image | glide:width="800" }}`
 5. **Static caching** - Enable for production sites
 6. **Git-friendly** - Commit content files for version control
