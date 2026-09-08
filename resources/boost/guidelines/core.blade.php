@@ -1,3 +1,4 @@
+@verbatim
 ## Statamic CMS
 
 Statamic is a flat-file CMS built on Laravel. Content is stored as YAML/Markdown files in the `content/` directory, making it Git-friendly.
@@ -202,3 +203,4 @@ Statamic 6 runs on Laravel 12.
 4. **Use Glide** - For responsive images: `@{{ image | glide:width="800" }}`
 5. **Static caching** - Enable for production sites
 6. **Git-friendly** - Commit content files for version control
+@endverbatim
