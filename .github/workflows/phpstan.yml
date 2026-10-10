@@ -5,6 +5,9 @@ on:
     paths:
       - '**.php'
       - 'phpstan.neon.dist'
+      - 'phpstan-baseline.neon'
+      - 'composer.json'
+      - 'composer.lock'
       - '.github/workflows/phpstan.yml'
 
 jobs:
