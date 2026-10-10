@@ -91,3 +91,17 @@ it('does not serve another major when its documentation is unavailable', functio
 
     expect(getResponseText($response))->toContain('Documentation file not found');
 });
+
+it('parses separate documentation pages with Windows line endings', function () {
+    $path = tempnam(sys_get_temp_dir(), 'statamic-docs-crlf-');
+
+    try {
+        file_put_contents($path, "### First\r\nSource: https://example.com/first\r\n\r\nFirst page.\r\n\r\n--------------------\r\n\r\n### Second\r\nSource: https://example.com/second\r\n\r\nSecond page.\r\n");
+        $sections = (new ReflectionMethod(SearchStatamicDocs::class, 'parseDocs'))->invoke(new SearchStatamicDocs, $path);
+
+        expect(array_column($sections, 'title'))->toBe(['First', 'Second'])
+            ->and($sections[1]['source'])->toBe('https://example.com/second');
+    } finally {
+        unlink($path);
+    }
+});

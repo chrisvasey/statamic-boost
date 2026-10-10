@@ -74,6 +74,20 @@ MARKDOWN);
         ->not->toContain('irrelevant-entry-id', 'screenshots/text.webp', 'updated_at');
 });
 
+it('creates portable source URLs for nested files from a native filesystem path', function () {
+    $directory = $this->bundleSource.'/content/collections/pages/nested directory';
+    mkdir($directory);
+    file_put_contents($directory.'/nested example.md', "---\ntitle: Nested example\n---\nNested documentation.\n");
+
+    (new DocsBundle)->write(realpath($this->bundleSource), '6', $this->bundleCommit, $this->bundleOutput);
+
+    $sections = (new ReflectionMethod(SearchStatamicDocs::class, 'parseDocs'))->invoke(new SearchStatamicDocs, $this->bundleOutput);
+    $nested = array_values(array_filter($sections, fn (array $section): bool => $section['title'] === 'Nested example'));
+
+    expect($nested)->toHaveCount(1)
+        ->and($nested[0]['source'])->toBe('https://github.com/statamic/docs/blob/'.$this->bundleCommit.'/content/collections/pages/nested%20directory/nested%20example.md');
+});
+
 it('retains tag parameters variables and extra Glide reference fields', function () {
     file_put_contents($this->bundleSource.'/content/collections/tags/example.md', <<<'MARKDOWN'
 ---
@@ -171,5 +185,16 @@ it('rejects linked source files without replacing a verified bundle', function (
     symlink($this->bundleOutput, $this->bundleSource.'/content/collections/pages/linked.md');
 
     expect(fn () => (new DocsBundle)->write($this->bundleSource, '6', $this->bundleCommit, $this->bundleOutput))->toThrow(RuntimeException::class, 'Linked documentation input')
+        ->and(file_get_contents($this->bundleOutput))->toBe('Verified bundle.');
+});
+
+it('rejects linked documentation directories without replacing a verified bundle', function () {
+    $directory = $this->bundleSource.'/content/collections/pages';
+    $outside = $this->bundleDirectory.'/outside-pages';
+    rename($directory, $outside);
+    symlink($outside, $directory);
+    file_put_contents($this->bundleOutput, 'Verified bundle.');
+
+    expect(fn () => (new DocsBundle)->write($this->bundleSource, '6', $this->bundleCommit, $this->bundleOutput))->toThrow(RuntimeException::class, 'missing or linked documentation directory')
         ->and(file_get_contents($this->bundleOutput))->toBe('Verified bundle.');
 });

@@ -118,6 +118,7 @@ class SearchStatamicDocs extends Tool
     protected function parseDocs(string $path): array
     {
         $content = file_get_contents($path);
+        $content = str_replace(["\r\n", "\r"], "\n", $content);
         $rawSections = preg_split('/^-{20,}$/m', $content);
 
         $sections = [];

@@ -42,6 +42,7 @@ final class DocsBundle
             throw new RuntimeException('The source directory does not exist.');
         }
 
+        $source = str_replace(DIRECTORY_SEPARATOR, '/', $source);
         $commit = strtolower($commit);
         $sections = [];
 
@@ -79,6 +80,10 @@ final class DocsBundle
     {
         $resolved = realpath($directory);
 
+        if ($resolved !== false) {
+            $resolved = str_replace(DIRECTORY_SEPARATOR, '/', $resolved);
+        }
+
         if ($resolved === false || ! is_dir($resolved) || $resolved !== $directory || ! str_starts_with($resolved, $source.'/')) {
             throw new RuntimeException("Incomplete snapshot: missing or linked documentation directory {$directory}.");
         }
@@ -89,7 +94,7 @@ final class DocsBundle
     {
         $files = [];
         $iterator = new RecursiveIteratorIterator(
-            new RecursiveDirectoryIterator($directory, FilesystemIterator::SKIP_DOTS),
+            new RecursiveDirectoryIterator($directory, FilesystemIterator::SKIP_DOTS | FilesystemIterator::UNIX_PATHS),
             RecursiveIteratorIterator::SELF_FIRST,
         );
 
