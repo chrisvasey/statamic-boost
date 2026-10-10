@@ -2,6 +2,25 @@
 
 All notable changes to `statamic-boost` will be documented in this file.
 
+## v1.3.0 - 2026-10-10
+
+### Fixed
+
+- Allow current Laravel Boost 2 installations with Laravel MCP `^1.0.1`.
+- Preserve the selected Statamic environment when Boost rebuilds its configuration, and return installer failures correctly.
+- Fix fieldtype discovery and Antlers examples in generated AI guidelines.
+
+### Added
+
+- Fresh-install CI for PHP 8.5, Laravel 13, Statamic 6 and Boost 2, covering installation, reinstallation, generated configuration and runtime tools.
+- Refreshed offline Statamic 5 and 6 documentation, with pinned source links and upstream licenses.
+- Weekly documentation updates that publish minor releases when docs change, plus one tracking issue per newly detected major.
+- Read-only documentation dry runs on pull requests.
+
+This release establishes the baseline for automatic documentation releases.
+
+**Full changelog:** https://github.com/chrisvasey/statamic-boost/compare/v1.2.1...v1.3.0
+
 ## v1.2.1 - 2026-03-26
 
 ### Fixed
