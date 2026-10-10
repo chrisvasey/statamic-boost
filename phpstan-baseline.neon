@@ -19,12 +19,6 @@ parameters:
 			path: src/Mcp/Tools/GetCollectionEntries.php
 
 		-
-			message: '#^Call to static method all\(\) on an unknown class Statamic\\Facades\\Fieldtype\.$#'
-			identifier: class.notFound
-			count: 1
-			path: src/Mcp/Tools/ListFieldtypes.php
-
-		-
 			message: '#^Method Illuminate\\Contracts\\JsonSchema\\JsonSchema\:\:array\(\) invoked with 1 parameter, 0 required\.$#'
 			identifier: arguments.count
 			count: 1

@@ -7,7 +7,6 @@ use Laravel\Mcp\Request;
 use Laravel\Mcp\Response;
 use Laravel\Mcp\Server\Tool;
 use Laravel\Mcp\Server\Tools\Annotations\IsReadOnly;
-use Statamic\Facades\Fieldtype;
 
 #[IsReadOnly]
 class ListFieldtypes extends Tool
@@ -26,7 +25,9 @@ class ListFieldtypes extends Tool
     {
         $category = $request->get('category');
 
-        $fieldtypes = Fieldtype::all()
+        $fieldtypes = app('statamic.fieldtypes')
+            ->unique()
+            ->map(fn ($class) => app($class))
             ->when($category, fn ($collection) => $collection->filter(
                 fn ($fieldtype) => collect($fieldtype->categories())->contains($category)
             ))
