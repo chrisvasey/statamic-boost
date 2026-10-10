@@ -112,22 +112,35 @@ if (command === 'gh' && args[0] === 'api') {
     const path = args[1];
     if (path === 'repos/statamic/docs/branches?per_page=100') result = [[{name:'5.x'}, {name:'6.x'}, {name:'7.x'}]];
     else if (path.includes('/issues?')) result = [[]];
+    else if (path === 'repos/owner/package/issues' && args.includes('POST')) result = {number: 1};
     else if (path.includes('/releases?')) result = [[{tag_name:'v1.2.3'}]];
-    else if (/^repos\\/statamic\\/docs\\/branches\\/[56]\\.x$/.test(path)) result = {commit:{sha:'${head}'}};
-    if (result !== undefined) result = JSON.stringify(result);
+    else if (/^repos\\/statamic\\/docs\\/branches\\/[56]\\.x$/.test(path)) result = {commit:{sha: mode === 'updated' ? '${otherCommit}' : '${head}'}};
+    else if (path.startsWith('repos/statamic/docs/tarball/')) result = 'Fixture archive';
+    if (result !== undefined && typeof result !== 'string') result = JSON.stringify(result);
 } else if (command === 'gh' && args[0] === 'release' && args[1] === 'create') result = '';
 else if (command === 'git') {
     if (args[0] === 'rev-parse') result = '${head}';
-    else if (args[0] === 'diff') result = mode === 'recovery' ? 'docs/upstream.json' : '';
+    else if (args[0] === 'diff') result = mode === 'recovery' ? 'docs/upstream.json' : mode === 'blocked' ? 'src/ServiceProvider.php' : '';
     else if (args[0] === 'status') result = mode === 'changed' ? ' M docs/statamic-docs-v5.md\\n M CHANGELOG.md\\n' : mode === 'code' ? ' M src/ServiceProvider.php\\n' : '';
     else if (args[0] === 'tag' && args[1] === '--list') result = mode === 'recovery' ? 'v1.3.0' : '';
     else if (args[0] === 'show') result = 'Update docs\\n\\nDocs-Release: v1.3.0\\n';
     else if (['config', 'add', 'commit', 'tag', 'push'].includes(args[0])) result = '';
+} else if (command === 'tar') {
+    if (args[0] === '-tzf') result = 'upstream/LICENSE.md\\nupstream/content/example.md\\n';
+    else if (args[0] === '-xzf') {
+        const source = args[args.indexOf('-C') + 1];
+        const major = require('node:path').basename(source).split('.')[0];
+        fs.writeFileSync(require('node:path').join(source, 'LICENSE.md'), 'Fixture license for Statamic ' + major + '\\n');
+        result = '';
+    }
+} else if (command === 'php' && args[0] === 'scripts/bundle-docs.php') {
+    fs.writeFileSync(args[4], (mode === 'updated' ? 'Updated ' : '') + 'Statamic ' + args[2] + ' documentation\\n');
+    result = JSON.stringify({pages: Number(args[2]) * 10});
 }
 if (result === undefined) { console.error('Unexpected fake CLI call: ' + JSON.stringify([command, ...args])); process.exit(99); }
 process.stdout.write(result);
 `;
-    for (const command of ['gh', 'git']) {
+    for (const command of ['gh', 'git', 'tar', 'php']) {
         const path = join(directory, 'bin', command);
         writeFileSync(path, fakeCli);
         chmodSync(path, 0o755);
@@ -136,7 +149,7 @@ process.stdout.write(result);
         directory,
         statePath,
         savePlan(overrides = {}) {
-            writeFileSync(statePath, JSON.stringify({ changed: true, recovery: false, repository: 'owner/package', head, tag: 'v1.3.0', notes: releaseNotes(versions), ...overrides }));
+            writeFileSync(statePath, JSON.stringify({ changed: true, dryRun: false, recovery: false, repository: 'owner/package', head, tag: 'v1.3.0', notes: releaseNotes(versions), ...overrides }));
         },
         run(action, dryRun = true) {
             return spawnSync(process.execPath, [script, action], {
@@ -156,14 +169,20 @@ process.stdout.write(result);
     };
 }
 
-test('unchanged snapshots prepare no release and only preview a new-major issue in dry-run mode', t => {
+test('dry-run rebuilds both unchanged snapshots, prepares no release and only previews a new-major issue', t => {
     const context = fixture(t);
     const result = context.run('prepare');
     assert.equal(result.status, 0, result.stderr);
     assert.match(result.stdout, /Would open issue: Add Statamic 7 support/);
-    assert.equal(JSON.parse(readFileSync(context.statePath)).changed, false);
+    const plan = JSON.parse(readFileSync(context.statePath));
+    assert.equal(plan.changed, false);
+    assert.equal(plan.dryRun, true);
+    assert.equal(context.calls().filter(call => call[0] === 'gh' && call[2]?.includes('/tarball/')).length, 2);
+    assert.deepEqual(context.calls().filter(call => call[0] === 'php').map(call => call[3]), ['5', '6']);
     const callsBeforePublish = context.calls();
-    assert.equal(context.run('publish').status, 0);
+    const published = context.run('publish');
+    assert.equal(published.status, 0, published.stderr);
+    assert.match(published.stdout, /no.*(?:change|release)/i);
     assert.deepEqual(context.calls(), callsBeforePublish);
     assert.ok(!context.calls().some(call => call.includes('POST')));
 });
@@ -175,15 +194,70 @@ test('a pushed pending release prepares recovery and dry-run publish performs no
     const plan = JSON.parse(readFileSync(context.statePath));
     assert.equal(plan.changed, true);
     assert.equal(plan.recovery, true);
+    assert.equal(plan.dryRun, true);
     assert.equal(plan.tag, 'v1.3.0');
     const callsBeforePublish = context.calls();
     const published = context.run('publish');
     assert.equal(published.status, 0, published.stderr);
     assert.match(published.stdout, /Dry run: would publish v1\.3\.0/);
     assert.deepEqual(context.calls(), callsBeforePublish);
-    const recovered = context.run('publish', false);
+    const live = fixture(t, 'recovery');
+    const livePrepared = live.run('prepare', false);
+    assert.equal(livePrepared.status, 0, livePrepared.stderr);
+    assert.equal(JSON.parse(readFileSync(live.statePath)).dryRun, false);
+    const callsBeforeRecovery = live.calls();
+    const recovered = live.run('publish', false);
     assert.equal(recovered.status, 0, recovered.stderr);
-    assert.deepEqual(context.calls().slice(callsBeforePublish.length).map(call => call.slice(0, 2)), [['git', 'rev-parse'], ['gh', 'release']]);
+    assert.deepEqual(live.calls().slice(callsBeforeRecovery.length).map(call => call.slice(0, 2)), [['git', 'rev-parse'], ['gh', 'release']]);
+});
+
+test('blocked dry-run still rebuilds both snapshots, while blocked live preparation skips downloads', t => {
+    for (const dryRun of [true, false]) {
+        const context = fixture(t, 'blocked');
+        const prepared = context.run('prepare', dryRun);
+        assert.equal(prepared.status, 0, prepared.stderr);
+        const plan = JSON.parse(readFileSync(context.statePath));
+        assert.equal(plan.dryRun, dryRun);
+        assert.equal(plan.changed, false);
+        assert.match(plan.blocked, /src\/ServiceProvider\.php/);
+        assert.equal(context.calls().filter(call => call[0] === 'gh' && call[2]?.includes('/tarball/')).length, dryRun ? 2 : 0);
+        assert.deepEqual(context.calls().filter(call => call[0] === 'php').map(call => call[3]), dryRun ? ['5', '6'] : []);
+        assert.equal(context.calls().some(call => call.includes('POST')), !dryRun);
+        const callsBeforePublish = context.calls();
+        const preview = context.run('publish');
+        assert.equal(preview.status, 0, preview.stderr);
+        assert.match(preview.stdout, /blocked/i);
+        assert.deepEqual(context.calls(), callsBeforePublish);
+    }
+});
+
+test('dry-run prepares changed documentation and previews its minor release without publishing', t => {
+    const context = fixture(t, 'updated');
+    const prepared = context.run('prepare');
+    assert.equal(prepared.status, 0, prepared.stderr);
+    const plan = JSON.parse(readFileSync(context.statePath));
+    assert.equal(plan.dryRun, true);
+    assert.equal(plan.changed, true);
+    assert.equal(plan.tag, 'v1.3.0');
+    const callsBeforePublish = context.calls();
+    const preview = context.run('publish');
+    assert.equal(preview.status, 0, preview.stderr);
+    assert.match(preview.stdout, /would publish v1\.3\.0/i);
+    assert.deepEqual(context.calls(), callsBeforePublish);
+    assert.ok(!context.calls().some(call => call.includes('POST') || ['commit', 'push'].includes(call[1])));
+});
+
+test('live publish rejects preview and blocked plans before any CLI operation, even without changed docs', t => {
+    for (const changed of [true, false]) {
+        for (const overrides of [{ dryRun: true }, { blocked: 'Unreleased package changes require a normal release first.' }]) {
+            const context = fixture(t);
+            context.savePlan({ changed, ...overrides });
+            const result = context.run('publish', false);
+            assert.equal(result.status, 1, result.stderr);
+            assert.match(result.stderr, /dry.run|preview|block|unreleased/i);
+            assert.deepEqual(context.calls(), []);
+        }
+    }
 });
 
 test('prepare rejects changed bundle or license contents even when their upstream commit is unchanged', t => {

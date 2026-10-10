@@ -13,6 +13,11 @@ on:
     paths:
       - 'scripts/**'
       - '.github/workflows/update-docs.yml'
+      - 'docs/**'
+      - 'src/Mcp/Tools/SearchStatamicDocs.php'
+      - 'tests/**'
+      - 'composer.json'
+      - 'composer.lock'
 
 permissions:
   contents: read
@@ -31,6 +36,45 @@ jobs:
         with:
           node-version: '24'
       - run: node --test scripts/tests/docs-release.test.mjs
+
+  dry-run:
+    if: github.event_name == 'pull_request'
+    needs: automation-tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      issues: read
+    env:
+      GH_TOKEN: ${{ github.token }}
+      DOCS_DRY_RUN: 'true'
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: dom, curl, mbstring, zip, sqlite, pdo_sqlite, bcmath, intl, gd, exif
+          coverage: none
+      - name: Install package dependencies
+        run: composer install --prefer-dist --no-interaction
+      - name: Rebuild upstream snapshots and validate without publishing
+        env:
+          DOCS_RELEASE_STATE: ${{ runner.temp }}/docs-preview.json
+        run: |
+          node scripts/docs-release.mjs prepare
+          vendor/bin/pest --ci
+          vendor/bin/phpstan analyse --no-progress --memory-limit=512M
+          git diff --check
+          node scripts/docs-release.mjs publish
+          printf '## Documentation dry run\n\n```json\n' >> "$GITHUB_STEP_SUMMARY"
+          cat "$DOCS_RELEASE_STATE" >> "$GITHUB_STEP_SUMMARY"
+          printf '\n```\n' >> "$GITHUB_STEP_SUMMARY"
 
   sync:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
@@ -64,13 +108,13 @@ jobs:
           DOCS_RELEASE_STATE: ${{ runner.temp }}/docs-release.json
         run: node scripts/docs-release.mjs prepare
       - name: Test the generated bundle and package
-        if: steps.prepare.outputs.changed == 'true'
+        if: steps.prepare.outputs.changed == 'true' || env.DOCS_DRY_RUN == 'true'
         run: |
           vendor/bin/pest --ci
           vendor/bin/phpstan analyse --no-progress --memory-limit=512M
           git diff --check
       - name: Commit, tag and publish the minor release
-        if: steps.prepare.outputs.changed == 'true'
+        if: steps.prepare.outputs.changed == 'true' || env.DOCS_DRY_RUN == 'true'
         env:
           DOCS_RELEASE_STATE: ${{ runner.temp }}/docs-release.json
         run: node scripts/docs-release.mjs publish

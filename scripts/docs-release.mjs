@@ -119,19 +119,20 @@ export function prepare(repository, statePath, dryRun) {
     const tag = nextMinor(release.tag_name);
     const paths = changedPaths(release.tag_name);
     const unrelated = paths.filter(path => !isDocsPath(path));
-    if (unrelated.length) {
-        savePlan(statePath, { changed: false, blocked: `Unreleased package changes require a normal release first: ${unrelated.join(', ')}` });
+    const blocked = unrelated.length ? `Unreleased package changes require a normal release first: ${unrelated.join(', ')}` : undefined;
+    if (blocked && !dryRun) {
+        savePlan(statePath, { changed: false, dryRun, blocked });
         return;
     }
     if (run('git', ['status', '--porcelain'])) throw new Error('Docs sync requires a clean checkout.');
 
     // Recover a release API failure after the atomic branch/tag push, before checking upstream again.
     const pendingTag = run('git', ['tag', '--list', tag]);
-    if (pendingTag) {
+    if (pendingTag && !blocked) {
         const target = run('git', ['rev-parse', `${tag}^{commit}`]);
         validateRecovery(tag, target, head, run('git', ['show', '-s', '--format=%B', target]), changedPaths(release.tag_name, target));
         const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
-        savePlan(statePath, { changed: true, recovery: true, repository, head, tag, notes: releaseNotes(manifest.versions) });
+        savePlan(statePath, { changed: true, dryRun, recovery: true, repository, head, tag, notes: releaseNotes(manifest.versions) });
         return;
     }
 
@@ -152,7 +153,7 @@ export function prepare(repository, statePath, dryRun) {
             if (old && (!existsSync(licensePath(major)) || hashText(readFileSync(licensePath(major), 'utf8')) !== old.license_hash)) {
                 throw new Error(`License checksum mismatch for Statamic ${major}.`);
             }
-            if (old?.commit === sha) {
+            if (old?.commit === sha && !dryRun) {
                 versions[major] = old;
                 continue;
             }
@@ -164,11 +165,12 @@ export function prepare(repository, statePath, dryRun) {
             const result = JSON.parse(run('php', ['scripts/bundle-docs.php', source, String(major), sha, destination]));
             const bundle = readFileSync(destination, 'utf8');
             const hash = contentHash(bundle);
+            if (!Number.isInteger(result.pages) || result.pages < 1) throw new Error(`Empty Statamic ${major} bundle.`);
+            console.log(`Validated Statamic ${major}: ${result.pages} pages from ${sha}.`);
             if (old?.content_hash === hash && old?.license_hash === licenseHash) {
                 versions[major] = old;
                 continue;
             }
-            if (!Number.isInteger(result.pages) || result.pages < 1) throw new Error(`Empty Statamic ${major} bundle.`);
             versions[major] = { branch, commit: sha, pages: result.pages, content_hash: hash, license_hash: licenseHash };
             replacements.set(path, bundle);
             replacements.set(licensePath(major), license);
@@ -179,14 +181,14 @@ export function prepare(repository, statePath, dryRun) {
             writeFileSync(manifestPath, `${JSON.stringify({ upstream, versions }, null, 2)}\n`);
             rmSync('docs/statamic-docs-v6.0.0-beta.md', { force: true });
         }
-        const changed = replacements.size > 0 || paths.some(path => path !== 'CHANGELOG.md');
+        const changed = replacements.size > 0 || paths.some(path => isDocsPath(path) && path !== 'CHANGELOG.md');
         const notes = releaseNotes(versions);
-        if (changed) {
+        if (changed && !blocked) {
             const changelog = readFileSync('CHANGELOG.md', 'utf8');
             const section = `## ${tag} - ${new Date().toISOString().slice(0, 10)}\n\n${notes}\n`;
             writeFileSync('CHANGELOG.md', changelog.replace(/(?=^## )/m, section));
         }
-        savePlan(statePath, { changed, recovery: false, repository, head, tag, notes });
+        savePlan(statePath, { changed, dryRun, blocked, recovery: false, repository, head, tag, notes });
     } finally {
         rmSync(temp, { recursive: true, force: true });
     }
@@ -194,7 +196,15 @@ export function prepare(repository, statePath, dryRun) {
 
 export function publish(statePath, dryRun) {
     const plan = JSON.parse(readFileSync(statePath, 'utf8'));
-    if (!plan.changed) return;
+    if (!dryRun && (plan.dryRun || plan.blocked)) throw new Error('Dry-run or blocked plans cannot be published. Run live preparation after resolving the release prerequisites.');
+    if (dryRun && plan.blocked) {
+        console.log(`Dry run: publication blocked. ${plan.blocked}`);
+        return;
+    }
+    if (!plan.changed) {
+        if (dryRun) console.log('Dry run: no documentation changes; no release needed.');
+        return;
+    }
     if (dryRun) {
         console.log(`Dry run: would publish ${plan.tag}. No commit, tag or release created.`);
         return;

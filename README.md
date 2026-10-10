@@ -131,7 +131,11 @@ enabled later, must permit the intended docs updates.
 
 Use **Actions → Update bundled documentation → Run workflow** on `main` to check
 manually. Dry run is enabled by default: it validates and reports changes without
-creating issues, commits, tags or releases. Uncheck it to publish. Existing tags
+creating issues, commits, tags or releases. It rebuilds both upstream snapshots
+even when their commits are unchanged or the normal-release prerequisite is unmet.
+Relevant pull requests run the same dry run with read-only repository permissions,
+followed by the package tests and static analysis. Dry-run plans cannot be published.
+Uncheck dry run to publish after the release prerequisites are met. Existing tags
 are never overwritten. If a release API call fails after the commit and tag were
 pushed, rerunning completes that release while the tagged commit remains at `main`.
 
