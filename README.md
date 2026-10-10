@@ -101,6 +101,52 @@ Statamic Boost includes guidelines for AI assistants covering:
 
 Guidelines are automatically included when you run `php please boost:install`.
 
+## Bundled Documentation Updates
+
+Documentation search runs offline against snapshots of the official `statamic/docs`
+`5.x` and `6.x` branches. The bundles preserve Markdown and reference information
+stored in YAML, including tag parameters and fieldtype options. Each result links
+to its exact upstream source commit. `docs/upstream.json` records the source commits,
+page counts and content checksums; the upstream licenses are included in `docs/`.
+
+The **Update bundled documentation** action checks every Monday at 05:23 UTC.
+It downloads immutable upstream snapshots, validates both versions, and publishes
+the next minor release only when bundled documentation or its license changes.
+Commit-only changes and non-documentation site edits do not cause releases.
+The action runs the tests and static analysis before atomically pushing the docs
+commit and tag, then creates a GitHub release and includes the changelog update.
+
+New numbered major branches (for example `7.x`) create one tracking issue per major.
+An existing issue, including a closed one, prevents duplicates. New majors do not automatically
+change Composer compatibility or replace an existing version's documentation.
+Checks for new majors continue even when a docs release is deferred.
+
+Automatic releases require an existing stable GitHub release and no unrelated
+changes since that release. **Publish a normal release containing this workflow
+and the pending package fixes before expecting automatic docs releases.** The
+workflow reports a deferred release when that prerequisite is not met. Once the
+baseline exists, it needs only the repository's `GITHUB_TOKEN` with `contents: write`
+and `issues: write`; no separate access token is required. Branch protection, if
+enabled later, must permit the intended docs updates.
+
+Use **Actions → Update bundled documentation → Run workflow** on `main` to check
+manually. Dry run is enabled by default: it validates and reports changes without
+creating issues, commits, tags or releases. Uncheck it to publish. Existing tags
+are never overwritten. If a release API call fails after the commit and tag were
+pushed, rerunning completes that release while the tagged commit remains at `main`.
+
+To regenerate one bundle locally from an upstream snapshot:
+
+```bash
+php scripts/bundle-docs.php /path/to/statamic-docs 6 FULL_COMMIT_SHA docs/statamic-docs-v6.md
+node --test scripts/tests/docs-release.test.mjs
+composer test
+```
+
+The action also updates the manifest and licenses. Local bundle changes must keep
+those files consistent. Unsupported Statamic majors return a documentation error
+instead of silently searching another major's bundle.
+
 ## Testing
 
 ```bash

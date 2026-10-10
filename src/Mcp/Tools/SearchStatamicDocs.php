@@ -107,20 +107,7 @@ class SearchStatamicDocs extends Tool
 
         $docsDir = dirname(__DIR__, 3).'/docs';
 
-        // Try version-specific docs first (e.g., statamic-docs-v5.md)
-        $versionFile = "{$docsDir}/statamic-docs-v{$version}.md";
-        if (file_exists($versionFile)) {
-            return $versionFile;
-        }
-
-        // Fallback: find any docs file matching the version pattern
-        $files = glob("{$docsDir}/statamic-docs-v{$version}*.md");
-        if (! empty($files)) {
-            return $files[0];
-        }
-
-        // Final fallback to v6 beta
-        return "{$docsDir}/statamic-docs-v6.0.0-beta.md";
+        return "{$docsDir}/statamic-docs-v{$version}.md";
     }
 
     /**
