@@ -9,8 +9,14 @@ beforeEach(function () {
         File::move($boostJsonPath, $boostJsonPath.'.backup');
     }
 
-    // Register a dummy boost:install command for testing
+    // Boost rebuilds its config during a normal installation.
     Artisan::command('boost:install', function () {
+        File::put(base_path('boost.json'), json_encode([
+            'agents' => ['claude_code'],
+            'packages' => ['chrisvasey/statamic-boost'],
+            'guidelines' => true,
+            'mcp' => true,
+        ]));
         $this->info('Boost installed');
     });
 });
@@ -46,6 +52,19 @@ it('accepts env option', function () {
     $boostJson = json_decode(File::get(base_path('boost.json')), true);
 
     expect($boostJson['environment'])->toBe('statamic');
+    expect($boostJson['agents'])->toBe(['claude_code']);
+    expect($boostJson['packages'])->toBe(['chrisvasey/statamic-boost']);
+    expect($boostJson['guidelines'])->toBeTrue();
+    expect($boostJson['mcp'])->toBeTrue();
+});
+
+it('returns the underlying Boost installer failure', function () {
+    Artisan::command('boost:install', fn () => 17);
+
+    $this->artisan('statamic-boost:install', [
+        '--env' => 'statamic',
+        '--no-interaction' => true,
+    ])->assertExitCode(17);
 });
 
 it('rejects invalid env option', function () {

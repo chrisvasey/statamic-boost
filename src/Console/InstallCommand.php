@@ -39,9 +39,8 @@ class InstallCommand extends Command
 
         // Run boost:install
         $this->info("\nRunning boost:install...\n");
-        $this->call('boost:install');
 
-        return self::SUCCESS;
+        return $this->installBoost($environment);
     }
 
     protected function handleNonInteractive(EnvironmentDetector $detector): int
@@ -70,9 +69,19 @@ class InstallCommand extends Command
 
         $this->saveEnvironmentConfig($environment);
 
-        $this->call('boost:install', ['--no-interaction' => true]);
+        return $this->installBoost($environment, ['--no-interaction' => true]);
+    }
 
-        return self::SUCCESS;
+    protected function installBoost(string $environment, array $options = []): int
+    {
+        $exitCode = $this->call('boost:install', $options);
+
+        if ($exitCode === self::SUCCESS) {
+            // Boost rebuilds boost.json; merge our settings into its new configuration.
+            $this->saveToBoostJson($environment);
+        }
+
+        return $exitCode;
     }
 
     protected function displayHeader(): void

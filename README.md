@@ -157,6 +157,18 @@ instead of silently searching another major's bundle.
 composer test
 ```
 
+To reproduce a fresh installation with PHP 8.5 and Composer:
+
+```bash
+bash scripts/test-fresh-install.sh
+```
+
+The **Fresh Statamic install** action runs this check on pull requests and `main`.
+It creates a disposable Laravel 13 / Statamic 6 app, installs the current package
+with Boost 2, and runs the real installer twice. It verifies the saved environment,
+generated guidelines, MCP configuration and runtime tools. Agent and package choices
+are preselected so the check can run without interactive prompts.
+
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.

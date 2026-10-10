@@ -1,0 +1,27 @@
+name: Fresh Statamic install
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fresh-install:
+    name: PHP 8.5 / Laravel 13 / Statamic 6 / Boost 2
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.5'
+          extensions: dom, curl, mbstring, zip, pdo_sqlite, bcmath, intl, gd, exif
+          coverage: none
+
+      - name: Install and verify a fresh Statamic application
+        run: bash scripts/test-fresh-install.sh
