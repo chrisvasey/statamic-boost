@@ -2,13 +2,6 @@
 
 use ChrisVasey\StatamicBoost\Mcp\Tools\ListFieldtypes;
 use Laravel\Mcp\Request;
-use Statamic\Facades\Fieldtype;
-
-beforeEach(function () {
-    if (! class_exists(Fieldtype::class)) {
-        $this->markTestSkipped('Statamic Fieldtype facade not available');
-    }
-});
 
 it('lists all fieldtypes', function () {
     $tool = new ListFieldtypes;
@@ -42,5 +35,12 @@ it('can filter by category', function () {
     $response = $tool->handle($request);
     $data = getResponseData($response);
 
-    expect($data['fieldtypes'])->toBeArray();
+    expect($data['total'])->toBeGreaterThan(0);
+    expect(collect($data['fieldtypes'])->pluck('handle')->all())
+        ->toContain('text')
+        ->not->toContain('assets');
+
+    foreach ($data['fieldtypes'] as $fieldtype) {
+        expect($fieldtype['categories'])->toContain('text');
+    }
 });
