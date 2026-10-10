@@ -1,0 +1,19 @@
+{
+  "upstream": "statamic/docs",
+  "versions": {
+    "5": {
+      "branch": "5.x",
+      "commit": "c3b2919e8ba6d48e2792c8b2276cc4e42fe78af6",
+      "pages": 583,
+      "content_hash": "b1355128f4ce33faf9c37904985c797d622d3f11c49231b780997d33f53e9ab8",
+      "license_hash": "89a9a0d25c9aa3eca3e3ec07fa8b4c465b4dbb197feb72d2f30a67036d41d93a"
+    },
+    "6": {
+      "branch": "6.x",
+      "commit": "65ec7a039fbd3f03b828f46b0df4b28bac5e7284",
+      "pages": 614,
+      "content_hash": "aa6657f283b25592ac061c13d92a05b48d4a19808abd7f6542ff4f088016e22a",
+      "license_hash": "89a9a0d25c9aa3eca3e3ec07fa8b4c465b4dbb197feb72d2f30a67036d41d93a"
+    }
+  }
+}

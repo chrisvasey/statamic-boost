@@ -8,6 +8,7 @@
 /phpunit.xml.dist   export-ignore
 /art                export-ignore
 /tests              export-ignore
+/scripts            export-ignore
 /workbench          export-ignore
 /.editorconfig      export-ignore
 /.php_cs.dist.php   export-ignore
@@ -17,3 +18,6 @@
 /UPGRADING.md       export-ignore
 /phpstan.neon.dist  export-ignore
 /phpstan-baseline.neon  export-ignore
+
+# Preserve upstream Markdown whitespace and collapse generated snapshots in reviews.
+docs/statamic-docs-v*.md linguist-generated -whitespace
