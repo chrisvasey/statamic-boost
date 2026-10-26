@@ -2,6 +2,15 @@
 
 All notable changes to `statamic-boost` will be documented in this file.
 
+## v1.5.0 - 2026-10-26
+
+Refresh the bundled Statamic documentation from pinned upstream snapshots.
+
+- Statamic 5: 583 pages from [c3b2919e8ba6](https://github.com/statamic/docs/commit/c3b2919e8ba6d48e2792c8b2276cc4e42fe78af6).
+- Statamic 6: 614 pages from [6df0c7929131](https://github.com/statamic/docs/commit/6df0c7929131d699cac78eb3fb921ccbe3fe57fc).
+
+Documentation remains available offline through the existing search tool. No new Statamic major is enabled by this release.
+
 ## v1.4.0 - 2026-10-19
 
 Refresh the bundled Statamic documentation from pinned upstream snapshots.

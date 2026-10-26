@@ -1,5 +1,5 @@
 ### Upgrade from 3.0 to 3.1
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/3-0-to-3-1.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/3-0-to-3-1.md
 
 A guide for upgrading from 3.0 to 3.1
 
@@ -153,7 +153,7 @@ To tell Statamic about your custom auth endpoint, you should define it in `confi
 --------------------
 
 ### Upgrade from 3.1 to 3.2
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/3-1-to-3-2.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/3-1-to-3-2.md
 
 A guide for upgrading from 3.1 to 3.2
 
@@ -318,7 +318,7 @@ If you need the entry, you can do `$tree->root()['entry']`.
 --------------------
 
 ### Upgrade from 3.2 to 3.3
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/3-2-to-3-3.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/3-2-to-3-3.md
 
 A guide for upgrading from 3.2 to 3.3. For most sites, the process will take less than 5 minutes. If your site is running an old version of PHP or Laravel, it may take a bit longer.
 
@@ -627,7 +627,7 @@ return [
 --------------------
 
 ### Upgrade from 3.3 to 3.4
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/3-3-to-3-4.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/3-3-to-3-4.md
 
 A guide for upgrading from 3.3 to 3.4. For most sites, the process will take less than 5 minutes.
 
@@ -845,7 +845,7 @@ Utility::register('foo')->title('Foo')->etc(); // [tl! ++]
 --------------------
 
 ### Upgrade from 3.4 to 4.0
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/3-4-to-4-0.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/3-4-to-4-0.md
 
 A guide for upgrading from 3.4 to 4.0. For most sites (those running Laravel > 8), the process will take less than 5 minutes.
 
@@ -1098,7 +1098,7 @@ For consistency, we renamed the underlying modal component from `<vue-modal>` to
 --------------------
 
 ### Upgrade from 4 to 5
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/4-to-5.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/4-to-5.md
 
 A guide for upgrading from 4 to 5. For most sites (those running Laravel > 9), the process will take less than 5 minutes.
 
@@ -1587,7 +1587,7 @@ abstract class TestCase extends AddonTestCase // [tl! ++]
 --------------------
 
 ### Upgrade from 5 to 6
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/5-to-6.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/5-to-6.md
 
 A guide for upgrading from 5 to 6. For most sites (those running Laravel >= 12), the process will take less than 5 minutes.
 
@@ -2394,7 +2394,7 @@ public function up(): void
 --------------------
 
 ### Actions
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/actions.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/actions.md
 
 Actions allow you to perform tasks on one or more items. You can trigger actions by selecting multiple items in a listing, or using each item's contextual menu.
 
@@ -2734,21 +2734,21 @@ public function run($values)
 --------------------
 
 ### All Tags
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/all-tags.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/all-tags.md
 
 Tags are Antlers expressions giving you the ability to fetch, filter, and display content, enhance and simplify your markup, build forms, and build dynamic functionality.
 
 --------------------
 
 ### All Variables
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/all-variables.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/all-variables.md
 
 Context-aware variables are always available in your views, giving you access to dynamic information about the current URL, user, loaded entry, site settings, and more.
 
 --------------------
 
 ### Antlers Cheat Sheet
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/antlers-cheat-sheet.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/antlers-cheat-sheet.md
 
 A brief overview of the Antlers features you're likely to use — and a few you may not have known existed.
 
@@ -3098,7 +3098,7 @@ Antlers inside your **content** isn't parsed at all unless the field's blueprint
 --------------------
 
 ### Antlers Templates
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/antlers.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/antlers.md
 
 Antlers is a simple and powerful templating engine provided with Statamic.  It can fetch and filter content, display, modify, and set variables, tap into core features like user authentication and search, and handle complex logic. Coming from Laravel and want to stick to Blade? [We got you covered](/blade).
 
@@ -4683,7 +4683,7 @@ We owe him a debt of gratitude for this amazing gift.
 --------------------
 
 ### Assets
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/assets.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/assets.md
 
 Assets are files managed by Statamic and made available to your writers and developers with tags and fieldtypes. They can be images, videos, PDFs, or any other type of file. Assets can have fields and content attached to them, just like entries, making them very powerful.
 
@@ -5189,7 +5189,7 @@ You can find out more about [moving assets to the database here](/tips/storing-c
 --------------------
 
 ### Augmentation
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/augmentation.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/augmentation.md
 
 Augmentation automatically transforms the rendered output of all Blueprint-defined variables based on their fieldtype.
 
@@ -5565,7 +5565,7 @@ The upside is that you can now modify the query anywhere a relationship field is
 --------------------
 
 ### Upgrade from Bard v1 to v2
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/bard-v1-to-v2.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/bard-v1-to-v2.md
 
 A guide for upgrading from Bard v1 to v2.
 
@@ -5714,7 +5714,7 @@ Augmentor::replaceExtension('bold', new CustomBold); // [tl!++]
 --------------------
 
 ### Blade Templates
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/blade.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/blade.md
 
 [Antlers](/antlers) is not _always_ the best template engine for the job. If you're using Statamic as a headless CMS or want to share views with a Laravel application already using [Blade](https://laravel.com/docs/blade) or another engine, you can do that.
 
@@ -6290,7 +6290,7 @@ class BlogController extends Controller
 --------------------
 
 ### Blink Cache
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/blink-cache.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/blink-cache.md
 
 The Blink Cache allows you to cache expensive operations for the life of a single request.
 
@@ -6333,7 +6333,7 @@ Without explicitly calling the `store` method, any methods will be targeting the
 --------------------
 
 ### Blueprints
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/blueprints.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/blueprints.md
 
 Blueprints are a key component of the content modeling process. Inside a blueprint you define your fields, which fieldtypes they'll implement, group them into sections if you desire, and define conditions controlling their visibility. The control panel uses blueprints to render publish forms so you can manage content.
 
@@ -6638,7 +6638,7 @@ This will hide the field from entry listings by default, but still allows a user
 --------------------
 
 ### Build a Fieldtype
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/build-a-fieldtype.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/build-a-fieldtype.md
 
 Fieldtypes determine the user interface and storage format for your [fields](/fields). Statamic includes 40+ fieldtypes to help you tailor the perfect intuitive experience for your authors, but there's always room for _one more_.
 
@@ -7191,7 +7191,7 @@ Fieldtype::appendConfigField('group', [
 --------------------
 
 ### Building Tags
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/building-a-tag.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/building-a-tag.md
 
 Ultimately a Tag is nothing more than a PHP method called from an Antlers or Blade template. This common pattern allows non-PHP developers to take advantage of dynamic features in their site easily without writing any code.
 
@@ -7899,7 +7899,7 @@ class YourTag extends Tags
 --------------------
 
 ### Building Widgets
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/building-a-widget.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/building-a-widget.md
 
 ## Generating a widget
 
@@ -7968,7 +7968,7 @@ Widgets can be added to the dashboard by modifying the `widgets` array in the `c
 --------------------
 
 ### Building an Addon
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/building-an-addon.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/building-an-addon.md
 
 An addon is a composer package you intend to reuse, distribute, or sell. For simple or private packages, consider implementing directly into your Laravel application.
 
@@ -8692,7 +8692,7 @@ An example use case is a frontend theme with sample content. This is the kind of
 --------------------
 
 ### Caching
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/caching.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/caching.md
 
 Caching is the life-blood, the secret-sauce, and the wizard behind the curtain of Statamic. There are several caching layers, each with its own purpose. Let's explore each one and its specific purpose.
 
@@ -8784,7 +8784,7 @@ This should not be confused with [Static Site Generation](https://github.com/sta
 --------------------
 
 ### CLI
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/cli.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/cli.md
 
 Statamic provides developers a nice long list of scripts available in the command line. They can clear caches, create users, generate addon and extension classes, and perform other time-saving tasks. In short, they make a developer's job easier and more enjoyable.
 
@@ -8881,7 +8881,7 @@ Read more about [Artisan][artisan] at Laravel.com.
 --------------------
 
 ### Code of Conduct
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/code-of-conduct.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/code-of-conduct.md
 
 This is the Statamic Code of Conduct. By participating here, you are expected to uphold this code like a knight of old. This code of conduct applies to all spaces used by the Statamic community for communication. This includes the Statamic Discord, forums, GitHub, Twitter, Facebook, meetups, conferences, and any other relevant forums. If you believe someone is violating the code of conduct, we ask that you report it by contacting us at [statamic.com/support](https://statamic.com/support). Your identity will remain confidential.
 
@@ -8896,7 +8896,7 @@ This is the Statamic Code of Conduct. By participating here, you are expected to
 --------------------
 
 ### Collections
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/collections.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/collections.md
 
 Collections are containers that hold groups of related entries. Each entry in a collection can represent a blog post, product, recipe, or even chapter of your Family Matters fan fiction novel detailing Steve Urkel's rise to UFC Heavyweight Champion of the world.
 
@@ -9358,7 +9358,7 @@ When running a [multi-site](/multi-site) installation, you can have entries exis
 --------------------
 
 ### Command Palette
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/command-palette.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/command-palette.md
 
 The command palette provides handy access to many pages and actions in the Control Panel without having to leave your keyboard.
 
@@ -9506,7 +9506,7 @@ If you want to dry up duplication, you may also use the `v-slot` to reuse things
 --------------------
 
 ### Computed Values
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/computed-values.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/computed-values.md
 
 Define dynamic values on your data and display them as virtual fields in the Control Panel. They're like accessors on Eloquent models.
 
@@ -9654,7 +9654,7 @@ Computed defaults are great for addon authors — register a default that reads 
 --------------------
 
 ### Conditional Fields
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/conditional-fields.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/conditional-fields.md
 
 Show and hide fields in your publish forms based on conditions and triggers. For example, you may only want to show a caption field if an asset field has an image selected, or a whole block of fields if a toggle switch is enabled.
 
@@ -10047,7 +10047,7 @@ You can take advantage of Conditional Fields on your front-end Forms to automati
 --------------------
 
 ### Tag Conditions
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/conditions.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/conditions.md
 
 Conditions allow you to filter the results of your content tags (e.g. Collections, Taxonomies) using the data inside them, much like WHERE clauses do with SQL.
 
@@ -10389,7 +10389,7 @@ date:is_before="2000-01-01"
 --------------------
 
 ### Configuration
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/configuration.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/configuration.md
 
 Statamic uses standard Laravel config files and environment variables for application-level settings.
 
@@ -10523,7 +10523,7 @@ Learn more about [environment configuration](https://laravel.com/docs/configurat
 --------------------
 
 ### Content Manager’s Guide to Statamic
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/content-managers-guide.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/content-managers-guide.md
 
 So you've got yourself a brand new Statamic site, inherited an older one, or joined a team that's already using Statamic. Great! Welcome to the wonderful world of Statamic. Perhaps you're wondering what to do next, how to add a tracking code to a landing page, get technical support, or reset your password and get back into the Control Panel.
 
@@ -10654,7 +10654,7 @@ You could also post a job or project on [workwithstatamic.com](https://workwiths
 --------------------
 
 ### Content Queries
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/content-queries.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/content-queries.md
 
 Statamic provides a fluent query builder interacting with your content and data in PHP-land. If you think of them as Laravel Eloquent Models, you should feel right at home.
 
@@ -11255,7 +11255,7 @@ Head to the [Repositories Reference](reference/repositories) area for the comple
 --------------------
 
 ### Contributing
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/contributing.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/contributing.md
 
 This is a guideline for contributing to Statamic, its documentation, addons, and starter kits. All of these wonderful things are hosted here in the [Statamic organization](https://github.com/statamic) on GitHub. We welcome your feedback, proposed changes, and updates to these guidelines. We will always welcome thoughtful issues and consider pull requests.
 
@@ -11344,7 +11344,7 @@ Stay rad. If you're not already rad, tell us and we will make sure you become ra
 --------------------
 
 ### Contribution Guide
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/contribution-guide.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/contribution-guide.md
 
 A guide on how to contribute to the `statamic/cms` repo
 
@@ -11644,7 +11644,7 @@ Instead of adding `repositories` key into your sandbox's `composer.json` every t
 --------------------
 
 ### Controllers
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/controllers.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/controllers.md
 
 Controllers group related Laravel request handling logic into single classes stored in the `app/Http/Controllers/` directory. Use them to build frontend areas or full custom apps, the Laravel way!
 
@@ -11749,7 +11749,7 @@ public function index()
 --------------------
 
 ### Core Concepts
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/core-concepts.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/core-concepts.md
 
 Statamic is opinionated software. Understanding the principles we follow and apply to the way we build features will help you learn Statamic faster.
 
@@ -11845,7 +11845,7 @@ Plus, you can easily tap into the power of AI in your code editor to manipulate 
 --------------------
 
 ### Extending CP Navigation
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/cp-navigation.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/cp-navigation.md
 
 The Control Panel navigation is quite customizable. Addons can add their own sections, pages, and subpages, as well as remove and modify existing ones.
 
@@ -12069,7 +12069,7 @@ Breadcrumbs::push(new Breadcrumb(
 --------------------
 
 ### Control Panel Translations
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/cp-translations.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/cp-translations.md
 
 Statamic's Control Panel is currently available in 28 languages. We always welcome new translations!
 
@@ -12199,7 +12199,7 @@ php translator review eo messages
 --------------------
 
 ### Creating a Starter Kit
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/creating-a-starter-kit.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/creating-a-starter-kit.md
 
 Thinking of creating your own Statamic Starter Kit? Here's everything you need to know to get started.
 
@@ -12695,7 +12695,7 @@ An example use case is a frontend theme with sample content. This is the kind of
 --------------------
 
 ### CSS & JavaScript
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/css-javascript.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/css-javascript.md
 
 Statamic can load custom stylesheets and Javascript files located in the `public/vendor/` directory, or from external sources.
 
@@ -12810,7 +12810,7 @@ class AppServiceProvider
 --------------------
 
 ### Custom Permissions
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/custom-permissions.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/custom-permissions.md
 
 Register your own permissions for apps and addons with `Permission::register` — nested trees, wildcards, policies, and groups.
 
@@ -13045,7 +13045,7 @@ class CustomEntryPolicy extends \Statamic\Policies\EntryPolicy
 --------------------
 
 ### Customizing the Control Panel Navigation
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/customizing-the-cp-nav.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/customizing-the-cp-nav.md
 
 The Control Panel (CP) navigation is quite customizable. You can add your own sections, pages, and subpages, as well as hide or modify existing ones.
 
@@ -13088,7 +13088,7 @@ On top of allowing the end user to customize their CP nav, Statamic also provide
 --------------------
 
 ### Dashboard
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/dashboard.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/dashboard.md
 
 The dashboard is a user-customizable screen containing widgets. Lots of widgets, few widgets, custom widgets, or prebuilt widgets. All kinds of widgets.
 
@@ -13156,7 +13156,7 @@ For widgets not requiring any configuration you can provide the string instead o
 --------------------
 
 ### Data Inheritance
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/data-inheritance.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/data-inheritance.md
 
 Statamic sets data in a series of scopes that can inherit and override each other in order. We call this data inheritance model **The Cascade**.
 
@@ -13200,7 +13200,7 @@ Here's the cascading order in which Statamic will look for the value of a given 
 --------------------
 
 ### Data Retrieval and Manipulation
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/data.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/data.md
 
 One of the most crucial aspects of extending a Content Management System is being able to retrieve the data and manipulate it. Statamic has a number of classes to provide you with ways to handle these sorts of situations.
 
@@ -13518,7 +13518,7 @@ $entry->getOriginal(); // ["Post title", "/path/to/image.jpg"]
 --------------------
 
 ### Debugging
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/debugging.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/debugging.md
 
 Debugging is the secret art of the experienced developer. The ability to inspect stack traces, rifle through response objects, and dump data to the screen is often the quickest way to get yourself unstuck and back on track. Here are some tools Statamic provides to help you debug.
 
@@ -13680,7 +13680,7 @@ Follow along with Laravel's documentation and you'll (probably) be up and runnin
 --------------------
 
 ### Deploying
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/deploying.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/deploying.md
 
 Statamic is a modern PHP application, built as a [Laravel](https://laravel.com) package, and can be deployed like any standard Laravel application or as a static site. Here are some common deployment solutions and workflow recommendations.
 
@@ -13689,7 +13689,7 @@ If you're still choosing where to host, take a look at our [recommended hosts](/
 --------------------
 
 ### Dictionaries
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/dictionaries.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/dictionaries.md
 
 Dictionaries add options to the [Dictionary](/fieldtypes/dictionary) fieldtype.
 
@@ -13952,7 +13952,7 @@ class Artists extends Dictionary
 --------------------
 
 ### How to Install Statamic on Digital Ocean
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/digital-ocean.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/digital-ocean.md
 
 A full walk-through for installing, configuring, and running Statamic on a Digital Ocean Ubuntu virtual private server.
 
@@ -13981,7 +13981,7 @@ Now that you have a secure server with Ubuntu, follow our [Ubuntu instructions](
 --------------------
 
 ### Dirty State Tracking
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/dirty-state-tracking.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/dirty-state-tracking.md
 
 Prevent users from accidentally leaving the page and losing their work.
 
@@ -14003,7 +14003,7 @@ If you're using a [publish container](/extending/publish-forms#container) (which
 --------------------
 
 ### How to Install Statamic with Docker
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/docker.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/docker.md
 
 Docker is an open source project that streamlines the deployment of an application (or OS) inside a Linux Container. Any dockerized image can run on any machine that is running Docker. You can run Statamic with Docker and never have to configure PHP, Nginx, Apache, or anything else on your local machine.
 
@@ -14085,7 +14085,7 @@ The [Laravel Sail docs](https://laravel.com/docs/13.x/sail) cover a lot more of 
 --------------------
 
 ### Elevated Sessions
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/elevated-sessions.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/elevated-sessions.md
 
 Elevated Sessions allow you to prompt users for their password or a verification code before being able to take certain actions.
 
@@ -14199,7 +14199,7 @@ When disabled, the `RequireElevatedSession` middleware and `requireElevatedSessi
 --------------------
 
 ### Sending Email
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/email.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/email.md
 
 Be sure to configure your email settings if you want to invite new users, send password resets, and receive form submission notifications. There's even an adorable little test utility in the control panel to help you with a double-check.
 
@@ -14243,7 +14243,7 @@ php artisan vendor:publish --tag=laravel-notifications
 --------------------
 
 ### Events
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/events.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/events.md
 
 Events serve as a great way to decouple various aspects of the application, or even modify behavior or output of core functionality. A single event can have multiple listeners that do not depend on each other.
 
@@ -15741,7 +15741,7 @@ public function handle(UrlInvalidated $event)
 --------------------
 
 ### Field Actions
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/field-actions.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/field-actions.md
 
 Field actions allow you perform JavaScript-based tasks on individual fields within a publish form.
 
@@ -15999,7 +15999,7 @@ If you find yourself needing to access other form field values, configs, etc., y
 --------------------
 
 ### Fields
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/fields.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/fields.md
 
 While in the control panel all content is managed inside fields. They come in many types, from basic text and select boxes, to rich text fields and image pickers. Fields are grouped into blueprints and fieldsets and can be reused in a number of different ways.
 
@@ -16161,7 +16161,7 @@ return [
 --------------------
 
 ### Fieldsets
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/fieldsets.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/fieldsets.md
 
 Fieldsets are used to store and organize reusable fields.
 
@@ -16306,7 +16306,7 @@ Sections are only preserved when a fieldset is imported directly into a blueprin
 --------------------
 
 ### Formatters
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/formatters.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/formatters.md
 
 Locale-aware formatters for dates and numbers in the Control Panel, built on top of the browser's `Intl` APIs.
 
@@ -16501,7 +16501,7 @@ numberFormatter.withLocale('de', (formatter) => {
 --------------------
 
 ### Forms
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/forms.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/forms.md
 
 Forms are a natural part of the internet experience and a core component of most websites. From a basic "Contact Me" form to a multi-page job application, Statamic can help manage your forms, submissions, and thereby make your life a little bit easier.
 
@@ -16861,7 +16861,7 @@ Inside your email view, you have a number of variables available:
 - `site`, `locale` - The handle of the site
 - `config` - Any app configuration values
 - `email_config` - The email's config (the current item from your `email:` array)
-- `form_config` - Any extra config values appended to the form's blueprint (e.g. via addons using `Form::appendBlueprintTab()`)
+- `form_config` - Any extra config values appended to the form's blueprint (e.g. via addons using [`Form::appendConfigFields()`](#adding-config-fields))
 - Any data from [Global Sets](/globals#global-sets)
 - All of the submitted form values
 - A `fields` array
@@ -17386,6 +17386,44 @@ The same pattern applies to the other user forms — just swap the action URL an
 
 If you'd rather submit normally (full page reload) and only use Precognition for live validation, drop the `@submit.prevent` handler.
 
+## Adding config fields
+
+Addons can add their own fields to the form's "Configure Form" page using `Form::appendConfigFields()`, typically in a service provider's `boot` method.
+
+```php
+use Statamic\Facades\Form;
+
+Form::appendConfigFields(
+    handles: ['contact', 'newsletter'],
+    display: 'CRM',
+    fields: [
+        'crm_list' => [
+            'type' => 'text',
+            'display' => 'List ID',
+        ],
+    ],
+);
+```
+
+The first argument is a form handle, an array of form handles, or `*` for all forms. The fields are added as a new section using the `display` as its heading. If a section with that `display` already exists, the fields are merged into it instead.
+
+The values are saved alongside the form's config and are available as `form_config` inside the [`form:create`](/tags/form-create) tag and in your [email views](#email-variables).
+
+### Positioning the section
+
+By default, the new section is added after the built-in ones. Use `beforeSection` or `afterSection` to place it relative to one of the existing sections: `name`, `fields`, `submissions`, or `email`.
+
+```php
+Form::appendConfigFields(
+    handles: '*',
+    display: 'CRM',
+    fields: [...],
+    afterSection: 'name', // [tl! ++]
+);
+```
+
+Only one of `beforeSection` or `afterSection` may be passed. Positions only apply to new sections, so passing one when your `display` matches an existing section will throw an exception. If the target section doesn't exist, the section is added at the end and a warning is logged.
+
 [tags]: /tags/form
 [submissions]: /tags/form-submissions
 [login_form]: /tags/user-login_form
@@ -17396,7 +17434,7 @@ If you'd rather submit normally (full page reload) and only use Precognition for
 --------------------
 
 ### Deploying Statamic with fortrabbit
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/fortrabbit.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/fortrabbit.md
 
 fortrabbit is a managed PHP app hosting solution running on AWS. Well known since 2012.
 
@@ -17483,7 +17521,7 @@ fortrabbit also offers MySQL resources, so you can run Statamic in database mode
 --------------------
 
 ### Switching From WordPress to Statamic
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/from-wordpress-to-statamic.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/from-wordpress-to-statamic.md
 
 Thinking about moving from WordPress to Statamic? You wouldn't be the first. If you’ve been in the WordPress world for a while, you’re pretty familiar with one of its biggest strengths — the massive plugin ecosystem. If you're evaluating Statamic against this catalogue you might think our community's few hundred addons aren't nearly enough.
 
@@ -17679,7 +17717,7 @@ When migrating from WordPress to Statamic, one of the initial challenges is adap
 --------------------
 
 ### Git Automation
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/git-automation.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/git-automation.md
 
 Statamic can automate your version control workflow with Git. It can automatically commit and push content as it's changed, schedule commits, or allow users to commit and push changes from the control panel without having to understand how git works.
 
@@ -17978,7 +18016,7 @@ pro: true
 --------------------
 
 ### Globals
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/globals.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/globals.md
 
 Global variables store content that belongs to the **whole site**, not just a single page or URL. Globals are available everywhere, in all of your views, all of the time. Just like the memory of eating your first hot pepper. 🌶
 
@@ -18082,7 +18120,7 @@ Here are a few more ideas what you can use globals for:
 --------------------
 
 ### GraphQL API
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/graphql.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/graphql.md
 
 The GraphQL API is a **read-only** API for delivering content from Statamic to your frontend, external apps, SPAs, and numerous other possible sources. Content is delivered as JSON data.
 
@@ -19796,14 +19834,14 @@ pro: true
 --------------------
 
 ### Home
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/home.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/home.md
 
 This is where the learning begins and the veterans return for their references.
 
 --------------------
 
 ### Hooks
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/hooks.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/hooks.md
 
 Statamic allows you to hook into specific points in PHP logic and perform operations using Pipelines.
 
@@ -20021,7 +20059,7 @@ Tag classes already `use Hookable` so you can simply use `$this->runHooks()` wit
 --------------------
 
 ### Image Manipulation (Glide)
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/image-manipulation.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/image-manipulation.md
 
 Statamic uses [Glide](https://glide.thephpleague.com) to manipulate images – from resizing and cropping to adjustments (like sharpness and contrast) and image effects (like pixelate and sepia).
 
@@ -20417,7 +20455,7 @@ If you're using [hybrid caching](#hybrid), this also removes the URL mappings, s
 --------------------
 
 ### Installing a Starter Kit
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/installing-a-starter-kit.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/installing-a-starter-kit.md
 
 Installing a Starter Kit is a pretty simple thing, but like with many things in life, there are a few different ways you can do it. Let's cover them all.
 
@@ -20458,14 +20496,14 @@ If you wish to install without bundled dependencies, you can run with the `--wit
 --------------------
 
 ### How to install Statamic
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/installing.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/installing.md
 
 Because Statamic is a **self-hosted platform**, there are many different ways to get started. We recommend using whichever approach you're most comfortable with.
 
 --------------------
 
 ### JavaScript Frameworks
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/javascript-frameworks.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/javascript-frameworks.md
 
 There are many different approaches you could take to pass data to JavaScriptLand. Here are some suggestions on how to fetch, format, and hydrate (inject data) typical JavaScript components.
 
@@ -20579,7 +20617,7 @@ It is also possible to create [a view model](/view-models) which will return onl
 --------------------
 
 ### Event Bus
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/js-events.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/js-events.md
 
 For situations where emitting an event to the parent component doesn't make sense, Statamic has a global event bus. You can emit and listen to events directly on this which will be available to all Vue components.
 
@@ -20600,7 +20638,7 @@ The event bus is intended to be used for Vue component communication. If you wan
 --------------------
 
 ### JavaScript Hooks
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/js-hooks.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/js-hooks.md
 
 Statamic allows you to hook into specific points in JavaScript and perform asyncronous operations using [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 
@@ -20739,7 +20777,7 @@ Payload contains the user reference and the Axios response.
 --------------------
 
 ### Keyboard Shortcuts
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/keyboard-shortcuts.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/keyboard-shortcuts.md
 
 Improve usability by adding keyboard shortcuts.
 
@@ -20817,7 +20855,7 @@ You can use `mod` to mean both `ctrl` on Windows and `cmd` on Mac. This saves yo
 --------------------
 
 ### Upgrade from Laravel 7 to 8
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/laravel-7-to-8.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/laravel-7-to-8.md
 
 A quick guide for upgrading from Laravel 7 to 8.
 
@@ -20875,7 +20913,7 @@ If your site is more complex or is part of a larger Laravel Application, you can
 --------------------
 
 ### Deploying Statamic with Laravel Cloud
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/laravel-cloud.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/laravel-cloud.md
 
 Laravel Cloud is a fully managed infrastructure platform. It's relentlessly optimized for Laravel and PHP. It's our favorite way to deploy Statamic sites that need to scale.
 
@@ -21004,7 +21042,7 @@ You can find more information about session drivers on the [Laravel documentatio
 --------------------
 
 ### How to Install Statamic on Laravel Forge
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/laravel-forge-1-click.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/laravel-forge-1-click.md
 
 A full tutorial on how to install Statamic with Forge's 1-Click Installer. For this walk-through, we'll assume you have a [Forge](https://forge.laravel.com) account with a server provisioned.
 
@@ -21047,7 +21085,7 @@ Assuming you've pointed your DNS to this server, all that's left is to head to `
 --------------------
 
 ### Deploying Statamic with Laravel Forge
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/laravel-forge.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/laravel-forge.md
 
 Laravel Forge provisions and deploys PHP applications on DigitalOcean, Vultr, Akamai, AWS Hetzner and other hosting platforms. It's our favorite way to deploy Statamic.
 
@@ -21140,7 +21178,7 @@ Under `Settings -> Environment`, you may configure your site's environment varia
 --------------------
 
 ### Install Statamic Locally Using Laravel Herd
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/laravel-herd.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/laravel-herd.md
 
 Using Laravel Herd to run Statamic locally is the **easiest and fastest way** to get started with the best CMS out there. It is also very **beginner-friendly**.
 
@@ -21253,7 +21291,7 @@ Use all of Statamic's Pro features while in development (like unlimited users, p
 --------------------
 
 ### How to Install into an Existing Laravel Application
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/laravel.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/laravel.md
 
 Statamic can be installed **into** an existing Laravel application and used to add new sections — like a blog or press release section — function as a headless CMS, or even manage existing data.
 
@@ -21369,7 +21407,7 @@ After Statamic is installed, you'll have 3 new directories in your project:
 --------------------
 
 ### Licensing
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/licensing.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/licensing.md
 
 Statamic is available in two distinct flavors, but one splendid codebase. Statamic Core is **free and open source** and can be used for any type of project, while **Statamic Pro** is powerful commercial software designed for team and more robust use.
 
@@ -21474,7 +21512,7 @@ If any of the following rules match, the domain is considered _not public_ (lett
 --------------------
 
 ### Lifecycle
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/lifecycle.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/lifecycle.md
 
 ## Laravel boots
 
@@ -21570,7 +21608,7 @@ The Vue part of the lifecycle only applies to Control Panel requests. Since you 
 --------------------
 
 ### How to Install Statamic on Linode
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/linode.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/linode.md
 
 A full walk-through for installing, configuring, and running Statamic on a Linode Ubuntu virtual private server.
 
@@ -21597,7 +21635,7 @@ Now that you have a secure server with Ubuntu, follow our [Ubuntu instructions](
 --------------------
 
 ### Live Preview
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/live-preview.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/live-preview.md
 
 Live Preview gives you the ability to see what your entry will look like in real time as you write and edit. You can configure and switch the preview screen size or pop it out into a new window.
 
@@ -21835,7 +21873,7 @@ Route::get('/render-live-preview', function (Request $request) {
 --------------------
 
 ### How to Install Statamic with the CLI
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/local.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/local.md
 
 Install Statamic anywhere you already have PHP and Composer — Linux, custom environments, or anytime you prefer the terminal over a guided Herd setup.
 
@@ -21920,7 +21958,7 @@ Use Pro features while developing (users, permissions, GraphQL, REST API, and mo
 --------------------
 
 ### Customizing Markdown
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/markdown.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/markdown.md
 
 ## Basic Usage
 
@@ -22167,7 +22205,7 @@ The `markdown` fieldtype allows you define the `parser`. This will be used when 
 --------------------
 
 ### Building Modifiers
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/modifiers.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/modifiers.md
 
 Modifiers give you the ability to manipulate the data of your variables on the fly. They can manipulate strings, filter arrays and lists, help you compare things, do basic math, simplify your markup, play Numberwang, and even help you debug.
 
@@ -22347,7 +22385,7 @@ PizzaPizzaPizzaPizzaPizza
 --------------------
 
 ### Multi-Site
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/multi-site.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/multi-site.md
 
 Statamic's multi-site capabilities are designed to manage variations of a **single site**, and/or different sections of a single site running on one or more domains or subdomains. It can be used to manage translations, country-specific versions of a company site, put an area such as `support` or `resources` on a subdomain, and other similar use cases. _It is not intended to be used for multi-tenant applications_ running completely separate sites.
 
@@ -22679,7 +22717,7 @@ pro: true
 --------------------
 
 ### Multi-User Collaboration
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/multi-user-collaboration.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/multi-user-collaboration.md
 
 Stop worrying if someone else is editing the same article at the same time and start enjoying a collaborative authoring process. Each field automatically locks as a user begins to edit, and unlocks when they leave or go idle.
 
@@ -22711,7 +22749,7 @@ pro: true
 --------------------
 
 ### Navigation
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/navigation.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/navigation.md
 
 A nav is a freestyle structure for menus — headers, footers, sidebars, the chrome. It composes links; it does not own your URLs.
 
@@ -22826,7 +22864,7 @@ On a [multi-site](/multi-site) install you can have a different tree per site. S
 --------------------
 
 ### Deploying Statamic to Netlify
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/netlify.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/netlify.md
 
 Netlify is a Jamstack service and cloud provider that lets you deploy your Statamic site statically with blazing fast performance using its Edge CDN.
 
@@ -22975,7 +23013,7 @@ For both files to be part of your generated site, explicitly add their URLs to t
 --------------------
 
 ### OAuth
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/oauth.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/oauth.md
 
 ## Overview
 
@@ -23261,7 +23299,7 @@ pro: true
 --------------------
 
 ### Control Panel Overview
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/overview.1.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/overview.1.md
 
 The Statamic Control Panel is where you manage everything that makes your site… well, your site. It's the admin interface you use to create and edit content, manage users and permissions, tweak settings, access utilities, and interact with addons — all without needing to touch the filesystem directly
 
@@ -23334,7 +23372,7 @@ Statamic's control panel nav is not set in stone. You can [customize what editor
 --------------------
 
 ### Starter Kits Overview
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/overview.10.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/overview.10.md
 
 Starter Kits are pre-built site packages that jump-start new Statamic sites with features, functionality, and even design.
 
@@ -23370,7 +23408,7 @@ The best way to find starter kits is by exploring the [Statamic Marketplace](htt
 --------------------
 
 ### Vue Components Overview
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/overview.12.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/overview.12.md
 
 Here's how you can add your own Vue 3 components to the Statamic Control Panel.
 
@@ -23440,7 +23478,7 @@ component.destroy();
 --------------------
 
 ### Frontend Overview
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/overview.2.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/overview.2.md
 
 Frontend, backend, control panel, client-side, server-side, left-side, strong-side, front-side fakey 180...there's a lot of terminology flying around referring to the various aspects of a website. Let's clear 'em up, at least in the Statamic context.
 
@@ -23507,7 +23545,7 @@ Let's take a quick look at what happens during a typical Statamic frontend reque
 --------------------
 
 ### Fieldtypes Overview
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/overview.3.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/overview.3.md
 
 Fieldtypes are customizable form [fields](/fields) used to structure your content and provide an intuitive content management experience. Each fieldtype has its own UI, data format, and configuration options.
 
@@ -23620,7 +23658,7 @@ options:
 --------------------
 
 ### Addons Overview
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/overview.4.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/overview.4.md
 
 Developers can easily build new features that are compatible with everyone’s Statamic installations. Addons can then be easily shared or sold to others to let them extend their Statamic installation.
 
@@ -23671,7 +23709,7 @@ You can choose which edition is installed by entering it into your `config/stata
 --------------------
 
 ### Tags Overview
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/overview.5.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/overview.5.md
 
 Tags are Antlers expressions that give you the ability to fetch, filter, and display content, enhance and simplify your markup, build forms, and add dynamic functionality to your templates.
 
@@ -23753,7 +23791,7 @@ Browse the [full tag reference](/tags/all-tags) to see everything available, or 
 --------------------
 
 ### Modifiers Overview
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/overview.6.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/overview.6.md
 
 Modifiers manipulate the data of your variables on the fly in Antlers templates. They can modify strings, filter arrays and lists, perform comparisons, handle basic math, simplify your markup, and even help you debug.
 
@@ -23797,7 +23835,7 @@ You can find a [full list of modifiers](/reference/modifiers) included with Stat
 --------------------
 
 ### Widgets Overview
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/overview.7.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/overview.7.md
 
 The Control Panel's dashboard may contain any number of widgets. A widget is simply a box that shows something. That something might be anything from a list of recently updated entries, to a randomized inspiration quote, and anything in between.
 
@@ -23823,7 +23861,7 @@ Check out the [list of available widgets](/reference/widgets) included in Statam
 --------------------
 
 ### Variables Overview
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/overview.8.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/overview.8.md
 
 Context-aware variables are always available in your [views](/views), giving you access to dynamic information about the current URL, user, loaded entry, site settings, and more.
 
@@ -23905,7 +23943,7 @@ The following groups of variables are available in your views, depending on thei
 --------------------
 
 ### Content Modeling
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/overview.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/overview.md
 
 Before you build pages, templates, or implement features, there’s one foundational question to answer: **what shape should your content take?**
 
@@ -24006,7 +24044,7 @@ If your model _only_ works for the site you’re building right now, it’s prob
 --------------------
 
 ### Permissions
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/permissions.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/permissions.md
 
 Permissions are the individual abilities you tick when building a role — view entries, edit assets, manage users, and so on.
 
@@ -24107,7 +24145,7 @@ pro: true
 --------------------
 
 ### Deploying Statamic with Ploi
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/ploi.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/ploi.md
 
 Ploi provisions and deploys PHP applications on DigitalOcean,
 Linode, Vultr, Amazon, Hetzner and other hosting platforms. It's a piece of 🍰 to deploy a Statamic site with it.
@@ -24196,7 +24234,7 @@ Ploi is [optimized for Laravel](https://ploi.io/laravel-optimized) and offers ad
 --------------------
 
 ### Preferences
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/preferences.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/preferences.md
 
 Preferences are easy to manage settings available from and generally affecting only the inside of the control panel. They can be set differently per-user, role, and globally.
 
@@ -24344,7 +24382,7 @@ Setting values from JS can only apply it to the user's preferences.
 --------------------
 
 ### Progress
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/progress.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/progress.md
 
 Control the magic progress bar at the top of the page.
 
@@ -24381,7 +24419,7 @@ progress.start(`things-${uniqueId}`);
 --------------------
 
 ### Protecting Content
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/protecting-content.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/protecting-content.md
 
 It's common to want to put a site online before it's ready to be viewed by the public. Statamic has built-in ways of making this very easy for you.
 
@@ -24742,7 +24780,7 @@ Once your extension is registered, update your `protect.php` configuration file'
 --------------------
 
 ### Publish Forms
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/publish-forms.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/publish-forms.md
 
 Build custom forms by harnessing the power of Blueprints and Fieldtypes.
 
@@ -25092,7 +25130,7 @@ Blueprint::make()->setContents([
 --------------------
 
 ### Query Scopes & Filters
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/query-scopes-and-filters.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/query-scopes-and-filters.md
 
 Query scopes and filters allow you to narrow down query results using custom conditions.
 
@@ -25243,7 +25281,7 @@ public $pinned = true;
 --------------------
 
 ### Quick start guide
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/quick-start-guide.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/quick-start-guide.md
 
 A step-by-step guide to installing and building your first Statamic site.
 
@@ -25760,7 +25798,7 @@ We have a screencast series that covers getting started but goes much further an
 --------------------
 
 ### Recommended Hosts
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/recommended-hosts.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/recommended-hosts.md
 
 A user-curated list of web hosts that do (and don't) play well with Statamic.
 
@@ -25831,7 +25869,7 @@ For local development, these work well. See [requirements](/getting-started/requ
 --------------------
 
 ### Relationship Fieldtypes
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/relationship-fieldtypes.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/relationship-fieldtypes.md
 
 The Relationship fieldtype is one of the more powerful fields in Statamic's core. So powerful, in fact, that it earns its very own page in the docs. This is that page.
 
@@ -26066,7 +26104,7 @@ In order to allow your users to remove their selection, you should emit a `remov
 --------------------
 
 ### Relationships
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/relationships.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/relationships.md
 
 Content is often related to other content and bits of data. A blog post may have an author and 3 other recommended posts. A product may have a brand and a category. A hot dog may have a bun and some mustard. This page covers ways to create and take advantage of these types of relationships.
 
@@ -26211,7 +26249,7 @@ If you _aren't_ using a relationship fieldtype but _do_ have an `id` or `handle`
 --------------------
 
 ### Release Schedule & Support Policy
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/release-schedule-support-policy.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/release-schedule-support-policy.md
 
 For all Statamic releases, bug fixes are provided for 1 year and security fixes are provided for 18 months.  For all first party addons, only the latest major release receives bug fixes. In addition, please review the [Laravel Support Policy](https://laravel.com/docs/master/releases#support-policy).
 
@@ -26283,7 +26321,7 @@ These dates are subject to changes based on factors outside of our control, such
 --------------------
 
 ### Repositories
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/repositories.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/repositories.md
 
 Statamic uses a repository pattern to retrieve data from various places.
 
@@ -26370,7 +26408,7 @@ Make sure to clear your cache after changing a binding like this.
 --------------------
 
 ### Requirements
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/requirements.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/requirements.md
 
 Statamic is a modern PHP application built as a [Laravel](https://laravel.com) package, which carries with it the same [server requirements](https://laravel.com/docs/13.x/deployment#server-requirements) as Laravel itself. To manipulate images (resize, crop, etc), you will also need the GD Library or ImageMagick installed on your server.
 
@@ -26414,7 +26452,7 @@ Statamic runs on any host that meets the requirements above. See our [recommende
 --------------------
 
 ### REST API
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/rest-api.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/rest-api.md
 
 The Content REST API is a **read-only** API for delivering content from Statamic to your frontend, external apps, SPAs, and numerous other possible sources. Content is delivered as JSON data.
 
@@ -27351,7 +27389,7 @@ pro: true
 --------------------
 
 ### Revisions
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/revisions.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/revisions.md
 
 Revisions adds an entire publishing workflow to your authoring process. You can create revisions, review and rollback to previous revisions of your content, and more.
 
@@ -27461,7 +27499,7 @@ pro: true
 --------------------
 
 ### Roles
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/roles.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/roles.md
 
 Roles are named bundles of permissions you assign to users and user groups — Editors, Authors, Clients, whatever fits your team.
 
@@ -27534,7 +27572,7 @@ pro: true
 --------------------
 
 ### Routing
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/routing.1.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/routing.1.md
 
 You can register Control Panel routes to build custom pages.
 
@@ -27566,7 +27604,7 @@ To register a custom route:
 --------------------
 
 ### Routing
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/routing.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/routing.md
 
 Statamic has several ways it routes requests and defines URLs and patterns, all of which are listed and described in this section.
 
@@ -27757,7 +27795,7 @@ For 5xx errors (e.g. 500, 503, etc) only the template will be rendered. It will 
 --------------------
 
 ### Task Scheduling
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/scheduling.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/scheduling.md
 
 Manage scheduled tasks using Laravel's task scheduler.
 
@@ -27826,7 +27864,7 @@ Schedule::job(new Heartbeat)->everyFiveMinutes();
 --------------------
 
 ### Search
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/search.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/search.md
 
 Help your visitors find what they're looking for with search. Use  configurable indexes to configure which fields are important, which aren't, and fine-tune your way to relevant results.
 
@@ -28677,7 +28715,7 @@ This `getSearchResults` method is used in the parent class in order to allow bas
 --------------------
 
 ### Sites API
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/sites-api.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/sites-api.md
 
 We have an API that can be used to manage your Statamic Sites in your [statamic.com](https://statamic.com) account. This is most useful with our Platform Plan, which you can [contact us](https://statamic.com/support) directly about for more information.
 
@@ -28815,7 +28853,7 @@ Any param you provide will override the site's current value. Params you leave o
 --------------------
 
 ### Slugs
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/slugs.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/slugs.md
 
 ## Slugify Vue Component
 
@@ -28907,7 +28945,7 @@ slugger.create('three').then(slug => console.log(slug));
 --------------------
 
 ### Stache
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/stache.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/stache.md
 
 Instead of using a relational database like MySQL as a storage system, Statamic aggregates the data in your content files into an efficient, index-based system and stores it in Laravel's application cache. We call this the "stache", and we like to make mustache jokes about it.
 
@@ -29191,7 +29229,7 @@ Dive deeper into the Stache!
 --------------------
 
 ### Static Caching
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/static-caching.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/static-caching.md
 
 Nothing loads faster than static pages. Instead of rendering pages dynamically on demand, Statamic can cache static pages and pass routing to Apache or Nginx with reverse proxying.
 
@@ -30198,7 +30236,7 @@ By default, running `php artisan cache:clear` won't clear Statamic's cache store
 --------------------
 
 ### Structures
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/structures.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/structures.md
 
 A structure is a tree — nested items you rearrange in the Control Panel. That tree either owns a collection’s URLs or powers a freestyle nav. Same shape, two jobs.
 
@@ -30329,7 +30367,7 @@ Loop either kind of structure with the [nav tag](/tags/nav).
 --------------------
 
 ### Taxonomies
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/taxonomies.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/taxonomies.md
 
 A taxonomy is a system of classifying data around a set of unique characteristics. Scientists have been using this system for years, grouping all living creatures into Kingdoms, Class, Species and so on. Taxonomies are the primary means for grouping content together by topic or a shared attribute.
 
@@ -30556,7 +30594,7 @@ You can configure search indexes for your collections to improve the efficiency 
 --------------------
 
 ### Testing
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/testing.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/testing.md
 
 There's only one thing better than manual testing... automated testing. Addons are scaffolded with PHPUnit test suites out-of-the-box. Learn how to write & run tests.
 
@@ -30753,14 +30791,14 @@ jobs:
 --------------------
 
 ### Tips & Tricks
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/tips.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/tips.md
 
 Here's a collection of little tips & tricks to help you on your way.
 
 --------------------
 
 ### Toast Notifications
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/toast-notifications.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/toast-notifications.md
 
 Simple notification messages that "pop" into the screen like toast popping out of a toaster.
 
@@ -30790,14 +30828,14 @@ You don't have to return them in a response, simply calling them is enough. They
 --------------------
 
 ### Troubleshooting
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/troubleshooting.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/troubleshooting.md
 
 Here are some common pitfalls.
 
 --------------------
 
 ### How to Install Statamic on Ubuntu
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/ubuntu.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/ubuntu.md
 
 A full walk-through for installing, configuring and running Statamic on an Ubuntu server, perfect for production use.
 
@@ -31013,7 +31051,7 @@ If you run into issues not covered here, you may want to read through [this disc
 --------------------
 
 ### Updating a Starter Kit
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/updating-a-starter-kit.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/updating-a-starter-kit.md
 
 Starter Kits aren't all designed to be updatable, but when they are you'll need to know how.
 
@@ -31047,7 +31085,7 @@ npm run dev
 --------------------
 
 ### Updating
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/updating.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/updating.md
 
 Updates are handled by [Composer](https://getcomposer.org/), PHP's dependency manager. We recommend running all updates locally (not on production) via the command line and deploying those changes to production after verifying everything still works as it should.
 
@@ -31108,7 +31146,7 @@ If a bug you're hitting has already been fixed in a pull request but hasn't ship
 --------------------
 
 ### Upgrade guide
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/upgrade-guide.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/upgrade-guide.md
 
 How to upgrade between various versions of Statamic.
 
@@ -31129,7 +31167,7 @@ You can also (semi-)automate the Laravel upgrade using [Laravel Shift](https://l
 --------------------
 
 ### User Groups
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/user-groups.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/user-groups.md
 
 User groups let you attach roles to a set of users at once — everyone in the group inherits those permissions.
 
@@ -31187,7 +31225,7 @@ pro: true
 --------------------
 
 ### Users
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/users.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/users.md
 
 Users are the member accounts to your site or application. What a user can do with their account is up to you. They could have limited or full access to the Control Panel, a login-only area of the front-end, or even something more custom by tapping into Laravel.
 
@@ -31463,7 +31501,7 @@ pro: true
 --------------------
 
 ### Utilities
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/utilities.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/utilities.md
 
 Utilities are simple tools with their own views, routes, navigation items, and permissions.
 
@@ -31697,7 +31735,7 @@ Your Blade view doesn't need to extend a layout, Statamic will handle wrapping i
 --------------------
 
 ### Upgrading from v2 to v3
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/v2-to-v3.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/v2-to-v3.md
 
 A guide for upgrading your existing Statamic v2 projects to v3.
 
@@ -32048,7 +32086,7 @@ Suggest modes have been replaced by [customized relationship fieldtypes](/extend
 --------------------
 
 ### Validation
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/validation.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/validation.md
 
 Statamic allows you to validate your data using Laravel's validation system.
 
@@ -32230,7 +32268,7 @@ The `validate` method would throw a `ValidationException` if invalid and return 
 --------------------
 
 ### Deploying Statamic with Vercel
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/vercel.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/vercel.md
 
 :::warning
 Please note that by hosting your site statically with a service like Vercel or Netlify, **you can't access the Control Panel in production** and are **not able to use dynamic features** like Statamic's built-in forms or random sorting in your templates.
@@ -32290,7 +32328,7 @@ php please ssg:generate
 --------------------
 
 ### View Models
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/view-models.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/view-models.md
 
 View Models give you a chance to manipulate or set data in PHP _right before_ everything is passed into your view, parsed, and then rendered.
 
@@ -32387,7 +32425,7 @@ View models help keep your views nice and clean. Use them often and you'll find 
 --------------------
 
 ### Views
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/views.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/views.md
 
 Views contain HTML, have access to your data, and are used to render the front-end of your site. Layouts, templates, and partials are all different types of views.
 
@@ -32603,7 +32641,7 @@ resources/views/
 --------------------
 
 ### Vite Tooling
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/vite-tooling.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/vite-tooling.md
 
 How to use Vite in your addon.
 
@@ -32860,7 +32898,7 @@ Statamic.configuring(() => {
 --------------------
 
 ### Upgrade from Vue 2 to Vue 3
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/vue-2-to-3.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/vue-2-to-3.md
 
 A guide for upgrading Vue 2 to 3.
 
@@ -33512,7 +33550,7 @@ A number of items have been removed. If you feel they shouldn't have been remove
 --------------------
 
 ### White Labeling
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/white-labeling.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/white-labeling.md
 
 White Labeling allows you to customize the logo, visible name, and basic theme of the CMS throughout the control panel.
 
@@ -33618,7 +33656,7 @@ pro: true
 --------------------
 
 ### YAML
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/pages/yaml.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/pages/yaml.md
 
 YAML is a data storage format designed to be human readable and easily manipulated by hand. It's interchangeable with JSON and in most cases easier to write. Statamic uses YAML extensively to store data, content, and settings.
 
@@ -33864,7 +33902,7 @@ You can also refer to the [Symfony YAML component][symfony-yaml] and [YAML forma
 --------------------
 
 ### Asset Container Repository
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/resource_apis/asset-container-repository.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/resource_apis/asset-container-repository.md
 
 To work with the AssetContainer Repository, use the following Facade:
 
@@ -33941,7 +33979,7 @@ class: \Statamic\Facades\AssetContainer
 --------------------
 
 ### Asset Repository
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/resource_apis/asset-repository.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/resource_apis/asset-repository.md
 
 To work with the Asset Repository, use the following Facade:
 
@@ -34062,7 +34100,7 @@ class: \Statamic\Facades\Asset
 --------------------
 
 ### Collection Repository
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/resource_apis/collection-repository.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/resource_apis/collection-repository.md
 
 To work with the with `Collection` Repository, use the following Facade:
 
@@ -34151,7 +34189,7 @@ class: \Statamic\Facades\Collection
 --------------------
 
 ### Entry Repository
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/resource_apis/entry-repository.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/resource_apis/entry-repository.md
 
 To work with the Entry Repository, use the following Facade:
 
@@ -34431,7 +34469,7 @@ $entry->ancestors();
 --------------------
 
 ### Form Repository
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/resource_apis/form-repository.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/resource_apis/form-repository.md
 
 To work with the Form Repository, use the following Facade:
 
@@ -34516,7 +34554,7 @@ $form->save(); // true or false
 --------------------
 
 ### Form Submission Repository
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/resource_apis/form-submission-repository.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/resource_apis/form-submission-repository.md
 
 To work with the Form Submissions Repository, use the following Facade:
 
@@ -34596,7 +34634,7 @@ $submission->save(); // true or false
 --------------------
 
 ### Global Repository
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/resource_apis/global-repository.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/resource_apis/global-repository.md
 
 To work with the GlobalSet Repository, use the following Facade:
 
@@ -34666,7 +34704,7 @@ $globals->save();
 --------------------
 
 ### Site Repository
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/resource_apis/site-repository.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/resource_apis/site-repository.md
 
 To work with the with Site Repository, use the following Facade:
 
@@ -34712,7 +34750,7 @@ class: \Statamic\Facades\Site
 --------------------
 
 ### Taxonomy Repository
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/resource_apis/taxonomy-repository.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/resource_apis/taxonomy-repository.md
 
 To work with the with `Taxonomy` Repository, use the following Facade:
 
@@ -34789,7 +34827,7 @@ class: \Statamic\Facades\Taxonomies
 --------------------
 
 ### Taxonomy Term Repository
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/resource_apis/term-repository.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/resource_apis/term-repository.md
 
 To work with the Repository Term queries, use the following Facade:
 
@@ -34908,7 +34946,7 @@ $term->save(); // true or false
 --------------------
 
 ### User Group Repository
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/resource_apis/user-group-repository.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/resource_apis/user-group-repository.md
 
 To work with the with `UserGroup` Repository, use the following Facade:
 
@@ -34976,7 +35014,7 @@ $group->save();
 --------------------
 
 ### User Repository
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/resource_apis/user-repository.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/resource_apis/user-repository.md
 
 To work with the User Repository, use the following Facade:
 
@@ -35094,7 +35132,7 @@ $user->isInGroup('group_2'); // Checks if the user is part of a group
 --------------------
 
 ### User Role Repository
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/resource_apis/user-role-repository.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/resource_apis/user-role-repository.md
 
 To work with the with `Role` Repository, use the following Facade:
 
@@ -35140,7 +35178,7 @@ $role->save();
 --------------------
 
 ### 404 (Not Found)
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/404.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/404.md
 
 Anytime this tag is rendered — whether in a template, partial, or content, Statamic will trigger a 404 status code and render your 404 template.
 
@@ -35197,7 +35235,7 @@ There's no need to wrap the rest of the template in an else condition.
 --------------------
 
 ### Asset
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/asset.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/asset.md
 
 The Asset (singular tense) tag retrieves single assets by their URL.
 
@@ -35247,7 +35285,7 @@ parameters:
 --------------------
 
 ### Assets
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/assets.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/assets.md
 
 Used to retrieve [Assets](/assets) directly from a container where you can then loop, filter, and sort them in expected but exciting ways.
 
@@ -35389,7 +35427,7 @@ parameters:
 --------------------
 
 ### Cache
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/cache.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/cache.md
 
 If you find that a particular chunk of your view logic is the cause of a performance hit — perhaps you're fetching and filtering huge amount of content, or pulling data from an API, caching that portion of your template can remove alleviate any slowdown.
 
@@ -35644,7 +35682,7 @@ parameters:
 --------------------
 
 ### Children
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/children.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/children.md
 
 The Children tag allows you to loop over and fetch data from the current URL.
 
@@ -35711,7 +35749,7 @@ parameters:
 --------------------
 
 ### Collection:Count
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/collection-count.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/collection-count.md
 
 This tag is a clone of the [collection tag](/tags/collection) but with one big difference: it only returns the total number of entries that match your set of filters.
 
@@ -35787,7 +35825,7 @@ parameters:
 --------------------
 
 ### Collection:Next
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/collection-next.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/collection-next.md
 
 If you're on a single entry page and want to show _next_ entries in order (publish date, alphabetical, or manual), this is the tag you're looking for.
 
@@ -35872,7 +35910,7 @@ variables:
 --------------------
 
 ### Collection:Previous
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/collection-previous.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/collection-previous.md
 
 If you're on a single entry page and want to show _previous_ entries in order (publish date, alphabetical, or manual), this is the tag you're looking for.
 
@@ -35957,7 +35995,7 @@ variables:
 --------------------
 
 ### Collection
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/collection.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/collection.md
 
 Entries are grouped into Collections and are fetched and filtered by this tag. A Collection could contain blog posts, products, or even a bag full of dad jokes. We don't judge, and neither does the Collection Tag.
 
@@ -36652,7 +36690,7 @@ variables:
 --------------------
 
 ### Cookie
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/cookie.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/cookie.md
 
 Cookies provide a client-side way to store information about the user across requests. The cookie tag will let you get, set, and forget cookie data.
 
@@ -36877,7 +36915,7 @@ protected $except = [
 --------------------
 
 ### Dictionary
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/dictionary.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/dictionary.md
 
 Allows you to loop through options from a Dictionary.
 
@@ -37143,7 +37181,7 @@ parameters:
 --------------------
 
 ### Dump
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/dump.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/dump.md
 
 The dump tag is used for debugging data inside your current view context.
 
@@ -37214,7 +37252,7 @@ You can also use the [dump modifier](/modifiers/dump) to achieve a similar effec
 --------------------
 
 ### Foreach
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/foreach.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/foreach.md
 
 Loop through and render values from an array of named keys and values without needing to know the keys.
 
@@ -37353,7 +37391,7 @@ parameters:
 --------------------
 
 ### Form:Create
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/form-create.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/form-create.md
 
 Statamic [forms](/forms) serve to collect, report, and reuse user submitted data. This tag handles the HTML markup, redirect behavior, and success/error states and messages for these forms.
 
@@ -38002,7 +38040,7 @@ variables:
 --------------------
 
 ### Form:Errors
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/form-errors.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/form-errors.md
 
 If a form submission encounters a validation error, you can use this tag to loop through the error messages and show your user where everything went south.
 
@@ -38080,7 +38118,7 @@ variables:
 --------------------
 
 ### Form:Fields
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/form-fields.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/form-fields.md
 
 To be used within the [form:create](/tags/form-create#dynamically-rendering-fields) tag when dynamically rendering fields.
 
@@ -38144,7 +38182,7 @@ parameters:
 --------------------
 
 ### Form:Set
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/form-set.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/form-set.md
 
 This is a "convenience" wrapper tag that will set all _other_ form tags to use the same formset.
 
@@ -38210,7 +38248,7 @@ parameters:
 --------------------
 
 ### Form:Submission
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/form-submission.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/form-submission.md
 
 If you want to show the user the data they submitted — whether as a confirmation or to pre-populate or personalize some content — this is the easiest way to do it.
 
@@ -38296,7 +38334,7 @@ variables:
 --------------------
 
 ### Form:Submissions
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/form-submissions.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/form-submissions.md
 
 This is how you fetch data and display data from form submissions. It works very much like the [collection](/tags/collection) tag.
 
@@ -38837,7 +38875,7 @@ variables:
 --------------------
 
 ### Form:Success
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/form-success.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/form-success.md
 
 This is how you check if a form was successful _outside_ of a [form:create](/tags/form-create) tag.
 
@@ -38887,7 +38925,7 @@ parameters:
 --------------------
 
 ### Form
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/form.md
 
 Statamic forms serve to collect, report, and reuse user submitted data. There are a number of different tags available, depending what you need to do.
 
@@ -38903,7 +38941,7 @@ Handles the frontend side of your forms.
 --------------------
 
 ### Get Content
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/get_content.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/get_content.md
 
 It gets content from other entries! Specify a URI or ID and fetch all the data attached to it.
 
@@ -39014,7 +39052,7 @@ parameters:
 --------------------
 
 ### Get Error
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/get_error.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/get_error.md
 
 The singular version of the "Get Errors" tag
 
@@ -39025,7 +39063,7 @@ See the [Get Errors](/tags/get_errors) tag.
 --------------------
 
 ### Get Errors
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/get_errors.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/get_errors.md
 
 This tag allows you to interact with a Laravel `ViewErrorBag` object to output validation errors.
 
@@ -39176,7 +39214,7 @@ parameters:
 --------------------
 
 ### Get Files
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/get_files.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/get_files.md
 
 The ultimate 🇨🇭Swiss Army Knife doing-stuff-with-files feature. With the `get_files` tag you can scan and display data on files in _any_ directories inside your local filesystem.
 
@@ -39366,7 +39404,7 @@ variables:
 --------------------
 
 ### Get Site
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/get_site.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/get_site.md
 
 It gets a site's config, given it's handle.
 
@@ -39445,7 +39483,7 @@ You can also use it as a single tag:
 --------------------
 
 ### Glide:Batch
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/glide-batch.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/glide-batch.md
 
 Use `glide:batch` to manipulate a whole batch of `<img>` tags with [Glide](/tags/glide).
 
@@ -39505,7 +39543,7 @@ parameters:
 --------------------
 
 ### Glide:Data_URL
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/glide-data-url.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/glide-data-url.md
 
 Use `glide:data_url` to output a manipulated image as a Data URL.
 
@@ -39568,7 +39606,7 @@ parameters:
 --------------------
 
 ### Glide
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/glide.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/glide.md
 
 The Glide tag makes it easy to manipulate images on the fly – from resizing and cropping to adjustments (like sharpness and contrast) and image effects (like pixelate and sepia).
 
@@ -40067,7 +40105,7 @@ variables:
 --------------------
 
 ### Include:Exists
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/include-exists.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/include-exists.md
 
 Checks if a view exists.
 
@@ -40114,7 +40152,7 @@ parameters:
 --------------------
 
 ### Include:If_Exists
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/include-if-exists.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/include-if-exists.md
 
 Renders a view if it exists.
 
@@ -40185,7 +40223,7 @@ parameters:
 --------------------
 
 ### Include
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/include.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/include.md
 
 The include tag renders another [view](/views), like the [partial](/tags/partial) tag, but with stricter variable scope rules and support for scoped slots.
 
@@ -40737,7 +40775,7 @@ parameters:
 --------------------
 
 ### Increment
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/increment.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/increment.md
 
 Each time an increment tag is parsed, an index is incremented by one and displayed.
 
@@ -40838,7 +40876,7 @@ parameters:
 --------------------
 
 ### Installed
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/installed.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/installed.md
 
 Determine whether or not a Composer package is installed.
 
@@ -40892,7 +40930,7 @@ You can pass any Composer package name into this tag. It's not limited to Statam
 --------------------
 
 ### Link
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/link.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/link.md
 
 Generate fully qualified URLs with the option to include your domain.
 
@@ -41003,7 +41041,7 @@ parameters:
 --------------------
 
 ### Locales:Count
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/locales-count.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/locales-count.md
 
 Get the number of localizations.
 
@@ -41036,7 +41074,7 @@ This tag shares everything from the [locales tag](/tags/locales), except that in
 --------------------
 
 ### Locales
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/locales.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/locales.md
 
 Create links to localized content.
 
@@ -41194,7 +41232,7 @@ variables:
 --------------------
 
 ### Loop
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/loop.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/loop.md
 
 Create and iterate through a loop a specific number of times or between a range.
 
@@ -41302,7 +41340,7 @@ parameters:
 --------------------
 
 ### Markdown:Indent
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/markdown-indent.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/markdown-indent.md
 
 This tag is used for transforming Markdown while ignoring whitespace in your view files.
 
@@ -41358,7 +41396,7 @@ Transforms inline Markdown while ignoring whitespace
 --------------------
 
 ### Markdown
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/markdown.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/markdown.md
 
 Transform Markdown content written inline in your template. For when you just can't be bothered to write HTML or make another variable.
 
@@ -41418,7 +41456,7 @@ Markdown considers indentation to be a code block. You'll need to keep your cont
 --------------------
 
 ### Mix
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/mix.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/mix.md
 
 The Mix tag is used in tandem with Laravel Mix to return the path to versioned CSS and JavaScript files.
 
@@ -41495,7 +41533,7 @@ parameters:
 --------------------
 
 ### Mount URL
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/mount_url.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/mount_url.md
 
 The Mount URL tag is used to return the URL to a collection's mount entry.
 
@@ -41545,7 +41583,7 @@ parameters:
 --------------------
 
 ### Nav:Breadcrumbs
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/nav-breadcrumbs.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/nav-breadcrumbs.md
 
 Breadcrumbs are a common form of site navigation designed to give the user a view of where the current page is in the parent/child hierarchy. Much like the crumbs left by a certain little German boy — they lead from wherever you are, all the way back home.
 
@@ -41641,7 +41679,7 @@ variables:
 --------------------
 
 ### Nav
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/nav.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/nav.md
 
 The nav tags are designed to help your users navigate through your hierarchy of navigations and collections.
 
@@ -41966,7 +42004,7 @@ variables:
 --------------------
 
 ### No Cache
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/nocache.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/nocache.md
 
 When using a broader caching solution (like [static caching](/static-caching) or the [cache tag](/tags/cache)) you may want to keep a chunk of your template dynamic.
 
@@ -42358,7 +42396,7 @@ By default, these are stored in the cache. However, with increased traffic or si
 --------------------
 
 ### OAuth:Disconnect_Form
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/oauth-disconnect_form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/oauth-disconnect_form.md
 
 Renders a form that disconnects an OAuth provider from the current user's account.
 
@@ -42411,7 +42449,7 @@ parameters:
 --------------------
 
 ### OAuth
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/oauth.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/oauth.md
 
 If you're using [OAuth](/oauth) to manage user authentication, you may find you need to generate login URLs at some point. Here's how you do it.
 
@@ -42550,7 +42588,7 @@ variables:
 --------------------
 
 ### Obfuscate
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/obfuscate.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/obfuscate.md
 
 Whenever you need to obfuscate something, reach for the obfuscate tag. It's an obfuscating good time.
 
@@ -42595,7 +42633,7 @@ djjazzyjeff@angelfire.com
 --------------------
 
 ### Parent
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/parent.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/parent.md
 
 The Parent tag fetches data from the "parent" page — the URL one level above the current one. For example, the parent of this very URL (`/tags/parent`) is `/tags`, and the parent title is "Tags".
 
@@ -42675,7 +42713,7 @@ Go back to <a href="/tags">Tags</a>.
 --------------------
 
 ### Partial:Exists
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/partial-exists.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/partial-exists.md
 
 Checks if a partial exists.
 
@@ -42721,7 +42759,7 @@ parameters:
 --------------------
 
 ### Partial:If_Exists
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/partial-if-exists.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/partial-if-exists.md
 
 Renders a partial if it exists.
 
@@ -42767,7 +42805,7 @@ parameters:
 --------------------
 
 ### Partial
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/partial.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/partial.md
 
 Partials are reusable [views](/views) that may find themselves in any number of other layouts, templates, and other partials.
 
@@ -43014,7 +43052,7 @@ parameters:
 --------------------
 
 ### Protect:Password_Form
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/protect-password_form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/protect-password_form.md
 
 This tag is used to create a custom content [password protection](/protecting-content#password) form.
 
@@ -43118,7 +43156,7 @@ variables:
 --------------------
 
 ### Redirect
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/redirect.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/redirect.md
 
 Anytime this tag is rendered — whether in a template, partial, or content, Statamic will redirect the visitor to the specified URL.
 
@@ -43215,7 +43253,7 @@ parameters:
 --------------------
 
 ### Route
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/route.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/route.md
 
 The route tag allows you to generate the full URL for a given named route, including any parameters.
 
@@ -43269,7 +43307,7 @@ variables:
 --------------------
 
 ### Scope
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/scope.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/scope.md
 
 Used to push all of the "root", or page scope data into an array to be used however you see fit.
 
@@ -43358,7 +43396,7 @@ parameters:
 --------------------
 
 ### Search
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/search.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/search.md
 
 This is how you do search. This is the tag you're looking for.
 
@@ -43667,7 +43705,7 @@ variables:
 --------------------
 
 ### Section
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/section.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/section.md
 
 The section tag is a useful way to abstract and reuse your views by extracting a section of markup that can then be rendered elsewhere with a [yield tag](/tags/yield).
 
@@ -43766,7 +43804,7 @@ If you haven't read up on [templates and layouts](/views), you should. It's rele
 --------------------
 
 ### Session:Dump
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/session-dump.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/session-dump.md
 
 The contents of the user session can be dumped to the browser. You never know when you need to peek inside the black box.
 
@@ -43798,7 +43836,7 @@ Peek into the user session for debugging purposes.
 --------------------
 
 ### Session:Flash
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/session-flash.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/session-flash.md
 
 Flash data is session data that is only kept for a single request. It is most often used for success/failure messages that automatically disappear after a page refresh.
 
@@ -43894,7 +43932,7 @@ Array data can be set with dot notation.
 --------------------
 
 ### Session:Flush
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/session-flush.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/session-flush.md
 
 The flush tag will wipe the entire user session. This will also sign a user out if they're signed in.
 
@@ -43925,7 +43963,7 @@ That's all there is to it. How you use it is up to you. You may want to tuck thi
 --------------------
 
 ### Session:Forget
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/session-forget.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/session-forget.md
 
 Remove variables from the user session by passing the names of the variables into the `keys` parameter.
 
@@ -43960,7 +43998,7 @@ This is the humor you came for and the software you (maybe) paid for.
 --------------------
 
 ### Session:Has
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/session-has.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/session-has.md
 
 This tag checks the session to see if any given keys exist in a user session.
 
@@ -43990,7 +44028,7 @@ This is a very simple tag designed to be used in a condition statement. You may 
 --------------------
 
 ### Session:Set
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/session-set.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/session-set.md
 
 Data set in the session will be available in all future requests until such time that the session is cleared over time (sessions eventually expire) or intentionally. Session variables can be retrieved with the main [session](/tags/session) tag.
 
@@ -44097,7 +44135,7 @@ Data can be removed from the session [session:forget](/tags/session-forget), and
 --------------------
 
 ### Session
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/session.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/session.md
 
 Sessions provide a stateless way to store information about the user across requests. The session tag will let you get, set, and forget session data.
 
@@ -44197,7 +44235,7 @@ If you need extra markup around your session data, you can _alias_ a new child a
 --------------------
 
 ### SVG
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/svg.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/svg.md
 
 The SVG tag renders inline SVGs and lets you easily set attributes on the `<svg>` element.
 
@@ -44297,7 +44335,7 @@ parameters:
 --------------------
 
 ### Switch
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/switch.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/switch.md
 
 Each time a switch tag is rendered it will return the next value from its `between` parameter until it reaches the end where it will start all over again.
 
@@ -44438,7 +44476,7 @@ parameters:
 --------------------
 
 ### Taxonomy:Count
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/taxonomy-count.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/taxonomy-count.md
 
 This tag is a clone of the [taxonomy tag](/tags/taxonomy) but with one big difference: it only returns the total number of terms that match your set of filters.
 
@@ -44484,7 +44522,7 @@ parameters:
 --------------------
 
 ### Taxonomy
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/taxonomy.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/taxonomy.md
 
 Taxonomy terms are grouped into taxonomies and are fetched and filtered by this tag. A taxonomy could contain tags, categories, or sock colors.
 
@@ -44735,7 +44773,7 @@ variables:
 --------------------
 
 ### Translate
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/trans.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/trans.md
 
 Retrieve a string from a language file in the current locale.
 
@@ -44875,7 +44913,7 @@ parameters:
 --------------------
 
 ### User:Can
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-can.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-can.md
 
 Anything inside the `user:can` tag will only be rendered if the user has the specified permission.
 
@@ -44989,7 +45027,7 @@ parameters:
 --------------------
 
 ### User:Delete_Passkey_Form
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-delete_passkey_form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-delete_passkey_form.md
 
 As the tag name suggests, it allows you to delete a passkey.
 
@@ -45056,7 +45094,7 @@ parameters:
 --------------------
 
 ### User:Disable_Two_Factor_Form
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-disable_two_factor_form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-disable_two_factor_form.md
 
 Allow users to turn off two-factor authentication. If their role requires 2FA, they'll be prompted to set it up again.
 
@@ -45137,7 +45175,7 @@ variables:
 --------------------
 
 ### User:Elevated_Session_Form
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-elevated_session_form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-elevated_session_form.md
 
 If you want to protect sensitive frontend actions with re-authentication, this tag renders the form for users to confirm their identity.
 
@@ -45330,7 +45368,7 @@ variables:
 --------------------
 
 ### User:Forgot_Password_Form
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-forgot_password_form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-forgot_password_form.md
 
 This tag is used to create a "forgot my password" form for your users.
 
@@ -45464,7 +45502,7 @@ variables:
 --------------------
 
 ### User_Groups
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-groups.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-groups.md
 
 The `user_groups` tag is used to return any groups you have added to collate the users on your site.
 
@@ -45555,7 +45593,7 @@ variables:
 --------------------
 
 ### User:In
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-in.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-in.md
 
 Anything inside the `user:in` tag will only be rendered if the user is in the specified group.
 
@@ -45630,7 +45668,7 @@ parameters:
 --------------------
 
 ### User:Is
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-is.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-is.md
 
 Anything inside the `user:is` tag will only be rendered if the user has a specific role.
 
@@ -45713,7 +45751,7 @@ parameters:
 --------------------
 
 ### User:Login_Form
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-login_form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-login_form.md
 
 If you want to build a login form for your users, this is the easiest way to do it.
 
@@ -45898,7 +45936,7 @@ variables:
 --------------------
 
 ### User:Logout
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-logout.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-logout.md
 
 Logs a user out and redirects them elsewhere
 
@@ -45939,7 +45977,7 @@ parameters:
 --------------------
 
 ### User:Logout_URL
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-logout_url.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-logout_url.md
 
 Generates a user logout URL
 
@@ -45972,7 +46010,7 @@ parameters:
 --------------------
 
 ### User:Passkey_Form
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-passkey_form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-passkey_form.md
 
 Allows authenticated users to set up passkeys
 
@@ -46057,7 +46095,7 @@ variables:
 --------------------
 
 ### User:Passkeys
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-passkeys.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-passkeys.md
 
 Loop through the authenticated user's registered passkeys.
 
@@ -46158,7 +46196,7 @@ variables:
 --------------------
 
 ### User:Password_Form
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-password_form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-password_form.md
 
 Creates a user password update form
 
@@ -46334,7 +46372,7 @@ variables:
 --------------------
 
 ### User:Profile
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-profile.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-profile.md
 
 Fetching user data made easy.
 
@@ -46477,7 +46515,7 @@ variables:
 --------------------
 
 ### User:Profile_Form
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-profile_form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-profile_form.md
 
 Creates user profile edit forms
 
@@ -46639,7 +46677,7 @@ variables:
 --------------------
 
 ### User:Register_Form
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-register_form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-register_form.md
 
 Creates user registration forms
 
@@ -46846,7 +46884,7 @@ variables:
 --------------------
 
 ### User:Reset_Password_Form
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-reset_password_form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-reset_password_form.md
 
 This tag is used to to set a new password _after_ a user has received the reset link from the "forgot my password" form.
 
@@ -46970,7 +47008,7 @@ variables:
 --------------------
 
 ### User:Reset_Two_Factor_Recovery_Codes_Form
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-reset_two_factor_recovery_codes_form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-reset_two_factor_recovery_codes_form.md
 
 If a user has used some of their recovery codes or suspects they've been compromised, they can generate a fresh set. This invalidates all existing codes.
 
@@ -47043,7 +47081,7 @@ variables:
 --------------------
 
 ### User_Roles
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-roles.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-roles.md
 
 The `user_roles` tag is used to return any roles you have added to collate the users on your site.
 
@@ -47133,7 +47171,7 @@ variables:
 --------------------
 
 ### User:Two_Factor_Challenge_Form
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-two_factor_challenge_form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-two_factor_challenge_form.md
 
 When a user with two-factor authentication enabled logs in, they need to verify their identity with a code from their authenticator app. This tag renders that verification form.
 
@@ -47240,7 +47278,7 @@ variables:
 --------------------
 
 ### User:Two_Factor_Enable_Form
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-two_factor_enable_form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-two_factor_enable_form.md
 
 Step one of the two-factor authentication setup flow. Submitting this form generates a 2FA secret for the user and sends them on to the setup page where they confirm the code.
 
@@ -47341,7 +47379,7 @@ variables:
 --------------------
 
 ### User:Two_Factor_Enabled
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-two_factor_enabled.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-two_factor_enabled.md
 
 A boolean tag that returns `true` when the authenticated user has two-factor authentication enabled. Useful for conditionally showing recovery code or disable UI.
 
@@ -47396,7 +47434,7 @@ Because this is a tag rather than a variable, use the extra brace syntax inside 
 --------------------
 
 ### User:Two_Factor_Recovery_Codes
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-two_factor_recovery_codes.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-two_factor_recovery_codes.md
 
 Recovery codes provide a backup way for users to access their account if they lose their authenticator device. This tag displays those codes.
 
@@ -47463,7 +47501,7 @@ variables:
 --------------------
 
 ### User:Two_Factor_Recovery_Codes_Download_URL
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-two_factor_recovery_codes_download_url.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-two_factor_recovery_codes_download_url.md
 
 Outputs a URL to download recovery codes as a text file
 
@@ -47504,7 +47542,7 @@ This tag requires the user to be authenticated with 2FA enabled. If 2FA is not e
 --------------------
 
 ### User:Two_Factor_Setup_Form
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/user-two_factor_setup_form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/user-two_factor_setup_form.md
 
 Step two of the two-factor authentication setup flow. This tag displays the QR code and verifies the code the user enters to confirm their authenticator app is working.
 
@@ -47662,7 +47700,7 @@ variables:
 --------------------
 
 ### Users
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/users.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/users.md
 
 The users tag can be used to fetch, filter, and iterate over Users and their data.
 
@@ -47862,7 +47900,7 @@ variables:
 --------------------
 
 ### Vite:Content
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/vite-content.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/vite-content.md
 
 This tag is used in tandem with the Vite build tool to return the contents of CSS and JavaScript files.
 
@@ -47947,7 +47985,7 @@ parameters:
 --------------------
 
 ### Vite
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/vite.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/vite.md
 
 This tag is used in tandem with the Vite build tool to return the path to CSS and JavaScript files.
 
@@ -48097,7 +48135,7 @@ parameters:
 --------------------
 
 ### Yield
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tags/yield.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tags/yield.md
 
 The yield tag is a useful way to abstract and reuse your views by displaying content or markup extracted in a template by the [section tag](/tags/section).
 
@@ -48234,7 +48272,7 @@ If you haven't read up on [templates and layouts](/views), you should. It's rele
 --------------------
 
 ### Add
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/add.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/add.md
 
 Add a value or another variable to your variable. Pass an integer or the name of a second variable as the parameter. Also supports `+` as shorthand.
 
@@ -48282,7 +48320,7 @@ modifier_types:
 --------------------
 
 ### Add Slashes
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/add_slashes.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/add_slashes.md
 
 Modifies a string by adding backslashes before characters that need to be escaped. These characters are:
 
@@ -48325,7 +48363,7 @@ modifier_types:
 --------------------
 
 ### Ampersand List
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/ampersand_list.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/ampersand_list.md
 
 Turn a simple array into a comma delimited string with a friendly little ampersand between the last two items.
 
@@ -48363,7 +48401,7 @@ modifier_types:
 --------------------
 
 ### Antlers
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/antlers.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/antlers.md
 
 Parses the given value as an Antlers template.
 
@@ -48400,7 +48438,7 @@ modifier_types:
 --------------------
 
 ### As
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/as.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/as.md
 
 Alias an array variable as another name, allowing you to massage your data to reused shared components and templates.
 
@@ -48444,7 +48482,7 @@ modifier_types:
 --------------------
 
 ### Ascii
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/ascii.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/ascii.md
 
 Replaces all non-ASCII characters with their closest ASCII counterparts and removes any unsupported characters completely. This is very useful for converting foreign language strings into something more code-friendly.
 
@@ -48478,7 +48516,7 @@ modifier_types:
 --------------------
 
 ### At
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/at.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/at.md
 
 Returns the single character at a given position in a string. It starts at zero with the first character.
 
@@ -48512,7 +48550,7 @@ modifier_types:
 --------------------
 
 ### Attribute
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/attribute.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/attribute.md
 
 When you're writing partials, you might find yourself passing variables that will ultimately just be used in HTML attributes, like this:
 
@@ -48564,7 +48602,7 @@ modifier_types:
 --------------------
 
 ### Background Position
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/background_position.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/background_position.md
 
 Converts an asset focal point value (eg. `50-30`) into a value suitable for the background-position css property.
 
@@ -48599,7 +48637,7 @@ modifier_types:
 --------------------
 
 ### Backspace
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/backspace.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/backspace.md
 
 Removes a specified number of characters from the end of a string.
 
@@ -48633,7 +48671,7 @@ modifier_types:
 --------------------
 
 ### Bard HTML
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/bard_html.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/bard_html.md
 
 Converts any Bard data to an HTML string (excluding sets). Bard data can be either:
 
@@ -48690,7 +48728,7 @@ modifier_types:
 --------------------
 
 ### Bard Items
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/bard_items.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/bard_items.md
 
 Converts any Bard data to a flat array of ProseMirror nodes and marks. Bard data can be either:
 
@@ -48836,7 +48874,7 @@ modifier_types:
 --------------------
 
 ### Bard Text
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/bard_text.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/bard_text.md
 
 Converts any Bard data to a plain text string (excluding sets). Bard data can be either:
 
@@ -48899,7 +48937,7 @@ modifier_types:
 --------------------
 
 ### Bool String
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/bool_string.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/bool_string.md
 
 Converts a truthy value to the string `true` and a falsy to the string `false`. Check out [https://www.php.net/manual/en/language.types.boolean.php](https://www.php.net/manual/en/language.types.boolean.php) to see what PHP considers truthy and falsy.
 
@@ -48941,7 +48979,7 @@ modifier_types:
 --------------------
 
 ### Camelize
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/camelize.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/camelize.md
 
 Returns a camelCase version of a string. Trims surrounding spaces, capitalizes letters following digits, spaces, dashes and underscores, and removes spaces, dashes and underscores. It's a programmer-type thing, great for converting between code styles.
 
@@ -48975,7 +49013,7 @@ modifier_types:
 --------------------
 
 ### CDATA
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/cdata.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/cdata.md
 
 Wraps a string in [CDATA][cdata] tags, useful for formatting characters properly in XML.
 
@@ -49012,7 +49050,7 @@ modifier_types:
 --------------------
 
 ### Ceil
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/ceil.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/ceil.md
 
 Rounds a number up to the next whole number.
 
@@ -49047,7 +49085,7 @@ modifier_types:
 --------------------
 
 ### Chunk
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/chunk.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/chunk.md
 
 Break arrays or collections into smaller (wait for it) chunks of any given size. This is useful for performing various gymnastics with your HTML markup.
 
@@ -49126,7 +49164,7 @@ modifier_types:
 --------------------
 
 ### Classes
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/classes.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/classes.md
 
 This conditionally compiles a CSS class string using Laravel's `Arr::toCssClasses()` method.
 
@@ -49193,7 +49231,7 @@ modifier_types:
 --------------------
 
 ### Collapse
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/collapse.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/collapse.md
 
 Collapses an array of arrays into a flat array. Duplicate string keys are overwritten; numeric keys are reindexed.
 
@@ -49238,7 +49276,7 @@ modifier_types:
 --------------------
 
 ### Collapse Whitespace
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/collapse_whitespace.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/collapse_whitespace.md
 
 Trims a string and replaces consecutive whitespace characters with
 a single space. This includes tabs and newline characters, as well as
@@ -49274,7 +49312,7 @@ modifier_types:
 --------------------
 
 ### Compact
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/compact.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/compact.md
 
 Converts a comma-delimited string of variable names into an array of their values.
 
@@ -49330,7 +49368,7 @@ modifier_types:
 --------------------
 
 ### Console Log
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/console_log.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/console_log.md
 
 Debug a variable by dumping its contents to your browser's JavaScript's console via `console.log`.
 
@@ -49367,7 +49405,7 @@ modifier_types:
 --------------------
 
 ### Contains
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/contains.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/contains.md
 
 Check if a string or array contains a value. Returns `true` if a match is found, otherwise `false`.
 
@@ -49461,7 +49499,7 @@ modifier_types:
 --------------------
 
 ### Contains All
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/contains_all.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/contains_all.md
 
 Search a string against multiple needles and return `true` if all are found, otherwise `false`. Comparisons are case-sensitive.
 
@@ -49498,7 +49536,7 @@ modifier_types:
 --------------------
 
 ### Contains Any
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/contains_any.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/contains_any.md
 
 Search a string against multiple needles and return `true` if any are found, otherwise `false`. Comparisons are case-sensitive.
 
@@ -49532,7 +49570,7 @@ modifier_types:
 --------------------
 
 ### Count
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/count.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/count.md
 
 Count the number of items in an array.
 
@@ -49569,7 +49607,7 @@ modifier_types:
 --------------------
 
 ### Count Substring
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/count_substring.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/count_substring.md
 
 Returns the number of occurrences of search term in a given string. By default,
 the comparison is case-insensitive, but can be made sensitive by setting the second parameter to `true`.
@@ -49610,7 +49648,7 @@ modifier_types:
 --------------------
 
 ### Dashify
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/dashify.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/dashify.md
 
 Returns a lowercase and trimmed string separated by dashes. Dashes are inserted before uppercase characters (with the exception of the first character of the string), and in place of spaces as well as underscores.
 
@@ -49644,7 +49682,7 @@ modifier_types:
 --------------------
 
 ### Days Ago
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/days_ago.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/days_ago.md
 
 Returns the number of days since a given date variable. Statamic will attempt to parse any string as a date, but try to keep it in the least ambiguous date format possible.
 
@@ -49680,7 +49718,7 @@ modifier_types:
 --------------------
 
 ### Decode
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/decode.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/decode.md
 
 Convert all HTML entities to their applicable characters via PHP's [html_entity_decode()][decode] function. Will convert both double and single quotes. This is the opposite of the [entities][entities] modifier.
 
@@ -49717,7 +49755,7 @@ modifier_types:
 --------------------
 
 ### Deslugify
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/deslugify.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/deslugify.md
 
 Replaces all hyphens and underscores in a string with spaces. The opposite of [dashify](dashify).
 
@@ -49751,7 +49789,7 @@ modifier_types:
 --------------------
 
 ### Divide
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/divide.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/divide.md
 
 Divide your variable by the value passed as the parameter. Pass a number or another variable.
 
@@ -49789,7 +49827,7 @@ modifier_types:
 --------------------
 
 ### DL
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/dl.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/dl.md
 
 Turn a key/value array, otherwise known as a YAML mapping, into an HTML definition list.
 
@@ -49838,7 +49876,7 @@ modifier_types:
 --------------------
 
 ### Doesn't Overlap
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/doesnt_overlap.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/doesnt_overlap.md
 
 The inverse of [`overlaps`](/modifiers/overlaps). Returns `true` when _none_ of the needle values are found in the haystack array, otherwise `false`.
 
@@ -49883,7 +49921,7 @@ modifier_types:
 --------------------
 
 ### Dump
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/dump.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/dump.md
 
 Dump a variable to the browser and see under the hood with data types and array exportation. Definitely just for debugging when in development.
 
@@ -49926,9 +49964,9 @@ modifier_types:
 --------------------
 
 ### Embed Url
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/embed_url.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/embed_url.md
 
-Converts a Youtube or Vimeo link to their embed URLs.
+Converts a Youtube, Vimeo, or Cloudflare Stream link to their embed URLs.
 
 Plays nicely with the [Video fieldtype](/fieldtypes/video) and the [is_embeddable modifier](/modifiers/is_embeddable).
 
@@ -49970,7 +50008,7 @@ modifier_types:
 --------------------
 
 ### Ends With
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/ends_with.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/ends_with.md
 
 Returns `true` if the value ends with a given string. This comparison is case-insensitive.
 
@@ -50012,7 +50050,7 @@ modifier_types:
 --------------------
 
 ### Ensure Left
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/ensure_left.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/ensure_left.md
 
 Ensures that the string begins with a specified string. If it doesn't, it will now.
 
@@ -50054,7 +50092,7 @@ modifier_types:
 --------------------
 
 ### Ensure Right
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/ensure_right.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/ensure_right.md
 
 Ensures that the string ends with a specified string. If it doesn't, it will now.
 
@@ -50096,7 +50134,7 @@ modifier_types:
 --------------------
 
 ### Entities
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/entities.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/entities.md
 
 Encode a string with HTML entities via PHP's [htmlentities()][entities] function. This is the opposite of the [decode][decode] modifier.
 
@@ -50134,7 +50172,7 @@ modifier_types:
 --------------------
 
 ### Excerpt
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/excerpt.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/excerpt.md
 
 Generate an excerpt from your content.
 
@@ -50179,7 +50217,7 @@ modifier_types:
 --------------------
 
 ### Explode
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/explode.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/explode.md
 
 Breaks a string into an array of strings split on a given delimiter.
 
@@ -50240,7 +50278,7 @@ modifier_types:
 --------------------
 
 ### Favicon
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/favicon.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/favicon.md
 
 Given a valid URL will generate a proper favicon meta tag.
 
@@ -50274,7 +50312,7 @@ modifier_types:
 --------------------
 
 ### Filter Empty
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/filter_empty.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/filter_empty.md
 
 Filters falsy values out of an array or collection, including `null`, `false`, `0`, `'0'`, empty strings, and empty arrays. Existing keys are preserved.
 
@@ -50304,7 +50342,7 @@ modifier_types:
 --------------------
 
 ### First
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/first.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/first.md
 
 Returns the first X characters of a string, where X is any positive integer, or the first item in an array.
 
@@ -50348,7 +50386,7 @@ modifier_types:
 --------------------
 
 ### Flatten
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/flatten.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/flatten.md
 
 Flattens a multi-dimensional array (a Grid or Replicator field for example) into a single dimension.
 
@@ -50416,7 +50454,7 @@ modifier_types:
 --------------------
 
 ### Flip
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/flip.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/flip.md
 
 Swaps the keys with their corresponding values. The old switcharoo.
 
@@ -50455,7 +50493,7 @@ modifier_types:
 --------------------
 
 ### Floor
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/floor.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/floor.md
 
 Rounds a number down to the next whole number.
 
@@ -50490,7 +50528,7 @@ modifier_types:
 --------------------
 
 ### Format
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/format.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/format.md
 
 Given a date string, or anything that sort of looks like a date string, `format` will convert it to a [Carbon][carbon] instance and allow you to format it with PHP's [datetime format][datetime] variables.
 
@@ -50604,7 +50642,7 @@ modifier_types:
 --------------------
 
 ### Format Number
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/format_number.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/format_number.md
 
 Format a number with grouped thousands and decimal points. In other words, make it look nice.
 
@@ -50643,7 +50681,7 @@ modifier_types:
 --------------------
 
 ### Format Time
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/format_time.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/format_time.md
 
 Given a time string, `format_time` will format it using PHP's [datetime format][datetime] variables.
 
@@ -50702,7 +50740,7 @@ modifier_types:
 --------------------
 
 ### Format Translated
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/format_translated.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/format_translated.md
 
 Given a date string, or anything that sort of looks like a date string, `format_translated` will convert it to a [Carbon][carbon] instance and allow you to format it using your site's configured locale.
 
@@ -50747,7 +50785,7 @@ modifier_types:
 --------------------
 
 ### Full Urls
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/full_urls.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/full_urls.md
 
 Replaces root-relative URLs inside HTML attributes (e.g. `href` and `src` ) with absolute URLs. This is most often used in RSS feeds and other places where markup may be consumed off the domain.
 
@@ -50782,7 +50820,7 @@ modifier_types:
 --------------------
 
 ### Get
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/get.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/get.md
 
 Gets a value from a relationship based on its ID. This is like a nicer-to-read single tag version of the [Get_Content Tag](/tags/get_content).
 
@@ -50836,7 +50874,7 @@ modifier_types:
 --------------------
 
 ### Gravatar
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/gravatar.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/gravatar.md
 
 Converts an email string to a Gravatar image URL. The size can be specified by a parameter.
 
@@ -50873,7 +50911,7 @@ modifier_types:
 --------------------
 
 ### Group By
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/group_by.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/group_by.md
 
 ## Overview
 
@@ -51025,7 +51063,7 @@ modifier_types:
 --------------------
 
 ### Has Lower Case
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/has_lower_case.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/has_lower_case.md
 
 Returns `true` if the string contains a lowercase character, `false` otherwise.
 
@@ -51060,7 +51098,7 @@ modifier_types:
 --------------------
 
 ### Has Upper Case
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/has_upper_case.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/has_upper_case.md
 
 Returns `true` if the string contains an uppercase character, `false` otherwise.
 
@@ -51096,7 +51134,7 @@ modifier_types:
 --------------------
 
 ### Headline
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/headline.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/headline.md
 
 Format the given string, usually a headline or title, with the modifier's built-in AP or MLA capitalization rules.
 
@@ -51150,7 +51188,7 @@ modifier_types:
 --------------------
 
 ### Hex To RGB
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/hex_to_rgb.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/hex_to_rgb.md
 
 Converts a color from hex to RGB, the perfect match for the [color fieldtype](/fieldtypes/color).
 
@@ -51184,7 +51222,7 @@ modifier_types:
 --------------------
 
 ### Hours Ago
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/hours_ago.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/hours_ago.md
 
 Returns the number of hours since a given date variable. Statamic will attempt to parse any string as a date, but try to keep it in the least ambiguous date format possible.
 
@@ -51218,7 +51256,7 @@ modifier_types:
 --------------------
 
 ### Image
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/image.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/image.md
 
 Generate an HTML image element with the variable's value as `src`.
 
@@ -51252,7 +51290,7 @@ modifier_types:
 --------------------
 
 ### In Array
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/in_array.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/in_array.md
 
 Check if an array contains a specific value. Returns `true` if a match is found.
 
@@ -51301,7 +51339,7 @@ modifier_types:
 --------------------
 
 ### Insert
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/insert.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/insert.md
 
 Inserts a string at the position provided. The beginning of the string is position 0.
 
@@ -51336,7 +51374,7 @@ modifier_types:
 --------------------
 
 ### Is After
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_after.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_after.md
 
 Returns `true` if a date variable is after another date. That second date can be the name of another variable, a literal date string, or any relative date format (see [PHP DateTime](https://www.php.net/manual/en/datetime.formats.php#datetime.formats.relative) for more details).
 
@@ -51388,7 +51426,7 @@ modifier_types:
 --------------------
 
 ### Is Alpha
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_alpha.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_alpha.md
 
 Returns `true` if string contains **only** alphabetic characters. Numbers, punctuation, whitespace, and other special characters will cause a `false`.
 
@@ -51427,7 +51465,7 @@ modifier_types:
 --------------------
 
 ### Is Alphanumeric
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_alphanumeric.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_alphanumeric.md
 
 Returns `true` if string contains **only** alphanumeric characters. Punctuation, whitespace, and other special characters will cause a `false`.
 
@@ -51468,7 +51506,7 @@ modifier_types:
 --------------------
 
 ### Is Array
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_array.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_array.md
 
 Check if a value is an array. Returns a `bool`.
 
@@ -51486,7 +51524,7 @@ modifier_types:
 --------------------
 
 ### Is Before
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_before.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_before.md
 
 Returns `true` if a date variable is before another date. That second date can be the name of another variable, a literal date string, or any relative date format (see [PHP DateTime](https://www.php.net/manual/en/datetime.formats.php#datetime.formats.relative) for more details).
 
@@ -51538,7 +51576,7 @@ modifier_types:
 --------------------
 
 ### Is Between
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_between.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_between.md
 
 Returns `true` if a date variable is between two other dates. Those dates can be the name of other variables or literal date strings.
 
@@ -51582,7 +51620,7 @@ modifier_types:
 --------------------
 
 ### Is Blank
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_blank.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_blank.md
 
 Returns `true` if the string contains only whitespace chars.
 
@@ -51620,7 +51658,7 @@ modifier_types:
 --------------------
 
 ### Is Email
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_email.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_email.md
 
 Returns `true` if a string is a valid email address.
 
@@ -51659,9 +51697,9 @@ modifier_types:
 --------------------
 
 ### Is Embeddable
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_embeddable.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_embeddable.md
 
-Recognizes YouTube and Vimeo URLs as supported embed sources. This does not check whether the video exists or whether its owner permits embedding.
+Recognizes YouTube, Vimeo, and Cloudflare Stream URLs as supported embed sources. This does not check whether the video exists or whether its owner permits embedding.
 
 Plays nicely with the [Video fieldtype](/fieldtypes/video) and the [embed_url modifier](/modifiers/embed_url).
 
@@ -51703,7 +51741,7 @@ modifier_types:
 --------------------
 
 ### Is Empty
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_empty.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_empty.md
 
 Checks an array recursively. It returns `true` for empty arrays and arrays containing only empty strings or other empty arrays. Values such as `null`, `false`, and `0` count as non-empty for this modifier.
 
@@ -51748,7 +51786,7 @@ modifier_types:
 --------------------
 
 ### Is External Url
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_external_url.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_external_url.md
 
 Returns `true` if a string is an external URL.
 
@@ -51791,7 +51829,7 @@ modifier_types:
 --------------------
 
 ### Is Future
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_future.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_future.md
 
 Returns `true` if date is in the future.
 
@@ -51837,7 +51875,7 @@ modifier_types:
 --------------------
 
 ### Is Json
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_json.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_json.md
 
 Returns `true` if string is valid json
 
@@ -51872,7 +51910,7 @@ modifier_types:
 --------------------
 
 ### Is Leap Year
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_leap_year.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_leap_year.md
 
 Returns `true` if date is in a leap year. Try and find a regular use for this one, we dare you.
 
@@ -51917,7 +51955,7 @@ modifier_types:
 --------------------
 
 ### Is Lowercase
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_lowercase.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_lowercase.md
 
 Returns `true` if string is only lowercase characters.
 
@@ -51956,7 +51994,7 @@ modifier_types:
 --------------------
 
 ### Is Numberwang
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_numberwang.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_numberwang.md
 
 Is it or is it not numberwang? Returns `true` if it is indeed numberwang.
 
@@ -51991,7 +52029,7 @@ modifier_types:
 --------------------
 
 ### Is Numeric
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_numeric.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_numeric.md
 
 Returns `true` if variable is a number or numeric string.
 
@@ -52030,7 +52068,7 @@ modifier_types:
 --------------------
 
 ### Is Past
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_past.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_past.md
 
 Returns `true` if date is in the past.
 
@@ -52075,7 +52113,7 @@ modifier_types:
 --------------------
 
 ### Is Today
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_today.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_today.md
 
 Returns `true` if a given date is today, using the date value's timezone.
 
@@ -52117,7 +52155,7 @@ modifier_types:
 --------------------
 
 ### Is Tomorrow
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_tomorrow.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_tomorrow.md
 
 Returns `true` if a given date is tomorrow, using the date value's timezone.
 
@@ -52159,7 +52197,7 @@ modifier_types:
 --------------------
 
 ### Is Uppercase
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_uppercase.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_uppercase.md
 
 Returns `true` if string is only uppercase characters.
 
@@ -52198,7 +52236,7 @@ modifier_types:
 --------------------
 
 ### Is Url
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_url.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_url.md
 
 Returns `true` if a string is a valid URL.
 
@@ -52237,7 +52275,7 @@ modifier_types:
 --------------------
 
 ### Is Weekday
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_weekday.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_weekday.md
 
 Returns `true` if date is a weekday.
 
@@ -52279,7 +52317,7 @@ modifier_types:
 --------------------
 
 ### Is Weekend
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_weekend.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_weekend.md
 
 Returns `true` if date is on the weekend.
 
@@ -52321,7 +52359,7 @@ modifier_types:
 --------------------
 
 ### Is Yesterday
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/is_yesterday.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/is_yesterday.md
 
 Returns `true` if a given date is yesterday, using the date value's timezone.
 
@@ -52363,7 +52401,7 @@ modifier_types:
 --------------------
 
 ### Iso Format
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/iso_format.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/iso_format.md
 
 Given a date string, or anything that even sorta kinda looks like a date string, will convert it to a [Carbon][carbon] instance and allow you to format it with ISO format. This allows you to use inner translations rather than language packages you need to install on every machine where you deploy your site.
 
@@ -52440,7 +52478,7 @@ modifier_types:
 --------------------
 
 ### Join
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/join.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/join.md
 
 Turn an array into a string by gluing together all the data with any specified delimiter. It uses a comma by default.
 
@@ -52482,7 +52520,7 @@ modifier_types:
 --------------------
 
 ### Kebab Case
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/kebab.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/kebab.md
 
 Converts a string into `kebab-case`.
 
@@ -52517,7 +52555,7 @@ modifier_types:
 --------------------
 
 ### Key By
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/key_by.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/key_by.md
 
 Re-keys a numerically indexed array using the value of a given key on each item. Handy when you want to target specific items by name instead of looping, like the `fields` array inside a form tag.
 
@@ -52568,7 +52606,7 @@ modifier_types:
 --------------------
 
 ### Keys
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/keys.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/keys.md
 
 Retrieves just the keys from the given array.
 
@@ -52614,7 +52652,7 @@ modifier_types:
 --------------------
 
 ### Last
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/last.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/last.md
 
 Returns the last X characters of a string, where X is any positive integer, or the last item in an array.
 
@@ -52658,7 +52696,7 @@ modifier_types:
 --------------------
 
 ### Lcfirst
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/lcfirst.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/lcfirst.md
 
 Converts the first character of the supplied string to lower case.
 
@@ -52693,7 +52731,7 @@ modifier_types:
 --------------------
 
 ### Length
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/length.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/length.md
 
 Returns the number of items in an array or characters in a string.
 
@@ -52736,7 +52774,7 @@ modifier_types:
 --------------------
 
 ### Limit
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/limit.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/limit.md
 
 Limits the number of items returned in an array.
 
@@ -52804,7 +52842,7 @@ modifier_types:
 --------------------
 
 ### Link
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/link.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/link.md
 
 Generate an HTML link element with the value as `href`.
 
@@ -52838,7 +52876,7 @@ modifier_types:
 --------------------
 
 ### List
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/list.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/list.md
 
 Turn a simple array into a comma delimited list with no comma after the last item.
 
@@ -52876,7 +52914,7 @@ modifier_types:
 --------------------
 
 ### Lower
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/lower.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/lower.md
 
 Converts all characters in the string to lowercase.
 
@@ -52911,7 +52949,7 @@ modifier_types:
 --------------------
 
 ### Macro
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/macro.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/macro.md
 
 Macro is a very special modifier. It performs no modifications of its own, but rather lets you create reusable groups of modifiers and give them a name. Those groups are each called a "macro" and are stored in your `resources/macros.yaml` file. Keep in mind that the order of modifiers within a macro matter, the same way as regular modifiers.
 
@@ -52979,7 +53017,7 @@ modifier_types:
 --------------------
 
 ### Mailto
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/mailto.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/mailto.md
 
 Generate a `mailto` link element with the value as the email address. If it's _not_ an email address, it's going to be one busted link.
 
@@ -53013,7 +53051,7 @@ modifier_types:
 --------------------
 
 ### Mark
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/mark.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/mark.md
 
 Wrap any matched words in `<mark>` tags to highlight them on the page.
 
@@ -53060,7 +53098,7 @@ modifier_types:
 --------------------
 
 ### Markdown
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/markdown.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/markdown.md
 
 Transform a string with [Markdown][markdown].
 
@@ -53099,7 +53137,7 @@ modifier_types:
 --------------------
 
 ### Md5
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/md5.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/md5.md
 
 Creates an md5 hash of a variable.
 
@@ -53133,7 +53171,7 @@ modifier_types:
 --------------------
 
 ### Merge
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/merge.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/merge.md
 
 Merge an array variable with another array variable.
 
@@ -53183,7 +53221,7 @@ In this template example we'll merge the two arrays and then pull out a single r
 --------------------
 
 ### Minutes Ago
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/minutes_ago.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/minutes_ago.md
 
 Returns the number of minutes since a given date variable. Statamic will attempt to parse any string as a date, but try to keep it in the least ambiguous date format possible.
 
@@ -53218,7 +53256,7 @@ modifier_types:
 --------------------
 
 ### Mod
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/mod.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/mod.md
 
 Get the modulus value (remainder after division) of a value split by another numeric value. Pass an integer or the name of a second variable as the parameter. Also supports `%` as shorthand.
 
@@ -53259,7 +53297,7 @@ modifier_types:
 --------------------
 
 ### Modify Date
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/modify_date.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/modify_date.md
 
 Alters a timestamp by incrementing or decrementing in a format accepted by PHP's native [`strtotime()`](http://php.net/manual/en/function.strtotime.php) method.
 
@@ -53310,7 +53348,7 @@ modifier_types:
 --------------------
 
 ### Months Ago
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/months_ago.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/months_ago.md
 
 Returns the number of months since a given date variable. Statamic will attempt to parse any string as a date, but try to keep it in the least ambiguous date format possible.
 
@@ -53345,7 +53383,7 @@ modifier_types:
 --------------------
 
 ### Multiply
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/multiply.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/multiply.md
 
 Multiply a value or another variable to your variable. Pass an integer or the name of a second variable as the parameter. Also supports `*` as shorthand.
 
@@ -53386,7 +53424,7 @@ modifier_types:
 --------------------
 
 ### Nl2br
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/nl2br.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/nl2br.md
 
 Replaces line breaks with `<br>` tags.
 
@@ -53424,7 +53462,7 @@ modifier_types:
 --------------------
 
 ### Obfuscate
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/obfuscate.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/obfuscate.md
 
 Replaces characters in a string with a mixture of HTML entities. The text appears unchanged in the browser. This is often used for email addresses, but bots that decode HTML can still read them.
 
@@ -53460,7 +53498,7 @@ modifier_types:
 --------------------
 
 ### Obfuscate Email
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/obfuscate_email.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/obfuscate_email.md
 
 Encodes an email address with HTML entities while keeping it readable in the browser. Bots that decode HTML can still read the address.
 
@@ -53495,7 +53533,7 @@ modifier_types:
 --------------------
 
 ### Offset
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/offset.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/offset.md
 
 Offsets the items returned in an array.
 
@@ -53562,7 +53600,7 @@ modifier_types:
 --------------------
 
 ### OL
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/ol.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/ol.md
 
 Turn an array into an HTML ordered list element.
 
@@ -53604,7 +53642,7 @@ modifier_types:
 --------------------
 
 ### Option List
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/option_list.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/option_list.md
 
 Turn an array into a pipe-delimited string. Useful when passing an array of things into a parameter. Generally unnecessary though as most parameters can now accept a wide range of datatypes.
 
@@ -53645,7 +53683,7 @@ modifier_types:
 --------------------
 
 ### Output
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/output.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/output.md
 
 Given the URL to an Asset file, returns the string output of an Asset file's contents. This is primarily useful for rendering inline SVGs, but could also be used to display a lot of gibberish to your users if you're into that kind of thing.
 
@@ -53690,7 +53728,7 @@ modifier_types:
 --------------------
 
 ### Overlaps
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/overlaps.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/overlaps.md
 
 Check if any values in an array are found in another array. Returns `true` if at least one value matches, otherwise `false`.
 
@@ -53740,7 +53778,7 @@ modifier_types:
 --------------------
 
 ### Parse Url
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/parse_url.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/parse_url.md
 
 Get information about a URL.
 
@@ -53786,7 +53824,7 @@ modifier_types:
 --------------------
 
 ### Partial
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/partial.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/partial.md
 
 Inject a variable's data into a partial and render it without any page scopes whatsoever. This is really just syntactical sugar, but it _is_ delicious.
 
@@ -53824,7 +53862,7 @@ modifier_types:
 --------------------
 
 ### Pathinfo
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/pathinfo.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/pathinfo.md
 
 Get information about a file path.
 
@@ -53870,7 +53908,7 @@ modifier_types:
 --------------------
 
 ### Piped
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/piped.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/piped.md
 
 Alias of [option_list](/modifiers/option_list)
 
@@ -53885,7 +53923,7 @@ modifier_types:
 --------------------
 
 ### Pluck
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/pluck.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/pluck.md
 
 Retrieves the values of a given `key` from each item.
 
@@ -53937,7 +53975,7 @@ modifier_types:
 --------------------
 
 ### Plural
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/plural.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/plural.md
 
 Get the plural form of an English word. Accepts a numerical parameter, either as a literal value or a variable, to control plurality. It's important to note that you should use the singular form of the word to ensure the best results.
 
@@ -53987,7 +54025,7 @@ modifier_types:
 --------------------
 
 ### Random
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/random.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/random.md
 
 ## Overview
 Picks a _single_ random item from an array or collection.
@@ -54034,7 +54072,7 @@ modifier_types:
 --------------------
 
 ### Raw
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/raw.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/raw.md
 
 ## Overview
 Returns the [unaugmented](/augmentation) version of the variable.
@@ -54088,7 +54126,7 @@ modifier_types:
 --------------------
 
 ### Raw URL Encode
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/rawurlencode.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/rawurlencode.md
 
 URL-encode a variable according to [RFC 3986][rfc-3986].
 ```yaml
@@ -54126,7 +54164,7 @@ modifier_types:
 --------------------
 
 ### Raw URL Encode Except Slashes
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/rawurlencode_except_slashes.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/rawurlencode_except_slashes.md
 
 URL-encode a variable according to [RFC 3986][rfc-3986]. Just like [rawurlencode](/modifiers/rawurlencode), but doesn't encode forward slashes (`/`).
 ```yaml
@@ -54162,7 +54200,7 @@ modifier_types:
 --------------------
 
 ### Ray
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/ray.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/ray.md
 
 Send a variable to Spatie's [Ray](https://myray.app) app.
 
@@ -54197,7 +54235,7 @@ modifier_types:
 --------------------
 
 ### Read Time
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/read_time.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/read_time.md
 
 Provide an estimate of the read time in minutes based on a given number of words per minute. Defaults to 200/wpm.
 
@@ -54238,7 +54276,7 @@ modifier_types:
 --------------------
 
 ### Regex Mark
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/regex_mark.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/regex_mark.md
 
 Wrap any regex matches in `<mark>` tags to highlight them on the page.
 
@@ -54283,7 +54321,7 @@ modifier_types:
 --------------------
 
 ### Regex Replace
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/regex_replace.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/regex_replace.md
 
 Run a find and replace regex on a string of content.
 
@@ -54320,7 +54358,7 @@ modifier_types:
 --------------------
 
 ### Relative
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/relative.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/relative.md
 
 Returns a date difference in a nice, human readable, string format. This modifier will add a phrase after the difference value relative to the current date and the passed in date.
 
@@ -54375,7 +54413,7 @@ modifier_types:
 --------------------
 
 ### Remove Left
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/remove_left.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/remove_left.md
 
 Ensures that the string never begins with a specified string.
 
@@ -54410,7 +54448,7 @@ modifier_types:
 --------------------
 
 ### Remove Right
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/remove_right.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/remove_right.md
 
 Ensures that the string never ends with a specified string.
 
@@ -54452,7 +54490,7 @@ modifier_types:
 --------------------
 
 ### Repeat
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/repeat.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/repeat.md
 
 Repeats a value any given number of times. For fun.
 
@@ -54486,7 +54524,7 @@ modifier_types:
 --------------------
 
 ### Replace
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/replace.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/replace.md
 
 Find and replace all occurrences of a string with a totally different string.
 
@@ -54521,7 +54559,7 @@ modifier_types:
 --------------------
 
 ### Resolve
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/resolve.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/resolve.md
 
 Resolves a query builder and returns either a specific item by key/index or the full array of results. Also works on arrays and collections.
 
@@ -54582,7 +54620,7 @@ modifier_types:
 --------------------
 
 ### Reverse
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/reverse.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/reverse.md
 
 Reverse the order of the characters in a string or the items in an array.
 
@@ -54626,7 +54664,7 @@ modifier_types:
 --------------------
 
 ### Round
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/round.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/round.md
 
 Rounds a number to a specified precision (number of digits after the decimal point). Defaults to `0`, or whole numbers.
 
@@ -54664,7 +54702,7 @@ modifier_types:
 --------------------
 
 ### Safe Truncate
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/safe_truncate.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/safe_truncate.md
 
 Truncates the string to a given length (parameter 1), while ensuring that
 it does not split words. You can append a string with parameter 2, and if truncating occurs the string is further truncated so that it may be appended without exceeding the desired length.
@@ -54702,7 +54740,7 @@ modifier_types:
 --------------------
 
 ### Sanitize
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/sanitize.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/sanitize.md
 
 Convert special characters to HTML entities with [htmlspecialchars][htmlspecialchars].
 
@@ -54755,7 +54793,7 @@ modifier_types:
 --------------------
 
 ### Scope
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/scope.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/scope.md
 
 Adds a named scope prefix to each item in an array or collection, letting you access variables with that prefix to avoid collisions with the parent context.
 
@@ -54806,7 +54844,7 @@ modifier_types:
 --------------------
 
 ### Seconds Ago
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/seconds_ago.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/seconds_ago.md
 
 Returns the number of seconds since a given date variable. Statamic will attempt to parse any string as a date, but try to keep it in the least ambiguous date format possible.
 
@@ -54841,7 +54879,7 @@ modifier_types:
 --------------------
 
 ### Segment
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/segment.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/segment.md
 
 Returns a segment by number from any valid URL or URI.
 
@@ -54876,7 +54914,7 @@ modifier_types:
 --------------------
 
 ### Select
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/select.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/select.md
 
 Retrieves the selected values of a given array.
 
@@ -54931,7 +54969,7 @@ modifier_types:
 --------------------
 
 ### Sentence List
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/sentence_list.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/sentence_list.md
 
 Turn a simple array into a friendly comma delimited list with the word "and" before the last item.
 
@@ -55005,7 +55043,7 @@ modifier_types:
 --------------------
 
 ### Shuffle
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/shuffle.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/shuffle.md
 
 Shuffles a string or an array to make it all random.
 
@@ -55051,7 +55089,7 @@ modifier_types:
 --------------------
 
 ### Singular
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/singular.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/singular.md
 
 Get the singular form of an English word.
 
@@ -55085,7 +55123,7 @@ modifier_types:
 --------------------
 
 ### Slugify
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/slugify.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/slugify.md
 
 Converts the string into an URL slug. This includes replacing non-ASCII characters with their closest ASCII equivalents, removing remaining non-ASCII
 and non-alphanumeric characters, and replacing whitespace with dashes. And then everything is lowercased.
@@ -55122,7 +55160,7 @@ modifier_types:
 --------------------
 
 ### Smartypants
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/smartypants.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/smartypants.md
 
 Translate plain ASCII punctuation characters into “smart” typographic punctuation HTML entities. It performs the following transformations:
 
@@ -55171,7 +55209,7 @@ modifier_types:
 --------------------
 
 ### Snake Case
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/snake.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/snake.md
 
 Converts a string into `snake_case`.
 
@@ -55206,7 +55244,7 @@ modifier_types:
 --------------------
 
 ### Sort
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/sort.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/sort.md
 
 Sort an array by key as parameter 1 and direction (`asc`/`desc`) as parameter 2. If sorting a primitive list no parameters are necessary.
 
@@ -55261,7 +55299,7 @@ modifier_types:
 --------------------
 
 ### Spaceless
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/spaceless.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/spaceless.md
 
 Removes excess whitespace and line breaks from a string. A definite OCD pleaser.
 
@@ -55300,7 +55338,7 @@ modifier_types:
 --------------------
 
 ### Split
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/split.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/split.md
 
 Break an array or collection into a given number of (roughly equal) groups.
 
@@ -55383,7 +55421,7 @@ modifier_types:
 --------------------
 
 ### Starts With
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/starts_with.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/starts_with.md
 
 Returns `true` if the value starts with a given string. This comparison is case-insensitive.
 
@@ -55425,7 +55463,7 @@ modifier_types:
 --------------------
 
 ### String Pad Left
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/str_pad_left.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/str_pad_left.md
 
 This modifier returns the string padded on the left to the specified padding length (parameter 1) with a character of choice (parameter 2).
 
@@ -55455,7 +55493,7 @@ modifier_types:
 --------------------
 
 ### Strip Tags
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/strip_tags.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/strip_tags.md
 
 Strip HTML tags from a string, allowing you optionally to pass in a list of tags or a variable name containing the specific tags you want stripped.
 
@@ -55508,7 +55546,7 @@ modifier_types:
 --------------------
 
 ### Studly Case
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/studly.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/studly.md
 
 Converts a string into `StudlyCase`.
 
@@ -55543,7 +55581,7 @@ modifier_types:
 --------------------
 
 ### Substr
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/substr.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/substr.md
 
 Returns the string beginning at a given position with an optional length.
 If no length is specified, it returns the rest of the string.
@@ -55586,7 +55624,7 @@ modifier_types:
 --------------------
 
 ### Subtract
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/subtract.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/subtract.md
 
 Subtract a value or another variable from your variable. Pass an integer or the name of a second variable as the parameter. Also supports `-` as shorthand.
 
@@ -55626,7 +55664,7 @@ modifier_types:
 --------------------
 
 ### Sum
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/sum.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/sum.md
 
 Returns the sum of all items in an array, optionally specified by a specific key.
 
@@ -55675,7 +55713,7 @@ modifier_types:
 --------------------
 
 ### Surround
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/surround.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/surround.md
 
 Surrounds a string with another string.
 
@@ -55709,7 +55747,7 @@ modifier_types:
 --------------------
 
 ### Swap Case
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/swap_case.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/swap_case.md
 
 Returns a case swapped version of the string.
 
@@ -55744,7 +55782,7 @@ modifier_types:
 --------------------
 
 ### Table
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/table.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/table.md
 
 Takes an array generated by the [Table Fieldtype](/fieldtypes/table), and converts into a basic HTML `<table>`.
 
@@ -55803,7 +55841,7 @@ modifier_types:
 --------------------
 
 ### Tidy
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/tidy.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/tidy.md
 
 Returns a string with smart quotes, ellipsis characters, and dashes from Windows-1252 (commonly used in Word documents) replaced by their ASCII equivalents.
 
@@ -55839,7 +55877,7 @@ modifier_types:
 --------------------
 
 ### Timezone
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/timezone.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/timezone.md
 
 Applies a timezone to a date value. Aliased as `tz`.
 
@@ -55900,7 +55938,7 @@ modifier_types:
 --------------------
 
 ### Title
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/title.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/title.md
 
 Returns a trimmed string with the first letter of each word capitalized, ignoring articles, coordinating conjunctions, and short prepositions: `a`, `an`, `the`, `at`, `by`, `for`, `in`, `of`, `on`, `to`, `up`, `and`, `as`, `but`, `or`, and `nor`.
 
@@ -55934,7 +55972,7 @@ modifier_types:
 --------------------
 
 ### To Json
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/to_json.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/to_json.md
 
 Converts any variable into JSON.
 
@@ -55999,7 +56037,7 @@ modifier_types:
 --------------------
 
 ### To qs
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/to_qs.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/to_qs.md
 
 Converts an array or array-like value into a query string using Laravel's [Arr::query()](https://laravel.com/docs/13.x/helpers#method-array-query) helper method.
 
@@ -56032,7 +56070,7 @@ modifier_types:
 --------------------
 
 ### To Spaces
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/to_spaces.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/to_spaces.md
 
 Converts all tabs in a string to a given number of spaces, `4` by default. This is a boring modifier to output examples of. Here's just a few examples on how the syntax looks.
 
@@ -56060,7 +56098,7 @@ modifier_types:
 --------------------
 
 ### To Tabs
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/to_tabs.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/to_tabs.md
 
 Converts all instances of a specified number of spaces in a string to tabs. `4` by default. This is a boring modifier to output examples of. Here's just a few examples on how the syntax looks.
 
@@ -56088,7 +56126,7 @@ modifier_types:
 --------------------
 
 ### Trans
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/trans.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/trans.md
 
 Retrieve a string from a language file in the current locale. It is the equivalent of the [trans and trans_choice methods](https://laravel.com/docs/localization) provided by Laravel.
 
@@ -56186,7 +56224,7 @@ Bonjour
 --------------------
 
 ### Trim
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/trim.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/trim.md
 
 Returns a string with whitespace removed from the start and end of the string. Supports the removal of unicode whitespace.
 
@@ -56220,7 +56258,7 @@ modifier_types:
 --------------------
 
 ### Truncate
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/truncate.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/truncate.md
 
 Truncates the string to a given length (parameter 1). You can append a string with parameter 2, and if truncating occurs the string is further truncated so that it may be appended without exceeding the desired length.
 
@@ -56261,7 +56299,7 @@ modifier_types:
 --------------------
 
 ### Ucfirst
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/ucfirst.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/ucfirst.md
 
 Converts the first character of a string to upper case.
 
@@ -56295,7 +56333,7 @@ modifier_types:
 --------------------
 
 ### UL
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/ul.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/ul.md
 
 Turn an array into an HTML unordered list element.
 
@@ -56337,7 +56375,7 @@ modifier_types:
 --------------------
 
 ### Underscored
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/underscored.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/underscored.md
 
 Returns a lowercase and trimmed string separated by underscores.
 Underscores are inserted before uppercase characters (with the exception
@@ -56375,7 +56413,7 @@ modifier_types:
 --------------------
 
 ### Unique
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/unique.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/unique.md
 
 Returns all of the unique items in the array:
 
@@ -56420,7 +56458,7 @@ modifier_types:
 --------------------
 
 ### Upper
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/upper.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/upper.md
 
 Transform a string into uppercase. Multi-byte friendly.
 
@@ -56454,7 +56492,7 @@ modifier_types:
 --------------------
 
 ### Url
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/url.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/url.md
 
 Get the URL of an Asset, Page, Entry, or Taxonomy term from an ID.
 
@@ -56498,7 +56536,7 @@ modifier_types:
 --------------------
 
 ### URL Decode
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/urldecode.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/urldecode.md
 
 URL-decodes a string. The inverse of [urlencode](/modifiers/urlencode)
 
@@ -56533,7 +56571,7 @@ modifier_types:
 --------------------
 
 ### URL Encode
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/urlencode.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/urlencode.md
 
 URL-encodes a string. The inverse of [urldecode](/modifiers/urldecode).
 
@@ -56570,7 +56608,7 @@ modifier_types:
 --------------------
 
 ### URL Encode Except Slashes
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/urlencode_except_slashes.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/urlencode_except_slashes.md
 
 URL-encodes a string. Just like [urlencode](/modifiers/urlencode), but doesn't encode forward slashes (`/`).
 
@@ -56605,7 +56643,7 @@ modifier_types:
 --------------------
 
 ### Values
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/values.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/values.md
 
 Retrieves just the values from the given array.
 
@@ -56649,7 +56687,7 @@ modifier_types:
 --------------------
 
 ### Weeks Ago
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/weeks_ago.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/weeks_ago.md
 
 Returns the number of weeks since a given date variable. Statamic will attempt to parse any string as a date, but try to keep it in the least ambiguous date format possible.
 
@@ -56684,7 +56722,7 @@ modifier_types:
 --------------------
 
 ### Where In
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/where-in.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/where-in.md
 
 Filter an array (such as a Replicator field's data) to items where a `key` matches specific `values`.
 
@@ -56741,7 +56779,7 @@ modifier_types:
 --------------------
 
 ### Where
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/where.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/where.md
 
 Filter an array (such as a Replicator field's data) to items where a `key` has a specific `value`.
 
@@ -56807,7 +56845,7 @@ modifier_types:
 --------------------
 
 ### Widont
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/widont.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/widont.md
 
 Attempts to prevent widows (a line with a single word) in a string by adding non-breaking spaces between the last two words of each paragraph.
 
@@ -56847,7 +56885,7 @@ modifier_types:
 --------------------
 
 ### Word Count
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/word_count.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/word_count.md
 
 Returns the number of words in a given string.
 
@@ -56882,7 +56920,7 @@ modifier_types:
 --------------------
 
 ### Wrap
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/wrap.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/wrap.md
 
 Wraps a string with a given HTML tag. Empty or falsy values are returned unchanged, so they do not produce an empty wrapper.
 
@@ -56968,7 +57006,7 @@ modifier_types:
 --------------------
 
 ### Years Ago
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/modifiers/years_ago.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/modifiers/years_ago.md
 
 Returns the number of years since a given date variable. Statamic will attempt to parse any string as a date, but try to keep it in the least ambiguous date format possible.
 
@@ -57003,7 +57041,7 @@ modifier_types:
 --------------------
 
 ### Array
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/array.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/array.md
 
 Manage data in a `key:value` array format.
 
@@ -57212,7 +57250,7 @@ options:
 --------------------
 
 ### Assets
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/assets.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/assets.md
 
 Any time you want to list, display, or work with assets (external files with enhanced abilities), this is the way to do it. Upload, browse, reorder, delete, and even manage field data on individual assets.
 
@@ -57473,7 +57511,7 @@ options:
 --------------------
 
 ### Bard
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/bard.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/bard.md
 
 Bard is more than just a content editor, and more flexible than a block-based editor. **It is designed to provide a delightful and powerful writing experience** with unparalleled flexibility on your front-end.
 
@@ -57988,7 +58026,7 @@ options:
 --------------------
 
 ### Button Group
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/button_group.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/button_group.md
 
 Buttons. Create some options and let your users select one and only one. May they choose wisely.
 
@@ -58085,7 +58123,7 @@ options:
 --------------------
 
 ### Checkboxes
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/checkboxes.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/checkboxes.md
 
 Checkboxes! Make some checkboxes, click the checkboxes, and store a record of which boxes of which ones you clicked. They're boxes you check.
 
@@ -58264,7 +58302,7 @@ options:
 --------------------
 
 ### Code
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/code.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/code.md
 
 What are you doing writing code in a browser?! Just kidding, it's fine. We made it easy, flexible, and pretty too. We use this fieldtype a lot.
 
@@ -58439,7 +58477,7 @@ options:
 --------------------
 
 ### Collections
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/collections.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/collections.md
 
 Choose from one or more collections.
 
@@ -58522,7 +58560,7 @@ options:
 --------------------
 
 ### Color
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/color.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/color.md
 
 A simple color picker with support for pre-defined swatches as well as entering a color by hex code.
 
@@ -58584,7 +58622,7 @@ options:
 --------------------
 
 ### Date
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/date.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/date.md
 
 Work with dates, times, and ranges with a variety of user interface options that make you really enjoy basically just picking numbers from a table.
 
@@ -58795,7 +58833,7 @@ options:
 --------------------
 
 ### Dictionary
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/dictionary.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/dictionary.md
 
 Give your users a list of options to choose from. Similar to the Select field, but allows you to read options from YAML or JSON files, or even hit external APIs.
 
@@ -59081,7 +59119,7 @@ options:
 --------------------
 
 ### Entries
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/entries.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/entries.md
 
 Create relationships with other entries in one or more collections. It's not very much like online dating because you can create and link the entries on the fly without leaving the page.
 
@@ -59191,7 +59229,7 @@ options:
 --------------------
 
 ### Float
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/float.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/float.md
 
 The float fieldtype is a text-style input that only accepts floats (numbers) and has increment and decrement controls.
 
@@ -59243,7 +59281,7 @@ options:
 --------------------
 
 ### Form
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/form.md
 
 Pick a form, any form.
 
@@ -59293,7 +59331,7 @@ options:
 --------------------
 
 ### Grid
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/grid.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/grid.md
 
 Manage columns of dynamic rows of data that can contain any other fieldtypes.
 
@@ -59392,7 +59430,7 @@ options:
 --------------------
 
 ### Group
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/group.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/group.md
 
 Group fields visually and scoped their own key in the data.
 
@@ -59441,7 +59479,7 @@ will output
 --------------------
 
 ### Hidden
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/hidden.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/hidden.md
 
 Set default data when creating new entries.
 
@@ -59463,7 +59501,7 @@ That's pretty much it. Nothing else to see here.
 --------------------
 
 ### HTML
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/html.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/html.md
 
 If you've ever wanted to add a little HTML to your blueprint, this is the way to do it. Longer instructions, images, embedded help videos — if you can write it, you can...write it.
 
@@ -59492,7 +59530,7 @@ options:
 --------------------
 
 ### Icon
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/icon.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/icon.md
 
 Give your users a list of icons to choose from. This field supports search and keyboard commands, and can be configured to use your own icons or ones managed by Statamic.
 
@@ -59583,7 +59621,7 @@ options:
 --------------------
 
 ### Info
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/info.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/info.md
 
 The Info fieldtype displays a styled message in your Control Panel publish forms. Use it to give authors a helpful tip, highlight important instructions, or warn them about something before they hit save.
 
@@ -59666,7 +59704,7 @@ options:
 --------------------
 
 ### Integer
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/integer.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/integer.md
 
 The integer fieldtype is a text-style input that only accepts integers (numbers) and has increment and decrement controls.
 
@@ -59718,7 +59756,7 @@ options:
 --------------------
 
 ### Link
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/link.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/link.md
 
 A select box gives you the option to choose what type of link you'd like to create. When set to URL it gives you a text box to enter the hyperlink. When set to Entry it opens a stack with all your entries to choose from. And when set to First Child will redirect a visitor to the first child page in a structure.
 
@@ -59890,7 +59928,7 @@ options:
 --------------------
 
 ### List
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/list.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/list.md
 
 Create YAML lists with a robust user interface. It has full keyboard controls so you can use `up` to go up, `down` to go down, drag and drop to rearrange the order, and click an item to select it and begin editing.
 
@@ -59948,7 +59986,7 @@ Loop through the array items to display each item's `value`.
 --------------------
 
 ### Markdown
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/markdown.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/markdown.md
 
 Write Markdown with the help of formatting buttons, assets integration, fullscreen mode, a Markdown cheatsheet, and HTML preview mode. What more do you need?
 
@@ -60060,7 +60098,7 @@ options:
 --------------------
 
 ### Navs
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/navs.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/navs.md
 
 Choose from one or more navigations.
 
@@ -60141,7 +60179,7 @@ options:
 --------------------
 
 ### Radio
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/radio.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/radio.md
 
 Radio buttons. The "you can only have one" variation of checkboxes. Create some options and let your users select one and only one. May they choose wisely.
 
@@ -60269,7 +60307,7 @@ options:
 --------------------
 
 ### Range
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/range.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/range.md
 
 Range fields let the user choose a numeric value which must be _no less_ than a given value, and _no more_ than another. Supports both integer and decimal values.
 
@@ -60379,7 +60417,7 @@ options:
 --------------------
 
 ### Replicator
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/replicator.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/replicator.md
 
 Build your content by creating sets of fields you can mix and match on the fly.
 
@@ -60665,7 +60703,7 @@ options:
 --------------------
 
 ### Revealer
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/revealer.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/revealer.md
 
 The revealer is a simple button that reveals conditional fields without saving boolean button data.
 
@@ -60725,7 +60763,7 @@ options:
 --------------------
 
 ### Select
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/select.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/select.md
 
 Give your users a list of options to choose from. This select field is highly configurable with support for search, multiple choice, and creating new options on the fly.
 
@@ -60844,7 +60882,7 @@ options:
 --------------------
 
 ### Sites
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/sites.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/sites.md
 
 Allows you to select one or more sites when running a [multi site](/multi-site).
 
@@ -60919,7 +60957,7 @@ options:
 --------------------
 
 ### Slug
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/slug.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/slug.md
 
 A text input that automatically "slugifies" the value of another field.
 
@@ -60943,7 +60981,7 @@ options:
 --------------------
 
 ### Spacer
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/spacer.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/spacer.md
 
 An invisible field to help you structure your blueprints and forms.
 
@@ -60952,7 +60990,7 @@ The Spacer fieldtype is invisible, perfect for giving your forms some much-neede
 --------------------
 
 ### Structures
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/structures.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/structures.md
 
 For when you need to create a relationship to one or more [Structures](/structures). This could be useful to pick which version of a sidebar or footer to include on a page, or other similar things.
 
@@ -61030,7 +61068,7 @@ options:
 --------------------
 
 ### Table
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/table.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/table.md
 
 Creating tables can be a nuisance in a WYSIWYG editor. This fieldtype gives you a way to create flexible tabular data.
 
@@ -61201,7 +61239,7 @@ options:
 --------------------
 
 ### Tags
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/taggable.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/taggable.md
 
 Enter a list of items with a tag-style interface.
 
@@ -61264,7 +61302,7 @@ This fieldtype uses the word "taggable" in a generic way. If you're looking for 
 --------------------
 
 ### Taxonomies
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/taxonomies.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/taxonomies.md
 
 Choose from one or more taxonomies.
 
@@ -61345,7 +61383,7 @@ options:
 --------------------
 
 ### Template
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/template.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/template.md
 
 Used for choosing an entry’s template. Be sure to name the field `template` if you want it to be able to change the template (it's a special variable name).
 
@@ -61368,7 +61406,7 @@ options:
 --------------------
 
 ### Terms
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/terms.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/terms.md
 
 Allows you attach Taxonomy Terms to your content. They could be Tags, Categories, Colors, Flavors, you name it. We highly recommend [learning more about Taxonomies](/taxonomies) before going any further.
 
@@ -61502,7 +61540,7 @@ options:
 --------------------
 
 ### Text
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/text.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/text.md
 
 A simple text input field for managing short, unformatted text.
 
@@ -61541,7 +61579,7 @@ options:
 --------------------
 
 ### Textarea
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/textarea.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/textarea.md
 
 A simple textarea field for managing longer, unformatted text.
 
@@ -61570,7 +61608,7 @@ options:
 --------------------
 
 ### Time
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/time.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/time.md
 
 The original time field from the set of Kiefer Sutherland's hit drama "24". It's a simple timepicker that operates in 24-hour mode and supports keyboard `up` and `down` controls.
 
@@ -61597,7 +61635,7 @@ options:
 --------------------
 
 ### Toggle
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/toggle.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/toggle.md
 
 A nice little toggle switch generally used to manage settings-type variables. It stores `true` or `false` and is delightfully uncomplicated, just like our relationship with yogurt.
 
@@ -61657,7 +61695,7 @@ The following example uses the `fetch` helper function, which resolves `Value` i
 --------------------
 
 ### User Groups
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/user-groups.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/user-groups.md
 
 Create a relationship with a User Group
 
@@ -61721,7 +61759,7 @@ pro: true
 --------------------
 
 ### User Roles
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/user-roles.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/user-roles.md
 
 Create a relationship with a User Role
 
@@ -61786,7 +61824,7 @@ pro: true
 --------------------
 
 ### Users
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/users.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/users.md
 
 Attach users to your content to show authorship, list team members, assign the winners of a foot race, or even winners of an elbow race.
 
@@ -61886,11 +61924,11 @@ options:
 --------------------
 
 ### Video
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/video.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/video.md
 
-Extract embed URLs from Youtube, Vimeo, and HTML5 compatible video links and preview them right inline. Feel free watch the whole thing instead of working – we won't tell.
+Extract embed URLs from Youtube, Vimeo, Cloudflare Stream, and HTML5 compatible video links and preview them right inline. Feel free watch the whole thing instead of working – we won't tell.
 
-Extract embed URLs from Youtube, Vimeo, and HTML5 compatible video links and preview them right inline.
+Extract embed URLs from Youtube, Vimeo, Cloudflare Stream, and HTML5 compatible video links and preview them right inline.
 
 ## Usage
 
@@ -61900,7 +61938,10 @@ You may enter:
 
 - YouTube URLs: `https://www.youtube.com/watch?v=s9F5fhJQo34`
 - Vimeo URLs: `https://vimeo.com/22439234`
+- Cloudflare Stream URLs: `https://customer-abc123.cloudflarestream.com/b209b1484821fff0ed2e5535fbb4ff7b/watch`
 - mp4, ogv, mov, or webm URLs: `http://example.com/video.mp4`
+
+For Cloudflare Stream, use the URL from the **Video Link** button in the Cloudflare dashboard. The `/iframe` URL from the embed code works too, and keeps any player options (like `autoplay` or `muted`) from its query string. Manifest URLs (`.m3u8` and `.mpd`) can't be embedded.
 
 ## Data Structure
 
@@ -61920,7 +61961,7 @@ You can use the [is_embeddable](/modifiers/is_embeddable) and
 ::tab antlers
 ```antlers
 {{ if video | is_embeddable }}
-    <!-- Youtube and Vimeo -->
+    <!-- Youtube, Vimeo, and Cloudflare Stream -->
     <iframe src="{{ video | embed_url }}" ...></iframe>
 {{ else }}
     <!-- Other HTML5 video types -->
@@ -61930,7 +61971,7 @@ You can use the [is_embeddable](/modifiers/is_embeddable) and
 ::tab blade
 ```blade
 @if (Statamic::modify($video)->isEmbeddable()->fetch())
-	<!-- Youtube and Vimeo -->
+	<!-- Youtube, Vimeo, and Cloudflare Stream -->
 	<iframe src="{{ Statamic::modify($video)->embedUrl() }}" ...></iframe>
 @else
 	<!-- Other HTML5 video types -->
@@ -61964,10 +62005,10 @@ The video field is augmented into an object that still outputs the URL you enter
 | Variable | Description |
 |----------|-------------|
 | `url` | The URL that was entered. |
-| `provider` | `youtube`, `vimeo`, `file` (a direct link to a video file), or `unsupported`. |
-| `id` | The YouTube or Vimeo video ID. `null` for other providers. |
+| `provider` | `youtube`, `vimeo`, `cloudflare`, `file` (a direct link to a video file), or `unsupported`. |
+| `id` | The YouTube, Vimeo, or Cloudflare Stream video ID. `null` for other providers. |
 | `privacy_hash` | The privacy hash of an unlisted Vimeo video (e.g. the `abc123` in `vimeo.com/22439234/abc123`). `null` otherwise. |
-| `embed_url` | The embeddable player URL for YouTube and Vimeo, the URL itself for video files, or `null` for anything unsupported. |
+| `embed_url` | The embeddable player URL for YouTube, Vimeo, and Cloudflare Stream, the URL itself for video files, or `null` for anything unsupported. |
 
 This lets you check the provider directly rather than reaching for modifiers:
 
@@ -61986,7 +62027,7 @@ These values are only available in templates. The REST API and GraphQL still ret
 --------------------
 
 ### Width
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/width.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/width.md
 
 A slick way to select a width in your blueprints. Although you could use it for anything you want as it stores the value in your markdown as an integer. Neat!
 
@@ -62050,7 +62091,7 @@ options:
 --------------------
 
 ### YAML
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/fieldtypes/yaml.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/fieldtypes/yaml.md
 
 A YAML editor that _directly_ manages YAML.
 
@@ -62075,7 +62116,7 @@ Refer to the [YAML guide](/yaml) on how to work with data in general. We really 
 --------------------
 
 ### Basename
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/basename.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/basename.md
 
 The basename of the asset, which is the filename with the extension.
 
@@ -62107,7 +62148,7 @@ types:
 --------------------
 
 ### Collection
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/collection.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/collection.md
 
 Get the name of the collection the entry belongs to.
 
@@ -62139,7 +62180,7 @@ types:
 --------------------
 
 ### Config
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/config.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/config.md
 
 Access configuration values from Statamic and Laravel config files.
 
@@ -62183,7 +62224,7 @@ types:
 --------------------
 
 ### CSRF Field
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/csrf_field.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/csrf_field.md
 
 Outputs the CSRF token inside a hidden field named `_token` from the session.
 
@@ -62220,7 +62261,7 @@ types:
 --------------------
 
 ### CSRF Token
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/csrf_token.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/csrf_token.md
 
 Output the CSRF token from the session.
 
@@ -62252,7 +62293,7 @@ types:
 --------------------
 
 ### Current Layout
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/current_layout.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/current_layout.md
 
 The name of the layout currently in use.
 
@@ -62285,7 +62326,7 @@ types:
 --------------------
 
 ### Current Template
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/current_template.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/current_template.md
 
 The name of the template currently in use.
 
@@ -62318,7 +62359,7 @@ types:
 --------------------
 
 ### Current Uri
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/current_uri.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/current_uri.md
 
 The current URI (URL without domain).
 
@@ -62350,7 +62391,7 @@ types:
 --------------------
 
 ### Current Url
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/current_url.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/current_url.md
 
 The current URL.
 
@@ -62382,7 +62423,7 @@ types:
 --------------------
 
 ### Current User
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/current_user.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/current_user.md
 
 The current user.
 
@@ -62411,7 +62452,7 @@ user@example.com
 --------------------
 
 ### Date
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/date.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/date.md
 
 Get the date of the entry as a Carbon instance, formatted according to system settings.
 
@@ -62446,7 +62487,7 @@ types:
 --------------------
 
 ### Datestamp
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/datestamp.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/datestamp.md
 
 Get the timestamp of the entry as an integer. Alias of `timestamp`.
 
@@ -62480,7 +62521,7 @@ types:
 --------------------
 
 ### Datestring
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/datestring.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/datestring.md
 
 Get the pre-formatted date of the entry as a string.
 
@@ -62512,7 +62553,7 @@ types:
 --------------------
 
 ### Edit Url
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/edit_url.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/edit_url.md
 
 Get the URL to edit the current page or entry in the Control Panel.
 
@@ -62546,7 +62587,7 @@ types:
 --------------------
 
 ### Entries Count
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/entries_count.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/entries_count.md
 
 Get the number of entries that use this taxonomy term.
 
@@ -62578,7 +62619,7 @@ types:
 --------------------
 
 ### Environment
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/environment.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/environment.md
 
 Outputs the current environment (the value of `APP_ENV` in your `.env` file).
 
@@ -62612,7 +62653,7 @@ types:
 --------------------
 
 ### Extension
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/extension.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/extension.md
 
 The file extension of the asset.
 
@@ -62644,7 +62685,7 @@ types:
 --------------------
 
 ### Filename
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/filename.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/filename.md
 
 The filename of the asset, without the extension.
 
@@ -62676,7 +62717,7 @@ types:
 --------------------
 
 ### Focus
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/focus.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/focus.md
 
 The focal point of the asset, defaulting to center (50-50).
 
@@ -62730,7 +62771,7 @@ types:
 --------------------
 
 ### Focus Css
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/focus_css.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/focus_css.md
 
 The focal point of the asset in a format suitable for the background-position CSS property.
 
@@ -62762,7 +62803,7 @@ types:
 --------------------
 
 ### Get
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/get.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/get.md
 
 An array of GET variables from query strings in the current URL.
 
@@ -62829,7 +62870,7 @@ types:
 --------------------
 
 ### Get Post
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/get_post.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/get_post.md
 
 Combines both `get` and `post` variables, with POST data taking precedence.
 
@@ -62845,7 +62886,7 @@ types:
 --------------------
 
 ### Has Timestamp
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/has_timestamp.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/has_timestamp.md
 
 A boolean indicating whether an entry is time-based.
 
@@ -62885,7 +62926,7 @@ types:
 --------------------
 
 ### Height
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/height.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/height.md
 
 The height of an image asset, in pixels.
 
@@ -62917,7 +62958,7 @@ types:
 --------------------
 
 ### Homepage
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/homepage.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/homepage.md
 
 The URL of the homepage. Usually the same as `site:url`.
 
@@ -62949,7 +62990,7 @@ types:
 --------------------
 
 ### Id
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/id.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/id.md
 
 The unique identifier of the content.
 
@@ -62982,7 +63023,7 @@ types:
 --------------------
 
 ### Is Asset
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/is_asset.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/is_asset.md
 
 A boolean indicating whether the current content is an asset.
 
@@ -62998,7 +63039,7 @@ types:
 --------------------
 
 ### Is Entry
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/is_entry.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/is_entry.md
 
 A boolean indicating whether the current content is an entry.
 
@@ -63014,7 +63055,7 @@ types:
 --------------------
 
 ### Is Homepage
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/is_homepage.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/is_homepage.md
 
 A boolean indicating whether you're on the homepage.
 
@@ -63046,7 +63087,7 @@ types:
 --------------------
 
 ### Is Image
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/is_image.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/is_image.md
 
 A boolean indicating whether the asset is an image.
 
@@ -63082,7 +63123,7 @@ types:
 --------------------
 
 ### Is Term
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/is_term.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/is_term.md
 
 A boolean indicating whether the current content is a term.
 
@@ -63098,7 +63139,7 @@ types:
 --------------------
 
 ### Is Video
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/is_video.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/is_video.md
 
 A boolean indicating whether the asset is a video.
 
@@ -63140,7 +63181,7 @@ types:
 --------------------
 
 ### Last Modified
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/last_modified.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/last_modified.md
 
 The last modified time for the content file or asset.
 
@@ -63171,7 +63212,7 @@ types:
 --------------------
 
 ### Last Segment
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/last_segment.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/last_segment.md
 
 Get the last segment of the current URL.
 
@@ -63205,7 +63246,7 @@ types:
 --------------------
 
 ### Live Preview
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/live_preview.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/live_preview.md
 
 A boolean indicating whether the current page is being viewed in Live Preview.
 
@@ -63227,7 +63268,7 @@ types:
 --------------------
 
 ### Logged In
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/logged_in.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/logged_in.md
 
 A boolean indicating whether the visitor is logged in.
 
@@ -63255,7 +63296,7 @@ types:
 --------------------
 
 ### Now
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/now.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/now.md
 
 The current date/time, formatted according to your display timezone and default time format.
 
@@ -63295,7 +63336,7 @@ types:
 --------------------
 
 ### Old
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/old.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/old.md
 
 An array of sanitized variables POSTed from the previous request, useful for form validation errors.
 
@@ -63357,7 +63398,7 @@ types:
 --------------------
 
 ### Order
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/order.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/order.md
 
 Get the order key of the content (the value at the beginning of the filename).
 
@@ -63391,7 +63432,7 @@ types:
 --------------------
 
 ### Order Type
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/order_type.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/order_type.md
 
 Get the order type of an entry (date, alphabetical, or number).
 
@@ -63423,7 +63464,7 @@ types:
 --------------------
 
 ### Path
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/path.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/path.md
 
 The path to the file, relative to the asset container.
 
@@ -63455,7 +63496,7 @@ types:
 --------------------
 
 ### Permalink
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/permalink.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/permalink.md
 
 Get the absolute URL to the content, including your site URL.
 
@@ -63487,7 +63528,7 @@ types:
 --------------------
 
 ### Post
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/post.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/post.md
 
 An array of sanitized POST variables from form data submitted to the current URL.
 
@@ -63536,7 +63577,7 @@ types:
 --------------------
 
 ### Published
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/published.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/published.md
 
 A boolean indicating whether the content is published (not a draft).
 
@@ -63572,7 +63613,7 @@ types:
 --------------------
 
 ### Response Code
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/response_code.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/response_code.md
 
 The HTTP response code of the request (200 for existing URLs, 404 for non-existent ones).
 
@@ -63588,7 +63629,7 @@ types:
 --------------------
 
 ### Segment X
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/segment_x.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/segment_x.md
 
 Get a specific URL segment by number (e.g., `segment_3` returns the third segment).
 
@@ -63622,7 +63663,7 @@ types:
 --------------------
 
 ### Site
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/site.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/site.md
 
 The current site being targeted in the request, available as a single tag or tag pair.
 
@@ -63756,7 +63797,7 @@ types:
 --------------------
 
 ### Sites
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/sites.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/sites.md
 
 A collection containing all configured sites as Site objects that can be looped over.
 
@@ -63842,7 +63883,7 @@ types:
 --------------------
 
 ### Size
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/size.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/size.md
 
 The file size of the asset in a human-readable format.
 
@@ -63881,7 +63922,7 @@ types:
 --------------------
 
 ### Size Bytes
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/size_bytes.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/size_bytes.md
 
 The file size of the asset in bytes. Also available as `size_b`.
 
@@ -63913,7 +63954,7 @@ types:
 --------------------
 
 ### Size Gigabytes
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/size_gigabytes.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/size_gigabytes.md
 
 The file size of the asset in gigabytes. Also available as `size_gb`.
 
@@ -63945,7 +63986,7 @@ types:
 --------------------
 
 ### Size Kilobytes
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/size_kilobytes.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/size_kilobytes.md
 
 The file size of the asset in kilobytes. Also available as `size_kb`.
 
@@ -63977,7 +64018,7 @@ types:
 --------------------
 
 ### Size Megabytes
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/size_megabytes.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/size_megabytes.md
 
 The file size of the asset in megabytes. Also available as `size_mb`.
 
@@ -64009,7 +64050,7 @@ types:
 --------------------
 
 ### Slug
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/slug.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/slug.md
 
 The string that identifies your content, usually appearing at the end of the URL.
 
@@ -64044,7 +64085,7 @@ types:
 --------------------
 
 ### Taxonomy
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/taxonomy.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/taxonomy.md
 
 Get the name of the taxonomy the term belongs to.
 
@@ -64076,7 +64117,7 @@ types:
 --------------------
 
 ### Timestamp
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/timestamp.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/timestamp.md
 
 Get the timestamp of the entry as an integer. Alias of `datestamp`.
 
@@ -64110,7 +64151,7 @@ types:
 --------------------
 
 ### Url
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/url.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/url.md
 
 Get the relative URL to the content (does not include the site URL).
 
@@ -64142,7 +64183,7 @@ types:
 --------------------
 
 ### Width
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/width.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/width.md
 
 The width of an image asset, in pixels.
 
@@ -64174,7 +64215,7 @@ types:
 --------------------
 
 ### Xml Header
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/variables/xml_header.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/variables/xml_header.md
 
 Outputs an XML header tag, useful when Statamic's template parser encodes PHP tags.
 
@@ -64208,7 +64249,7 @@ types:
 --------------------
 
 ### Collection Widget
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/widgets/collection.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/widgets/collection.md
 
 Display a list of entries from a collection.
 
@@ -64276,7 +64317,7 @@ options:
 --------------------
 
 ### Form Widget
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/widgets/form.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/widgets/form.md
 
 Display a list of the most recent form submissions.
 
@@ -64340,7 +64381,7 @@ options:
 --------------------
 
 ### Updater Widget
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/widgets/updater.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/widgets/updater.md
 
 Shows if there are any Statamic core or addon updates available.
 
@@ -64378,7 +64419,7 @@ options:
 --------------------
 
 ### Building your own Entries Repository
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/building-your-own-entries-repository.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/building-your-own-entries-repository.md
 
 Statamic's data layer is driver-driven. Build a custom Eloquent repository when flat files are not enough.
 
@@ -64889,7 +64930,7 @@ And there you have it. You've built a custom Eloquent repository, re-wired all t
 --------------------
 
 ### How to change your timezone to UTC
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/change-timezone-to-utc.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/change-timezone-to-utc.md
 
 Statamic 6 improves timezone handling. Switch your app timezone back to UTC and let Statamic handle display conversion.
 
@@ -64926,7 +64967,7 @@ Once complete, you may change your app's timezone in `config/app.php`:
 --------------------
 
 ### Configuring update scripts on older installations
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/configuring-update-scripts.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/configuring-update-scripts.md
 
 Update scripts were introduced for Statamic 3.1. Learn about update scripts and how to configure them on older Statamic installations.
 
@@ -64962,7 +65003,7 @@ This is a one-time thing and will be automatically triggered by future Statamic 
 --------------------
 
 ### Content Security Policy
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/content-security-policy.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/content-security-policy.md
 
 Lock down scripts, styles, and frames with a Content Security Policy — plus what Statamic needs whitelisted.
 
@@ -65077,7 +65118,7 @@ But, you can start with these:
 --------------------
 
 ### Converting from Single to Multi-Site
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/converting-from-single-to-multi-site.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/converting-from-single-to-multi-site.md
 
 Convert a single-site Statamic project to multi-site with `php please multisite`, or walk through the manual conversion steps.
 
@@ -65146,7 +65187,7 @@ php artisan cache:clear
 --------------------
 
 ### Creating Users by Hand
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/creating-users-by-hand.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/creating-users-by-hand.md
 
 Create CP users by adding YAML files to the users directory — Statamic encrypts the password on first load.
 
@@ -65190,7 +65231,7 @@ roles:
 --------------------
 
 ### Using Digital Ocean Spaces for an Asset Container
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/digital-ocean-spaces-for-asset-container.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/digital-ocean-spaces-for-asset-container.md
 
 Point an asset container at DigitalOcean Spaces using the S3 driver — install the adapter, add credentials, and you are set.
 
@@ -65258,7 +65299,7 @@ If you're having performance issues with S3 containers in the Control Panel, che
 --------------------
 
 ### Disabling Control Panel Authentication
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/disabling-cp-authentication.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/disabling-cp-authentication.md
 
 Disable the CP login, forgot-password, and registration pages when you are rolling your own authentication.
 
@@ -65277,7 +65318,7 @@ The Control Panel will still require an authorized user. This just allows you to
 --------------------
 
 ### Excluding the Control Panel from Maintenance Mode
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/excluding-the-control-panel-from-maintenance-mode.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/excluding-the-control-panel-from-maintenance-mode.md
 
 Keep the Control Panel reachable while Laravel maintenance mode is on — add CP routes to the allow list.
 
@@ -65326,7 +65367,7 @@ protected $except = [
 --------------------
 
 ### GDPR Considerations
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/gdpr-considerations.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/gdpr-considerations.md
 
 Not legal advice, but practical GDPR considerations for forms, user accounts, analytics, and consent in Statamic.
 
@@ -65363,7 +65404,7 @@ You may also want to disable form submission storing on any [forms](/forms), and
 --------------------
 
 ### Git Workflow
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/git-workflow.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/git-workflow.md
 
 A good workflow revolving around git to manage your deployments is a key factor in a pain-free and efficient project.
 
@@ -65415,7 +65456,7 @@ Whatever the reason, you can ignore the `content` directory in your `.gitignore`
 --------------------
 
 ### How to Enable Statamic Pro
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/how-to-enable-statamic-pro.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/how-to-enable-statamic-pro.md
 
 A fresh Statamic install starts in Solo edition mode. Here's how to enable Pro mode and unlock every feature Statamic has.
 
@@ -65450,7 +65491,7 @@ STATAMIC_LICENSE_KEY=your-site-license-key
 --------------------
 
 ### Importing Existing Content
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/importing-content.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/importing-content.md
 
 Import content from another CMS into Statamic — built-in tools, converters, and manual approaches for every situation.
 
@@ -65551,7 +65592,7 @@ If you need to import other content, like taxonomy terms or users, please review
 --------------------
 
 ### Using Statamic Alongside Laravel Nova
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/laravel-nova.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/laravel-nova.md
 
 Nova is an admin panel designed to manage your Eloquent models and other things. It can work hand in hand with Statamic.
 
@@ -65611,7 +65652,7 @@ If you'd like to manage Eloquent models within Statamic, [you're able to do that
 --------------------
 
 ### Load templates dynamically based on the URL
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/load-templates-dynamically-based-on-the-url.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/load-templates-dynamically-based-on-the-url.md
 
 Map URLs to view files with two route rules — prototype frontend layouts without setting up collections first.
 
@@ -65645,7 +65686,7 @@ Here's this route rule in action.
 --------------------
 
 ### Localizing Entries
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/localizing-entries.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/localizing-entries.md
 
 Entries, blueprints, and folder structure when localizing content across multiple Statamic sites.
 
@@ -65780,7 +65821,7 @@ propagate: true
 --------------------
 
 ### Localizing Globals
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/localizing-globals.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/localizing-globals.md
 
 Configure which sites use a global set, and which fields are localizable vs. shared across locales.
 
@@ -65809,7 +65850,7 @@ A localized global set should reference the origin. In the example above, the fr
 --------------------
 
 ### Localizing Navigation
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/localizing-navigation.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/localizing-navigation.md
 
 How navigation trees are organized per site in a multi-site setup — folders, YAML, and tree files.
 
@@ -65868,7 +65909,7 @@ tree: [...]
 --------------------
 
 ### Manually Resetting a User Password
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/manually-resetting-a-user-password.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/manually-resetting-a-user-password.md
 
 Stuck in a login loop? Reset a password by editing the user YAML file — Statamic hashes it automatically.
 
@@ -65912,7 +65953,7 @@ password_hash: $2y$10$Vopn8T7e.EMVEjxdP5p.g.AU5GTTN4RklvgR2l0dTwSPeJal91v/q
 --------------------
 
 ### Optimizing Assets
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/optimizing-assets.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/optimizing-assets.md
 
 Slow asset browser on S3 or Spaces? Stop the Stache watcher from scanning every request, persist asset caches separately, and move metadata to the database when flat-file indexing buckles.
 
@@ -66091,7 +66132,7 @@ Use them when you genuinely need a live check. Otherwise stick to `$asset->exist
 --------------------
 
 ### Overriding Exception Rendering
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/overriding-exception-rendering.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/overriding-exception-rendering.md
 
 Statamic 404, 403, and 401 exceptions bypass Laravel's renderer. Use renderUsing() to customize how they are displayed.
 
@@ -66160,7 +66201,7 @@ A few things to know about the callback:
 --------------------
 
 ### Pushing related entries to an Algolia index
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/pushing-related-entries-to-an-algolia-index.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/pushing-related-entries-to-an-algolia-index.md
 
 Transform entry data before indexing to Algolia, including pushing related entries alongside each record in the index.
 
@@ -66204,7 +66245,7 @@ _Contributed by Steven Grant_
 --------------------
 
 ### Recursive Nav Examples
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/recursive-nav-examples.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/recursive-nav-examples.md
 
 Recursive nav examples for trees, footers, and sidebars — for when the nav tag makes your brain hurt a little.
 
@@ -66330,7 +66371,7 @@ nav_classes:
 --------------------
 
 ### List of Reserved Words
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/reserved-words.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/reserved-words.md
 
 Reserved field handles and variable names that collide with Statamic tags — avoid these in your blueprints.
 
@@ -66396,7 +66437,7 @@ Some of these _may_ work as field names in some circumstances, but can have unin
 --------------------
 
 ### Setting Default Columns on Listing Tables
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/setting-default-listing-columns.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/setting-default-listing-columns.md
 
 Set default columns and sort order on CP listing tables by editing preference YAML — no UI required.
 
@@ -66442,7 +66483,7 @@ collections:
 --------------------
 
 ### Storing Content in a Database
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/storing-content-in-a-database.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/storing-content-in-a-database.md
 
 Outgrown flat-file content? Move entries, collections, and assets into a database with Statamic's Eloquent driver.
 
@@ -66484,7 +66525,7 @@ If you change your mind about moving content to the database, you can always mov
 --------------------
 
 ### Storing Laravel Users in Files
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/storing-laravel-users-in-files.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/storing-laravel-users-in-files.md
 
 Store Laravel app users as Statamic YAML files when your project needs both frameworks sharing the same user format.
 
@@ -66506,7 +66547,7 @@ If you've installed Statamic into an existing Laravel application, it will be ex
 --------------------
 
 ### Storing Users in a Database
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/storing-users-in-a-database.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/storing-users-in-a-database.md
 
 Move users from flat files to a database when your user count grows and filesystem storage stops scaling.
 
@@ -66693,7 +66734,7 @@ By default, roles and groups are stored in flat files. If you would like to stor
 --------------------
 
 ### Storing Users Somewhere Custom
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/storing-users-somewhere-custom.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/storing-users-somewhere-custom.md
 
 Build a custom user repository when file or Eloquent storage does not fit how your users need to work.
 
@@ -66851,7 +66892,7 @@ Laravel needs to know how to retrieve your users when they log in. Statamic regi
 --------------------
 
 ### Working with Taxonomies by Hand
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/taxonomies-by-hand.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/taxonomies-by-hand.md
 
 Create and manage taxonomies and terms by hand in YAML when the Control Panel is not your vibe.
 
@@ -66935,7 +66976,7 @@ Just like entries, these values will be augmented automatically in your template
 --------------------
 
 ### Timezones
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/timezones.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/timezones.md
 
 UTC storage, display timezones, and the config that ties them together — every developer's least favorite topic.
 
@@ -67023,7 +67064,7 @@ You should ensure you're applying the `Localize` middleware to any custom routes
 --------------------
 
 ### Enforce trailing slashes in URLs
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/trailing-slashes.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/trailing-slashes.md
 
 Keep trailing slashes on URLs for SEO when migrating from another CMS — one helper call in AppServiceProvider.
 
@@ -67091,7 +67132,7 @@ Add this to your `web.config` file:
 --------------------
 
 ### Using an Independent Authentication Guard
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/using-an-independent-authentication-guard.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/using-an-independent-authentication-guard.md
 
 Separate Laravel app users from Statamic CP users with independent guards and providers in config/auth.php.
 
@@ -67222,7 +67263,7 @@ These routes will use whichever guard you have set to as the "default" in your `
 --------------------
 
 ### Using Composer Patches
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/using-composer-patches.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/using-composer-patches.md
 
 When a bug fix exists in a pull request but hasn't been released yet, Composer patches let you apply it today instead of waiting.
 
@@ -67348,7 +67389,7 @@ _Hat tip to [Rias Van der Veken](https://rias.be), whose article [Using composer
 --------------------
 
 ### Using Statamic Alongside Laravel Nightwatch
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/using-statamic-with-laravel-nightwatch.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/using-statamic-with-laravel-nightwatch.md
 
 Nightwatch on Statamic burns through your event quota fast. Filter noisy events and keep monitoring costs under control.
 
@@ -67437,7 +67478,7 @@ For a full list of filtering and sampling options, see the [Nightwatch Cache doc
 --------------------
 
 ### Zero Downtime Deployments
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/tips/zero-downtime-deployments.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/tips/zero-downtime-deployments.md
 
 How zero-downtime deploy tools structure releases, and how to set up Statamic so the Stache cache and Git Automation work correctly with them.
 
@@ -67574,6 +67615,23 @@ There are two ways to avoid sharing a Redis cache between your deployment releas
     :::tip
     The `stache` connection above shares Redis database `1` with the default `cache` connection. Key prefixes keep their entries separate during normal use, but `php artisan cache:clear` wipes both. Point the `stache` connection at a different database (e.g. `'database' => env('REDIS_STACHE_DB', '2')`) for complete isolation, mirroring the file cache option above where the two stores naturally live in separate directories.
     :::
+
+### Skipping the cache clear on install
+
+Statamic's `statamic:install` command runs on every `composer install` via the `post-autoload-dump` script in your `composer.json`, and it clears the application cache each time. If your releases share a cache store, this wipes the live site's cache mid-deploy, before the new release is even activated.
+
+Add the `--no-cache-clear` option to skip it:
+
+```json
+"post-autoload-dump": [
+    "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+    "@php artisan package:discover --ansi",
+    "@php artisan statamic:install --ansi", // [tl! --]
+    "@php artisan statamic:install --ansi --no-cache-clear" // [tl! ++]
+]
+```
+
+If you still need the cache cleared, run `php artisan cache:clear` in your deploy script after the new release has been activated.
 
 ## Git Automation
 
@@ -67791,7 +67849,7 @@ error: failed to push some refs to '…'. Updates were rejected because the remo
 --------------------
 
 ### Troubleshooting Asset Permissions
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/troubleshooting/asset-permissions.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/troubleshooting/asset-permissions.md
 
 You've uploaded files to a service like Amazon S3 or Digital Ocean Spaces, but your files are private.
 
@@ -67820,7 +67878,7 @@ This setting only applies to newly uploaded files. You'll need to log into AWS o
 --------------------
 
 ### Assets are Missing URLs
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/troubleshooting/assets-missing-urls.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/troubleshooting/assets-missing-urls.md
 
 Trying to output an asset's details and `url` is just blank?
 
@@ -67884,7 +67942,7 @@ Asset containers using url-less disks are considered "private" and will intentio
 --------------------
 
 ### CLI Command Not Found: Statamic
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/troubleshooting/command-not-found-statamic.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/troubleshooting/command-not-found-statamic.md
 
 In order for you to run globally installed [Composer](https://getcomposer.org) binaries, (like our `statamic` installer) you'll need to tell your computer where it's located.
 
@@ -67936,7 +67994,7 @@ Composer's directory to add is `%USERPROFILE%\AppData\Roaming\Composer\vendor\bi
 --------------------
 
 ### Composer & GitHub Authentication
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/troubleshooting/composer-and-github-authentication.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/troubleshooting/composer-and-github-authentication.md
 
 If you receive a Composer error similar to `Could not authenticate against github.com`, this usually means you are hitting API rate limits.
 
@@ -67966,7 +68024,7 @@ composer config github-oauth.github.com {your-personal-access-token-here}
 --------------------
 
 ### "419 Page Expired" error when logging into the Control Panel
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/troubleshooting/control-panel-page-expired.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/troubleshooting/control-panel-page-expired.md
 
 There are a few common reasons why you might encounter a "419 Page Expired" error when attempting to login to the Control Panel.
 
@@ -67999,7 +68057,7 @@ To rule this out, you could try disabling all browser extensions, or logging in 
 --------------------
 
 ### Email not sending
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/troubleshooting/email-not-sending.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/troubleshooting/email-not-sending.md
 
 Email can be difficult to debug when it seems like you've set everything up correctly.
 
@@ -68030,7 +68088,7 @@ If you're using Laravel Horizon, make sure that you didn't just `composer requir
 --------------------
 
 ### Fixing issues with Global Composer packages
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/troubleshooting/fixing-issues-with-global-composer-packages.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/troubleshooting/fixing-issues-with-global-composer-packages.md
 
 When [Composer](https://getcomposer.org) works, it's a fantastic and powerful tool. But what happens when it...doesn't? Here's how to fix one of the most common issues with global dependencies:
 
@@ -68066,7 +68124,7 @@ If you're on MacOS, that file will be at `~/.composer/composer.json`
 --------------------
 
 ### How to Fix Slow Control Panel Entry Listings
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/troubleshooting/listing-performance.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/troubleshooting/listing-performance.md
 
 Entry listings in the control panel are feeling a bit sluggish? We have ways of speeding that right up.
 
@@ -68091,7 +68149,7 @@ If you find entry search is sluggish, it might be worth looking into creating a 
 --------------------
 
 ### Missing Control Panel Assets (Vite manifest not found)
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/troubleshooting/missing-control-panel-assets.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/troubleshooting/missing-control-panel-assets.md
 
 You've just installed Statamic and are ready to jump into the Control Panel. You head to `/cp` and are met with a `Vite manifest not found` error.
 
@@ -68166,7 +68224,7 @@ ENV COMPOSER_ALLOW_SUPERUSER=1
 --------------------
 
 ### Required PHP Extensions for Assets
-Source: https://github.com/statamic/docs/blob/9e26cc4217784b0bf135965d0c33a03159d3a852/content/collections/troubleshooting/required-php-extensions.md
+Source: https://github.com/statamic/docs/blob/6df0c7929131d699cac78eb3fb921ccbe3fe57fc/content/collections/troubleshooting/required-php-extensions.md
 
 Is your Control Panel subtly broken?  Check to see if you have these PHP extensions enabled.
 
