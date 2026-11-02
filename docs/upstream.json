@@ -10,9 +10,9 @@
     },
     "6": {
       "branch": "6.x",
-      "commit": "6df0c7929131d699cac78eb3fb921ccbe3fe57fc",
+      "commit": "2b2c44f946751d2e75a691681529956184ccdc6f",
       "pages": 614,
-      "content_hash": "975b9ce638f6ca7ac5e918a1a098a6a67fcc6bb96505b2747264e03d24a804e1",
+      "content_hash": "4b05b5f67d60884de5ca43cca14e2411818d8ae4ed81911812daf0e8fe3b7239",
       "license_hash": "89a9a0d25c9aa3eca3e3ec07fa8b4c465b4dbb197feb72d2f30a67036d41d93a"
     }
   }
