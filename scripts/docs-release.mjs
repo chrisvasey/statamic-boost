@@ -39,10 +39,10 @@ export function latestStable(releases) {
         })[0];
 }
 
-export function nextMinor(tag) {
+export function nextPatch(tag) {
     const match = /^v?(\d+)\.(\d+)\.\d+$/.exec(tag);
     if (!match) throw new Error(`Invalid stable tag: ${tag}`);
-    return `v${match[1]}.${Number(match[2]) + 1}.0`;
+    return `v${match[1]}.${match[2]}.${Number(match[3]) + 1}`;
 }
 
 export function isDocsPath(path) {
@@ -116,7 +116,7 @@ export function prepare(repository, statePath, dryRun) {
     const release = latestStable(pages(`repos/${repository}/releases?per_page=100`));
     if (!release) throw new Error('Publish an initial stable release before enabling automatic docs releases.');
     const head = run('git', ['rev-parse', 'HEAD']);
-    const tag = nextMinor(release.tag_name);
+    const tag = nextPatch(release.tag_name);
     const paths = changedPaths(release.tag_name);
     const unrelated = paths.filter(path => !isDocsPath(path));
     const blocked = unrelated.length ? `Unreleased package changes require a normal release first: ${unrelated.join(', ')}` : undefined;

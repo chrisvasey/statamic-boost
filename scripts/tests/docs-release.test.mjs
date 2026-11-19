@@ -6,7 +6,7 @@ import { tmpdir } from 'node:os';
 import { delimiter, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
-import { contentHash, isDocsPath, latestStable, newMajors, nextMinor, releaseNotes, validateRecovery } from '../docs-release.mjs';
+import { contentHash, isDocsPath, latestStable, newMajors, nextPatch, releaseNotes, validateRecovery } from '../docs-release.mjs';
 
 const head = 'a'.repeat(40);
 const otherCommit = 'b'.repeat(40);
@@ -30,11 +30,13 @@ test('the latest stable release uses numeric versions and skips drafts, prerelea
     assert.equal(latestStable([{ tag_name: 'v1.0' }, { tag_name: 'v1.0.0', draft: true }]), undefined);
 });
 
-test('minor releases retain the major and reset the patch', () => {
-    assert.equal(nextMinor('v1.9.27'), 'v1.10.0');
-    assert.equal(nextMinor('2.0.8'), 'v2.1.0');
+test('patch releases retain the major and minor and increment the patch', () => {
+    assert.equal(nextPatch('v1.9.27'), 'v1.9.28');
+    assert.equal(nextPatch('2.0.8'), 'v2.0.9');
+    assert.equal(nextPatch('v1.8.0'), 'v1.8.1');
+    assert.equal(nextPatch('v1.8.1'), 'v1.8.2');
     for (const tag of ['v1.2', 'v1.2.3-beta.1', 'v1.2.3+build', 'release-1.2.3']) {
-        assert.throws(() => nextMinor(tag), /Invalid stable tag/);
+        assert.throws(() => nextPatch(tag), /Invalid stable tag/);
     }
 });
 
@@ -61,7 +63,7 @@ test('new major discovery uses exact branches and deduplicates markers in open o
 });
 
 test('pending tags are recoverable only at the same HEAD with an exact ownership marker and docs-only changes', () => {
-    const tag = 'v1.3.0';
+    const tag = 'v1.2.4';
     const message = `Update documentation\n\nDocs-Release: ${tag}\n`;
     const paths = ['CHANGELOG.md', 'docs/upstream.json', 'docs/statamic-docs-v6.md'];
     assert.doesNotThrow(() => validateRecovery(tag, head, head, message, paths));
@@ -122,8 +124,8 @@ else if (command === 'git') {
     if (args[0] === 'rev-parse') result = '${head}';
     else if (args[0] === 'diff') result = mode === 'recovery' ? 'docs/upstream.json' : mode === 'blocked' ? 'src/ServiceProvider.php' : '';
     else if (args[0] === 'status') result = mode === 'changed' ? ' M docs/statamic-docs-v5.md\\n M CHANGELOG.md\\n' : mode === 'code' ? ' M src/ServiceProvider.php\\n' : '';
-    else if (args[0] === 'tag' && args[1] === '--list') result = mode === 'recovery' ? 'v1.3.0' : '';
-    else if (args[0] === 'show') result = 'Update docs\\n\\nDocs-Release: v1.3.0\\n';
+    else if (args[0] === 'tag' && args[1] === '--list') result = mode === 'recovery' ? 'v1.2.4' : '';
+    else if (args[0] === 'show') result = 'Update docs\\n\\nDocs-Release: v1.2.4\\n';
     else if (['config', 'add', 'commit', 'tag', 'push'].includes(args[0])) result = '';
 } else if (command === 'tar') {
     if (args[0] === '-tzf') result = 'upstream/LICENSE.md\\nupstream/content/example.md\\n';
@@ -149,7 +151,7 @@ process.stdout.write(result);
         directory,
         statePath,
         savePlan(overrides = {}) {
-            writeFileSync(statePath, JSON.stringify({ changed: true, dryRun: false, recovery: false, repository: 'owner/package', head, tag: 'v1.3.0', notes: releaseNotes(versions), ...overrides }));
+            writeFileSync(statePath, JSON.stringify({ changed: true, dryRun: false, recovery: false, repository: 'owner/package', head, tag: 'v1.2.4', notes: releaseNotes(versions), ...overrides }));
         },
         run(action, dryRun = true) {
             return spawnSync(process.execPath, [script, action], {
@@ -195,7 +197,7 @@ test('a pushed pending release prepares recovery and dry-run publish performs no
     assert.equal(plan.changed, true);
     assert.equal(plan.recovery, true);
     assert.equal(plan.dryRun, true);
-    assert.equal(plan.tag, 'v1.3.0');
+    assert.equal(plan.tag, 'v1.2.4');
     const callsBeforePublish = context.calls();
     const published = context.run('publish');
     assert.equal(published.status, 0, published.stderr);
@@ -231,14 +233,14 @@ test('blocked dry-run still rebuilds both snapshots, while blocked live preparat
     }
 });
 
-test('dry-run prepares changed documentation and previews its minor release without publishing', t => {
+test('dry-run prepares changed documentation and previews its patch release without publishing', t => {
     const context = fixture(t, 'updated');
     const prepared = context.run('prepare');
     assert.equal(prepared.status, 0, prepared.stderr);
     const plan = JSON.parse(readFileSync(context.statePath));
     assert.equal(plan.dryRun, true);
     assert.equal(plan.changed, true);
-    assert.equal(plan.tag, 'v1.3.0');
+    assert.equal(plan.tag, 'v1.2.4');
     const callsBeforePublish = context.calls();
     const preview = context.run('publish');
     assert.equal(preview.status, 0, preview.stderr);
@@ -278,10 +280,10 @@ test('normal publish accepts unstaged docs paths and pushes the branch and tag a
     const calls = context.calls();
     const push = calls.findIndex(call => call[0] === 'git' && call[1] === 'push');
     const release = calls.findIndex(call => call[0] === 'gh' && call[1] === 'release');
-    assert.deepEqual(calls[push], ['git', 'push', '--atomic', 'origin', 'HEAD:refs/heads/main', 'refs/tags/v1.3.0']);
+    assert.deepEqual(calls[push], ['git', 'push', '--atomic', 'origin', 'HEAD:refs/heads/main', 'refs/tags/v1.2.4']);
     assert.ok(release > push);
     assert.ok(calls[release].includes('--verify-tag'));
-    assert.ok(calls.some(call => call[1] === 'commit' && call.includes('Update bundled Statamic documentation\n\nDocs-Release: v1.3.0')));
+    assert.ok(calls.some(call => call[1] === 'commit' && call.includes('Update bundled Statamic documentation\n\nDocs-Release: v1.2.4')));
 });
 
 test('publish refuses code changes or a changed HEAD before committing or pushing', t => {

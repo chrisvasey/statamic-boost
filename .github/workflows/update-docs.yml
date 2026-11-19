@@ -113,7 +113,7 @@ jobs:
           vendor/bin/pest --ci
           vendor/bin/phpstan analyse --no-progress --memory-limit=512M
           git diff --check
-      - name: Commit, tag and publish the minor release
+      - name: Commit, tag and publish the patch release
         if: steps.prepare.outputs.changed == 'true' || env.DOCS_DRY_RUN == 'true'
         env:
           DOCS_RELEASE_STATE: ${{ runner.temp }}/docs-release.json

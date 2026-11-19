@@ -2,6 +2,11 @@
 
 All notable changes to `statamic-boost` will be documented in this file.
 
+## v1.8.1 - 2026-11-19
+
+- Publish future automated bundled documentation updates as patch releases.
+- Keep content and licence change detection, validation, and release safeguards unchanged.
+
 ## v1.8.0 - 2026-11-16
 
 Refresh the bundled Statamic documentation from pinned upstream snapshots.
