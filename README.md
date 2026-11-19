@@ -111,7 +111,7 @@ page counts and content checksums; the upstream licenses are included in `docs/`
 
 The **Update bundled documentation** action checks every Monday at 05:23 UTC.
 It downloads immutable upstream snapshots, validates both versions, and publishes
-the next minor release only when bundled documentation or its license changes.
+the next patch release only when bundled documentation or its license changes.
 Commit-only changes and non-documentation site edits do not cause releases.
 The action runs the tests and static analysis before atomically pushing the docs
 commit and tag, then creates a GitHub release and includes the changelog update.
