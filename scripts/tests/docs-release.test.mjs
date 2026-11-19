@@ -201,7 +201,7 @@ test('a pushed pending release prepares recovery and dry-run publish performs no
     const callsBeforePublish = context.calls();
     const published = context.run('publish');
     assert.equal(published.status, 0, published.stderr);
-    assert.match(published.stdout, /Dry run: would publish v1\.3\.0/);
+    assert.match(published.stdout, /Dry run: would publish v1\.2\.4/);
     assert.deepEqual(context.calls(), callsBeforePublish);
     const live = fixture(t, 'recovery');
     const livePrepared = live.run('prepare', false);
@@ -244,7 +244,7 @@ test('dry-run prepares changed documentation and previews its patch release with
     const callsBeforePublish = context.calls();
     const preview = context.run('publish');
     assert.equal(preview.status, 0, preview.stderr);
-    assert.match(preview.stdout, /would publish v1\.3\.0/i);
+    assert.match(preview.stdout, /would publish v1\.2\.4/i);
     assert.deepEqual(context.calls(), callsBeforePublish);
     assert.ok(!context.calls().some(call => call.includes('POST') || ['commit', 'push'].includes(call[1])));
 });
