@@ -40,7 +40,7 @@ export function latestStable(releases) {
 }
 
 export function nextPatch(tag) {
-    const match = /^v?(\d+)\.(\d+)\.\d+$/.exec(tag);
+    const match = /^v?(\d+)\.(\d+)\.(\d+)$/.exec(tag);
     if (!match) throw new Error(`Invalid stable tag: ${tag}`);
     return `v${match[1]}.${match[2]}.${Number(match[3]) + 1}`;
 }
